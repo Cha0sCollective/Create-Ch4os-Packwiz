@@ -34,3 +34,5 @@ when they leave the pack. Settings marked for preservation keep your edits;
 other managed defaults may be replaced. Worlds and operator data stay outside
 the pack. Unmanaged old mods are not cleaned up automatically, and AOCA/RC8 worlds
 are not migrated. Update Java or NeoForge through AMP when a release requires it.
+
+[Map sharing and DH settings for the beta](MAPS.md)

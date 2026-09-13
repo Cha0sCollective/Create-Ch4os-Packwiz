@@ -2,7 +2,7 @@
 
 Keep this an ordinary Packwiz pack. `pack/` is the source of truth for mods,
 configuration, recipes and tags. Use `beta` for work and testing; `public` moves
-only when the owner selects the release players should receive. `main` tracks
+only when I select the release players should receive. `main` tracks
 the accepted release; keep it aligned when promoting a release.
 
 ## Add, remove or configure a mod
@@ -45,5 +45,5 @@ changing packaging. Record the exact revision, ZIP checksum and actual results
 in the PR. Reuse valid unchanged coverage; do not claim a hash check proves gameplay.
 
 Use a fresh independent review for consequential changes. A PR into `public`
-selects a player update only after owner approval. Do not change repository
+selects a player update only after my approval. Do not change repository
 visibility, publish releases or touch production as a side effect of pack work.

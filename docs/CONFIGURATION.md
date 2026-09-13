@@ -1,7 +1,6 @@
 # Maintained configuration
 
-The exact settings live in `pack/`. This overview describes the unchanged 0.2
-starting point; a mod's generated configuration can contain additional defaults.
+The exact settings live in `pack/`; a mod's generated configuration can contain additional defaults.
 
 | Area | Pack choice |
 | --- | --- |
@@ -11,11 +10,12 @@ starting point; a mod's generated configuration can contain additional defaults.
 | Deep Seas | Its additional ocean deepening is off; retained hull/pressure behavior is unchanged |
 | Structures | IDAS included with Labyrinth mining fatigue off; CSA global multipliers 0.7 and 1.0 |
 | Logging | Only CSA's repetitive DEBUG logger is filtered; warnings/errors and other diagnostics remain |
-| DH | Radius 128; 2 worker threads at 50% runtime; PRE_EXISTING_ONLY generation |
-| DH transfer | 500 KB/s per player, 2000 KB/s overall; fresh LOD caches may take time to fill |
+| DH | Radius 128; 4 worker threads at 75% runtime for new installations; existing settings preserved; PRE_EXISTING_ONLY generation |
+| DH transfer | No server bandwidth caps for new installations; existing servers need a manual change |
+| Map sharing | MapSyncer 1.0.3; generated terrain shared, TICK updates every 6000 ticks; per-world defaults |
 | Display | Borderless fullscreen, VSync/shaders off, 120 FPS cap, 12-chunk render/simulation distance |
 | Shaders | Three downloaded archives: Bliss and two Complementary variants; installed patchers generate additional choices |
-| Java | Java 21 Generational ZGC arguments supplied by the Prism instance; memory inherits Prism |
+| Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
 
 Ore attempts and terrain settings are not guaranteed yields or geometry. This

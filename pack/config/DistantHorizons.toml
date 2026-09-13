@@ -15,9 +15,9 @@ enableDistantGeneration = true
 distantGeneratorMode = "PRE_EXISTING_ONLY"
 
 [common.multiThreading]
-# Leave CPU headroom for machinery, physics and the normal game renderer.
-numberOfThreads = 2
-threadRunTimeRatio = 0.5
+# Shared first-install default; existing client/server settings are preserved.
+numberOfThreads = 4
+threadRunTimeRatio = 0.75
 
 [server]
 enableServerGeneration = true
@@ -25,6 +25,6 @@ enableServerGeneration = true
 maxGenerationRequestDistance = 256
 maxSyncOnLoadRequestDistance = 256
 realTimeUpdateDistanceRadiusInChunks = 128
-# DH LOD traffic only, in KB/s; ordinary game traffic is separate.
-playerBandwidthLimit = 500
-globalBandwidthLimit = 2000
+# DH LOD traffic only. Zero disables each bandwidth cap.
+playerBandwidthLimit = 0
+globalBandwidthLimit = 0

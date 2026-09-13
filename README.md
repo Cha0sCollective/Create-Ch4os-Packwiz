@@ -17,7 +17,7 @@ command when prompted; it downloads the mods and keeps the pack updated.
 
 ## About the pack
 
-Version 0.2.0 includes Distant Horizons, Tectonic, Terralith and Create integrations.
+The pack includes Distant Horizons, Tectonic, Terralith and Create integrations.
 Prism manages your client; AMP manages your server. Packwiz installs the pack files
 for both. No separate Ch4oS installer is needed.
 
@@ -29,7 +29,7 @@ our unchanged MIT-licensed release mirror. The import ZIP contains no gameplay J
 `public` supplies player updates, `main` holds the accepted release, and `beta`
 is for testing. Changes reach players only when promoted to `public`.
 
-[Contributing](docs/CONTRIBUTING.md) · [Configuration](docs/CONFIGURATION.md) ·
+[Beta map-sharing setup](docs/MAPS.md) · [Contributing](docs/CONTRIBUTING.md) · [Configuration](docs/CONFIGURATION.md) ·
 [Mod sources](docs/MOD-SOURCES.csv) · [Build a ZIP](distribution/README.md)
 
 Project-authored files use the [MIT license](LICENSE.txt). Mods retain their own licenses.

@@ -1,0 +1,10 @@
+# Share generated terrain, including unvisited pregenerated areas.
+# MapSyncer 1.0.3 copies this into new worlds' serverconfig directory.
+[general]
+enableDebugLogging = false
+maxConcurrentRegions = 4
+syncSpeedLimitKBps = 1024
+
+[incremental_update]
+incrementalUpdateMode = "TICK"
+incrementalUpdateIntervalTicks = 6000

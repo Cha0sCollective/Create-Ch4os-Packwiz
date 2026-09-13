@@ -20,8 +20,8 @@ uses the direct GitHub release URL and hash in its Packwiz entry, with its origi
 provider identity retained. All other mods use their official providers.
 
 Keep profile version/name and runtime versions aligned with `pack/pack.toml`.
-Java 21 Generational ZGC is supplied as instance arguments; memory and Java
-selection come from Prism. Only instance metadata, the player guide, notices and
+Java 21 Generational ZGC is supplied as instance arguments; new instances use a 12 GiB maximum heap and inherit Java
+selection from Prism. Only instance metadata, the player guide, notices and
 Packwiz tools enter the ZIP. Packwiz fetches the selected pack at launch.
 
 ## Select the player release

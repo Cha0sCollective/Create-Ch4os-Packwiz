@@ -1,5 +1,5 @@
 # Keep this identity aligned with pack.toml and distribution/profile.json.
 [general]
 modpackName = "Create: Ch4oS — New World"
-modpackVersion = "0.2.0"
+modpackVersion = "0.2.1-beta.1"
 useMetadata = false

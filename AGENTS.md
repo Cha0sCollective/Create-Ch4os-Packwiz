@@ -4,10 +4,10 @@ This is the Packwiz-only Create: Ch4oS repository. Keep it lightweight: ordinary
 Packwiz files, native Prism import metadata and concise user/contributor docs.
 Do not add a custom installer, update framework, hosting service or server manager.
 
-- `main` tracks the accepted release; `public` is the owner-selected player release. Work on `beta` or a focused branch
-  based on it; moving `public`, merging and release publication need owner approval.
-- Preserve the selected mod versions, gameplay and world boundary unless the owner
-  requests a change. The starting pack matches Create: Ch4oS 0.2.0-rc.1.
+- `main` tracks the accepted release; `public` is the player release I select. Work on `beta` or a focused branch
+  based on it; moving `public`, merging and release publication need my approval.
+- Preserve the selected mod versions, gameplay and world boundary unless I
+  request a change. The starting pack matches Create: Ch4oS 0.2.0-rc.1.
 - Edit maintained files under `pack/`, retain LF bytes, run ordinary `packwiz refresh`
   after changes, and verify the hashes. Keep personal data and generated state out
   of Git and ZIPs. Upstream mods stay official downloads except the unchanged Industrialized
