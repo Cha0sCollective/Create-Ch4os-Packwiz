@@ -1,7 +1,7 @@
 The following license applies to project-authored pack files, distribution
 metadata/glue and documentation. It does not license upstream mods or downloads.
-The bundled Industrialized Architecture release has its own upstream MIT notice
-in third-party/industrialized-architecture-LICENSE.txt.
+The mirrored Industrialized Architecture release has its own upstream MIT notice
+in pack/third-party-notices/industrialized-architecture-LICENSE.txt.
 
 MIT License
 

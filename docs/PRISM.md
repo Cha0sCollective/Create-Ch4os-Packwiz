@@ -18,10 +18,11 @@ application.
    included Packwiz pre-launch command when Prism asks. Packwiz downloads the
    selected client mods and configuration before Minecraft starts.
 
-Industrialized Architecture 0.1.1b is included unchanged with its MIT notice.
-Every other mod downloads from its official provider. The two other JARs are
-Packwiz installation tools, not gameplay mods. No existing installation or world
-is required. Minecraft 1.21.1 and NeoForge 21.1.248 are selected by the instance.
+Industrialized Architecture 0.1.1b downloads from our unchanged GitHub release
+mirror with SHA-256 verification; its MIT notice is included. Every other mod
+downloads from its official provider. The ZIP contains no gameplay JARs. Its two
+JARs are Packwiz installation tools. No previous pack installation or world is
+required. The instance selects Minecraft 1.21.1 and NeoForge 21.1.248.
 
 ## Updates and personal files
 
@@ -52,7 +53,5 @@ local data. There is no Windows Apps uninstall entry for this import.
 
 ## Availability
 
-The public address must be enabled before this ZIP is distributed for normal
-use. While the repository is private or its branches are unpublished, it cannot
-serve anonymous clients. Maintainers can build a separate loopback-address test
-ZIP; it is not a public download.
+The public and beta pack addresses are available without signing into GitHub.
+Prism itself is installed separately by the player; this ZIP only adds an instance.

@@ -1,7 +1,6 @@
 # Builds a standard Prism instance. Packwiz performs installation and updates.
 [CmdletBinding()]
 param(
-    [Parameter(Mandatory)][string]$BundledArtifactsDirectory,
     [Parameter(Mandatory)][string]$Output,
     [string]$CacheDirectory,
     [ValidateSet('public','beta')][string]$Channel = 'public',
@@ -28,17 +27,11 @@ $revision = & git -C $repo rev-parse HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Build from a Git checkout.' }
 $dirty = & git -C $repo status --porcelain --untracked-files=normal
 if ($LASTEXITCODE -ne 0 -or $dirty) { throw 'Commit or isolate local changes before building.' }
-$artifact = @($profile.bundledArtifacts)
-if ($artifact.Count -ne 1 -or $artifact[0].destination -cne 'mods/i_architecture-0.1.1b.jar') { throw 'Review Prism packaging when the bundled artifact changes.' }
-$artifact = $artifact[0]
-$bundled = Join-Path $BundledArtifactsDirectory $artifact.source
-if ((Get-FileHash -LiteralPath $bundled -Algorithm SHA256).Hash.ToLowerInvariant() -cne $artifact.sha256) { throw 'Industrialized Architecture does not match its declared hash.' }
 New-Item -ItemType Directory -Force -Path $CacheDirectory | Out-Null
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $outputPath) | Out-Null
 $stage = Join-Path ([IO.Path]::GetTempPath()) ('ch4os-prism-' + [Guid]::NewGuid().ToString('N'))
 $instance = Join-Path $stage $profile.id
 $game = Join-Path $instance '.minecraft'
-New-Item -ItemType Directory -Path (Join-Path $game 'mods') -Force | Out-Null
 $notices = Join-Path $game 'third-party-notices'
 New-Item -ItemType Directory -Path $notices | Out-Null
 foreach ($name in @('bootstrap','installer')) {
@@ -55,8 +48,7 @@ foreach ($name in @('bootstrap','installer')) {
     $filename = if ($name -eq 'bootstrap') { 'packwiz-installer-bootstrap.jar' } else { 'packwiz-installer.jar' }
     Copy-Item -LiteralPath $cached -Destination (Join-Path $game $filename)
 }
-Copy-Item -LiteralPath $bundled -Destination (Join-Path $game $artifact.destination)
-foreach ($notice in @($artifact.notice, 'third-party/packwiz-installer-LICENSE.txt', 'third-party/packwiz-installer-bootstrap-LICENSE.txt')) {
+foreach ($notice in @('pack/third-party-notices/industrialized-architecture-LICENSE.txt', 'third-party/packwiz-installer-LICENSE.txt', 'third-party/packwiz-installer-bootstrap-LICENSE.txt')) {
     Copy-Item -LiteralPath (Join-Path $repo $notice) -Destination $notices
 }
 Copy-Item -LiteralPath (Join-Path $repo 'LICENSE.txt') -Destination $instance

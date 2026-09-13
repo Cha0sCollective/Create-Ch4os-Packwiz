@@ -7,7 +7,7 @@ installer repository, an installed Minecraft instance or a world capture.
 From a clean committed checkout:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File distribution/Build-Prism.ps1 -BundledArtifactsDirectory C:\Release-inputs -Output C:\Candidates\Create-Ch4oS-Prism.zip
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File distribution/Build-Prism.ps1 -Output C:\Candidates\Create-Ch4oS-Prism.zip
 ```
 
 Add `-Channel beta` and choose a different output filename for the beta ZIP.
@@ -15,16 +15,14 @@ The default is `public`. A `.sha256` file accompanies each ZIP; existing ZIPs ar
 never overwritten. The two ordinary Packwiz tools are pinned in `prism-tools.json`
 and downloaded with hash verification. Their licenses are included.
 
-Supply the unchanged Industrialized Architecture 0.1.1b file outside Git at
-`C:\Release-inputs\bundled\i_architecture-0.1.1b.jar`. Its official identity,
-SHA-256 and notice are recorded in `profile.json` and `third-party/`. No other mod
-JAR is a packaging input. Keep profile version/name and runtime versions aligned
-with `pack/pack.toml`; Java 21 Generational ZGC is supplied as instance arguments,
-while memory and Java selection come from Prism.
+No mod JAR or external release-input directory is needed. Industrialized Architecture
+uses the direct GitHub release URL and hash in its Packwiz entry, with its original
+provider identity retained. All other mods use their official providers.
 
-Only Prism metadata, the player guide, licenses, Packwiz tools and the declared
-Industrialized Architecture JAR enter the ZIP. `pack/` is fetched from the selected
-branch at launch. No custom update service or publishing workflow is involved.
+Keep profile version/name and runtime versions aligned with `pack/pack.toml`.
+Java 21 Generational ZGC is supplied as instance arguments; memory and Java
+selection come from Prism. Only instance metadata, the player guide, notices and
+Packwiz tools enter the ZIP. Packwiz fetches the selected pack at launch.
 
 ## Select the player release
 
@@ -34,9 +32,9 @@ a GitHub release alone does not advance either branch. Do this when the server i
 ready for the client changes. Review world compatibility and keep backups; changing
 the branch backward does not roll back player data safely.
 
-Keep the same world line, Minecraft/NeoForge/Java requirements and bundled artifact
-for an existing import. Changes requiring different Prism metadata or bundled
-files use a new import ZIP and a deliberate transition. Packwiz file preservation
+Keep the same world line and Minecraft/NeoForge/Java requirements for an existing
+import. Changes requiring different Prism metadata use a new import ZIP and a
+deliberate transition. Packwiz file preservation
 is not a world-migration system.
 
 For an isolated local test, serve a copy of the pack over loopback HTTP and build

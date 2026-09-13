@@ -29,8 +29,10 @@ when a change affects them. Keep the Packwiz, BCC and distribution version field
 aligned when changing the release version.
 
 Prefer small original configuration, recipes and tags. Do not copy restricted
-AOCA integration or upstream assets. Mods remain official downloads; only the
-unchanged declared Industrialized Architecture JAR may be bundled with its notice.
+AOCA integration or upstream assets. Mods remain official downloads; the
+unchanged Industrialized Architecture JAR is mirrored as a GitHub release asset. Keep its SHA-256 and original CurseForge
+identity unchanged. Its notice is also managed in `pack/third-party-notices/` so
+empty server and client installations receive the attribution.
 Create: Tracks has an explicitly accepted source-availability exception and
 includes upstream art with separate restrictions; its JAR/assets are not bundled.
 

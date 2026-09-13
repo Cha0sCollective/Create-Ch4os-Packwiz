@@ -1,20 +1,5 @@
 {
   "id": "Create-Ch4oS-02",
   "name": "Create: Ch4oS — New World",
-  "version": "0.2.0-rc.1",
-  "bundledArtifacts": [
-    {
-      "source": "bundled/i_architecture-0.1.1b.jar",
-      "destination": "mods/i_architecture-0.1.1b.jar",
-      "notice": "third-party/industrialized-architecture-LICENSE.txt",
-      "sha256": "295edfb0f3dec36bc294debe377425a9ad21f7ce98305ca9f7b03d4b0605a544",
-      "license": "MIT",
-      "provider": {
-        "name": "curseforge",
-        "projectId": 1316585,
-        "fileId": 7350975,
-        "url": "https://www.curseforge.com/minecraft/mc-mods/industrialized-architecture/files/7350975"
-      }
-    }
-  ]
+  "version": "0.2.0-rc.1"
 }

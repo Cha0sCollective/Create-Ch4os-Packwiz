@@ -10,8 +10,9 @@ Do not add a custom installer, update framework, hosting service or server manag
   requests a change. The starting pack matches Create: Ch4oS 0.2.0-rc.1.
 - Edit maintained files under `pack/`, retain LF bytes, run ordinary `packwiz refresh`
   after changes, and verify the hashes. Keep personal data and generated state out
-  of Git and ZIPs. Upstream mods stay official downloads; only the declared unchanged
-  Industrialized Architecture JAR may be bundled with its license and attribution.
+  of Git and ZIPs. Upstream mods stay official downloads except the unchanged Industrialized
+  Architecture release mirror. Preserve its hash, provider identity and notice.
+  Do not bundle gameplay JARs in the Prism ZIP.
 - Preserve unrelated local work. Test in isolated instances; never modify a live
   server or the user's running instance as part of a packaging check.
 - Reuse valid evidence. Distinguish a package/hash check from a real Prism import

@@ -992,7 +992,7 @@ metafile = true
 
 [[files]]
 file = "mods/industrialized-architecture.pw.toml"
-hash = "7df2b22209759618b0542f98a2974f9b5c7256b5aac575c20a02dfd998e73d74"
+hash = "79914adea900685abe05ae14a6cbfe8c3bd7aa928289093dbc4e059910852749"
 metafile = true
 
 [[files]]
@@ -1429,3 +1429,7 @@ metafile = true
 file = "shaderpacks/complementaryunbound_r5.8.1.zip.pw.toml"
 hash = "4640bb9f40bea2902a69c5f57ae4b08386b967e5d2e896e595ad81199f9237ae"
 metafile = true
+
+[[files]]
+file = "third-party-notices/industrialized-architecture-LICENSE.txt"
+hash = "9c8076f529d398bfa363d5b705fe7f461d81ec7010698c221788e9a405b42d3d"
