@@ -1,0 +1,13 @@
+name = "powergrid-mc1.21.1-0.6.1"
+filename = "powergrid-mc1.21.1-0.6.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8738/576/powergrid-mc1.21.1-0.6.1.jar"
+hash-format = "sha256"
+hash = "b2835c36af6794a963737c617b5f9dd6b41aba5078d418c88847193fbcf702e5"
+
+[update.curseforge]
+file-id = 8738576
+project-id = 1321420

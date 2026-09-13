@@ -1,0 +1,13 @@
+name = "sliceanddice-4.3.3-neoforge"
+filename = "sliceanddice-4.3.3-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8547/315/sliceanddice-4.3.3-neoforge.jar"
+hash-format = "sha256"
+hash = "f887f70d8a5892c0cffb4fcac59dd189c76aef64e2f2d4771743ca8721d6ee48"
+
+[update.curseforge]
+file-id = 8547315
+project-id = 659674

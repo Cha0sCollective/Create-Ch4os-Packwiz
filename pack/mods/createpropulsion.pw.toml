@@ -1,0 +1,13 @@
+name = "createpropulsion-1.1.5"
+filename = "createpropulsion-1.1.5.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8496/246/createpropulsion-1.1.5.jar"
+hash-format = "sha256"
+hash = "5525a3a0c8b1c476cbc467d021e9d1492b58c78de31ed269eb04f169d42db0a1"
+
+[update.curseforge]
+file-id = 8496246
+project-id = 1522736

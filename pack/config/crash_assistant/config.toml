@@ -1,0 +1,32 @@
+[general]
+help_link = "https://github.com/Cha0sCollective/Create-Ch4oS/issues"
+formulation_type = "GITHUB"
+wrap_link = "mclo.gs"
+send_uploaded_logs_data_to_kostromdan_dev = false
+generate_localization_overrides_folder_with_readme = false
+
+[text]
+support_name = "Create: Ch4oS GitHub issues"
+support_place = ""
+modpack_name = "Create: Ch4oS"
+
+# Packwiz maintains the dependency definition; players are not pack creators.
+[modpack_modlist]
+enabled = false
+auto_update = false
+
+[greeting]
+shown_greeting = true
+
+[scripts]
+generate_scripts_folder_with_example = false
+ide_enabled = false
+
+[simple_mode]
+enabled = true
+
+[generated_message]
+piracy_notification = false
+
+[gui_customisation]
+disable_upload_all_button = true

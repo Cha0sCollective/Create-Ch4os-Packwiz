@@ -1,0 +1,13 @@
+name = "EasyAnvils-v21.1.0-1.21.1-NeoForge"
+filename = "EasyAnvils-v21.1.0-1.21.1-NeoForge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/5733/955/EasyAnvils-v21.1.0-1.21.1-NeoForge.jar"
+hash-format = "sha256"
+hash = "dcd0e562710a639b4fdd60a7500dc9404c6fbd1007215a088248ce1c57ccc6dc"
+
+[update.curseforge]
+file-id = 5733955
+project-id = 682567

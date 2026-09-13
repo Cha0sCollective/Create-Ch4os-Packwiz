@@ -1,0 +1,13 @@
+name = "cloth-config-15.0.140-neoforge"
+filename = "cloth-config-15.0.140-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/5729/127/cloth-config-15.0.140-neoforge.jar"
+hash-format = "sha256"
+hash = "65e722e0d98431a07c45f8bdd8d529a217cc8c175fde1740248bd5c1b4f3c0d4"
+
+[update.curseforge]
+file-id = 5729127
+project-id = 348521

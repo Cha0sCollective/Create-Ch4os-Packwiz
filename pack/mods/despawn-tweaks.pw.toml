@@ -1,0 +1,13 @@
+name = "despawntweaks-neoforge-1.0.0-1.21.1"
+filename = "despawntweaks-neoforge-1.0.0-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6145/369/despawntweaks-neoforge-1.0.0-1.21.1.jar"
+hash-format = "sha256"
+hash = "c3c65c7c58657b2b73db2a25d5c9acccb0115a2d64af40426db5d43c32028981"
+
+[update.curseforge]
+file-id = 6145369
+project-id = 1191080

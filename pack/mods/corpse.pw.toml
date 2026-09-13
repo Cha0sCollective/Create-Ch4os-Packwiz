@@ -1,0 +1,13 @@
+name = "corpse-neoforge-1.21.1-1.1.13"
+filename = "corpse-neoforge-1.21.1-1.1.13.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7018/307/corpse-neoforge-1.21.1-1.1.13.jar"
+hash-format = "sha256"
+hash = "f61e750eb2cb49867483d34d6630e02597a52e41680fc38d1c65ece4ef36fd2b"
+
+[update.curseforge]
+file-id = 7018307
+project-id = 316582

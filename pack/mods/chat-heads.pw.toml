@@ -1,0 +1,13 @@
+name = "chat_heads-0.15.7-neoforge-1.21"
+filename = "chat_heads-0.15.7-neoforge-1.21.jar"
+side = "client"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8642/154/chat_heads-0.15.7-neoforge-1.21.jar"
+hash-format = "sha256"
+hash = "02e10437ceeed34e14e0efe206204658e4b8aa8ee7df10f2a9e28ac20f1b0391"
+
+[update.curseforge]
+file-id = 8642154
+project-id = 407206

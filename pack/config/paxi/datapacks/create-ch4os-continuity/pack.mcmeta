@@ -1,0 +1,34 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": "Create: Ch4oS: continuity recipes"
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "create",
+        "path": "recipe/crushing/tuff(_recycling)?\\.json"
+      },
+      {
+        "namespace": "createaddition",
+        "path": "recipe/crushing/tuff_recycling\\.json"
+      },
+      {
+        "namespace": "create_things_and_misc",
+        "path": "recipe/(crushed_magma_crush|magma_cream_craft)\\.json"
+      },
+      {
+        "namespace": "create_enchantment_industry",
+        "path": "recipe/crushing/infested_cobblestone\\.json"
+      },
+      {
+        "namespace": "dndesires",
+        "path": "recipe/hydraulic_compacting/veridium_gen\\.json"
+      },
+      {
+        "namespace": "totemfactory",
+        "path": "recipe/ghast_tear\\.json"
+      }
+    ]
+  }
+}

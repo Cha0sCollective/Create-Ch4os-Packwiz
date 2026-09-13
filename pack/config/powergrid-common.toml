@@ -1,0 +1,2 @@
+# Intentional continuity settings; unspecified values use the pinned mod defaults.
+syncWithDoubles = false

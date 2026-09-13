@@ -1,0 +1,13 @@
+name = "fancymenu_neoforge_3.9.12_MC_1.21.1"
+filename = "fancymenu_neoforge_3.9.12_MC_1.21.1.jar"
+side = "client"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8752/297/fancymenu_neoforge_3.9.12_MC_1.21.1.jar"
+hash-format = "sha256"
+hash = "fd0f446c22bb42a0a3ac5cbdcb614abcba5a70f99e2a0cda6556a8efad2859a5"
+
+[update.curseforge]
+file-id = 8752297
+project-id = 367706

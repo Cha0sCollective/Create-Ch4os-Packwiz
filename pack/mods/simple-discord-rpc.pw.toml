@@ -1,0 +1,13 @@
+name = "SimpleRPC-4.1.4"
+filename = "SimpleRPC-4.1.4.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8489/200/SimpleRPC-4.1.4.jar"
+hash-format = "sha256"
+hash = "0ea2d26bb7037edeb6199af562c185bd27211ffbea5ee16b5200b50c4d361cf1"
+
+[update.curseforge]
+file-id = 8489200
+project-id = 411816

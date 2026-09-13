@@ -1,0 +1,8 @@
+# Shader and mod versions are selected together by the pack.
+[updates]
+doUpdateChecking = "none"
+
+[display]
+doDisplayShaderInGameMessage = false
+# Keep installation/failure dialogs available.
+doPopUpLogging = true

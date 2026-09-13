@@ -1,0 +1,13 @@
+name = "pinout-0.2.1"
+filename = "pinout-0.2.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/sMa4MaGz/versions/UJtJCpBi/pinout-0.2.1.jar"
+hash-format = "sha256"
+hash = "d31c19c3c8aefb512922bf8086146127cad7ef9100d929a8fddcc2ab133fdd4a"
+
+[update.modrinth]
+mod-id = "sMa4MaGz"
+version = "UJtJCpBi"

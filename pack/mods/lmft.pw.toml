@@ -1,0 +1,13 @@
+name = "lmft-1.1.1+1.21.9-neoforge"
+filename = "lmft-1.1.1+1.21.9-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7084/444/lmft-1.1.1%2b1.21.9-neoforge.jar"
+hash-format = "sha256"
+hash = "932765aae037197e8acfe7a90d9e473b143e3e785655c24c02b30c7013cd4458"
+
+[update.curseforge]
+file-id = 7084444
+project-id = 656346

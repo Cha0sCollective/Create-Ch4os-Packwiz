@@ -1,0 +1,13 @@
+name = "better-compatability-checker-neoforge-21.1.8"
+filename = "better-compatability-checker-neoforge-21.1.8.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7404/415/better-compatability-checker-neoforge-21.1.8.jar"
+hash-format = "sha256"
+hash = "1ed1373aa54a486f19a0c68c7446fe39c227628e7f5048bff97917189307e7e8"
+
+[update.curseforge]
+file-id = 7404415
+project-id = 551894

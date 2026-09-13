@@ -1,0 +1,13 @@
+name = "xaerominimap-neoforge-1.21.1-26.4.2"
+filename = "xaerominimap-neoforge-1.21.1-26.4.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8449/819/xaerominimap-neoforge-1.21.1-26.4.2.jar"
+hash-format = "sha256"
+hash = "b722bcf794288f0ed51165cd1f057fc4505e20abbc723b2e17e900426e443603"
+
+[update.curseforge]
+file-id = 8449819
+project-id = 263420

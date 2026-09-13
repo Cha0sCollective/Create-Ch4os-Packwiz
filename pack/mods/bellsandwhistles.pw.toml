@@ -1,0 +1,13 @@
+name = "bellsandwhistles-0.4.7-1.21.1"
+filename = "bellsandwhistles-0.4.7-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6299/879/bellsandwhistles-0.4.7-1.21.1.jar"
+hash-format = "sha256"
+hash = "a438cf2ea3a05120e12342484f1e12ca11526fbf4195d259ce1d7df8a9b3ffca"
+
+[update.curseforge]
+file-id = 6299879
+project-id = 905040

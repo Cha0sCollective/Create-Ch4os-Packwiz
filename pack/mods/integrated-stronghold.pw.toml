@@ -1,0 +1,13 @@
+name = "integrated_stronghold-1.1.4+1.21.1-neoforge"
+filename = "integrated_stronghold-1.1.4+1.21.1-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7802/495/integrated_stronghold-1.1.4%2b1.21.1-neoforge.jar"
+hash-format = "sha256"
+hash = "c6ac6ad68de806524615238f8a7efe511c417b8cd56ffceb7dd62aad9c8b821b"
+
+[update.curseforge]
+file-id = 7802495
+project-id = 815548

@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "pattern": [
+    "HH  ",
+    "MCRP"
+  ],
+  "key": {
+    "H": {
+      "item": "createdieselgenerators:kelp_handle"
+    },
+    "M": {
+      "item": "create:precision_mechanism"
+    },
+    "C": {
+      "tag": "c:storage_blocks/copper"
+    },
+    "R": {
+      "item": "rubberworks:rubber_sheet"
+    },
+    "P": {
+      "item": "create:fluid_pipe"
+    }
+  },
+  "result": {
+    "id": "createdieselgenerators:chemical_sprayer",
+    "count": 1
+  }
+}

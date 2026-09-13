@@ -1,0 +1,13 @@
+name = "boatiview-neoforge-0.0.6-1.21.1"
+filename = "boatiview-neoforge-0.0.6-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6059/206/boatiview-neoforge-0.0.6-1.21.1.jar"
+hash-format = "sha256"
+hash = "c08f1c2188ab79b4f4085a72d98796d3c59fc3f836c6ce1f3755ea5b8928c77c"
+
+[update.curseforge]
+file-id = 6059206
+project-id = 482444

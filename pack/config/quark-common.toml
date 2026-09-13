@@ -1,0 +1,56 @@
+# Intentional continuity settings; unspecified values use the pinned mod defaults.
+[general]
+"Enable Onboarding" = false
+
+[management.automatic_tool_restock]
+"Ignored Items" = [
+    "botania:exchange_rod",
+    "botania:dirt_rod",
+    "botania:skydirt_rod",
+    "botania:cobble_rod",
+]
+
+[tools]
+Pickarang = false
+
+[world.big_stone_clusters]
+"Blocks To Replace" = [
+    "minecraft:stone",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:netherrack|minecraft:the_nether",
+    "minecraft:end_stone|minecraft:the_end",
+    "quark:marble",
+    "quark:limestone",
+    "quark:jasper",
+    "quark:slate",
+]
+
+[world.big_stone_clusters.shale.biomes.tags]
+"Biome Tags" = [
+    "c:is_snowy",
+]
+
+[mobs]
+Stonelings = false
+
+[oddities.matrix_enchanting]
+"Influences List" = [
+    "minecraft:unbreaking",
+    "minecraft:fire_protection",
+    "minecraft:knockback,minecraft:punch",
+    "minecraft:feather_falling",
+    "minecraft:looting,minecraft:fortune,minecraft:luck_of_the_sea",
+    "minecraft:blast_protection",
+    "minecraft:silk_touch,minecraft:channeling",
+    "minecraft:bane_of_arthropods",
+    "minecraft:protection",
+    "minecraft:respiration,minecraft:loyalty,minecraft:infinity",
+    "minecraft:sweeping,minecraft:multishot",
+    "minecraft:efficiency,minecraft:sharpness,minecraft:lure,minecraft:power,minecraft:impaling,minecraft:quick_charge",
+    "minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide",
+    "minecraft:thorns,minecraft:piercing",
+    "minecraft:fire_aspect,minecraft:flame",
+    "minecraft:smite,minecraft:projectile_protection",
+]

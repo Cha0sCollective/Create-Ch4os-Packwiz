@@ -1,0 +1,13 @@
+name = "amendments-1.21-2.1.9-neoforge"
+filename = "amendments-1.21-2.1.9-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8732/859/amendments-1.21-2.1.9-neoforge.jar"
+hash-format = "sha256"
+hash = "28647bef2397e69953237e883333f80ca4d3e93feec714eff71c67350c389b9b"
+
+[update.curseforge]
+file-id = 8732859
+project-id = 896746

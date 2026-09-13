@@ -1,0 +1,8 @@
+# Create: Ch4oS has no BisectHosting partner integration or hosted public-server directory.
+pack_edit_mode = false
+
+[modules.server_creator_banner]
+enabled = false
+
+[modules.public_server_list]
+enabled = false

@@ -1,0 +1,13 @@
+name = "sodium-neoforge-0.8.13+mc1.21.1"
+filename = "sodium-neoforge-0.8.13+mc1.21.1.jar"
+side = "client"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8756/580/sodium-neoforge-0.8.13%2bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "575d187b15328d7bddd8a9b1bee64333c22c14735f5780ec49eac0cd5503c08d"
+
+[update.curseforge]
+file-id = 8756580
+project-id = 394468

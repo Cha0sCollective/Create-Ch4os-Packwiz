@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create_fantasizing:zinc_casing"
+    }
+  ],
+  "result": {
+    "id": "createcasing:zinc_casing",
+    "count": 1
+  }
+}

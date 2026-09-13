@@ -1,0 +1,13 @@
+name = "collective-1.21.1-8.39"
+filename = "collective-1.21.1-8.39.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8341/460/collective-1.21.1-8.39.jar"
+hash-format = "sha256"
+hash = "ae59b63790c3097fb01e7801c21f3e7feed13b151c2ad993895196c74381a8fe"
+
+[update.curseforge]
+file-id = 8341460
+project-id = 342584

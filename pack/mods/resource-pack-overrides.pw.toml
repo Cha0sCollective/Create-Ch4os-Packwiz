@@ -1,0 +1,13 @@
+name = "ResourcePackOverrides-v21.1.0-1.21.1-NeoForge"
+filename = "ResourcePackOverrides-v21.1.0-1.21.1-NeoForge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/5733/968/ResourcePackOverrides-v21.1.0-1.21.1-NeoForge.jar"
+hash-format = "sha256"
+hash = "5aab7282d287a7de64d6be4e20f4c3b9c577add436ac89fd643b6ce9b4445738"
+
+[update.curseforge]
+file-id = 5733968
+project-id = 832644

@@ -1,0 +1,13 @@
+name = "leaky-1.21-3.3"
+filename = "leaky-1.21-3.3.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8755/808/leaky-1.21-3.3.jar"
+hash-format = "sha256"
+hash = "eccaa99b08f021268ceaa4745586a63a9f364c9a0d8bd38acf9d2e4611a22a30"
+
+[update.curseforge]
+file-id = 8755808
+project-id = 856906

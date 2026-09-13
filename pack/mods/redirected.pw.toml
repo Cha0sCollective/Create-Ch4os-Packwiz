@@ -1,0 +1,13 @@
+name = "redirected-neoforge-1.0.0-1.21.1"
+filename = "redirected-neoforge-1.0.0-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6148/845/redirected-neoforge-1.0.0-1.21.1.jar"
+hash-format = "sha256"
+hash = "bdaf4c3399b7436d3be7d79729d87ed707a964420dc58720e13fb2f4960c8b9e"
+
+[update.curseforge]
+file-id = 6148845
+project-id = 1191845

@@ -1,0 +1,14 @@
+{
+  "configVersion": 1,
+  "enabled": true,
+  "rules": [
+    {
+      "name": "CSA repeated configuration diagnostics",
+      "enabled": true,
+      "type": "LOGGER_REGEX",
+      "pattern": "^createstructuresarise\\.CreateStructuresAriseMod$",
+      "action": "DENY",
+      "level": "DEBUG"
+    }
+  ]
+}

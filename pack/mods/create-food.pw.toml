@@ -1,0 +1,13 @@
+name = "createfood-neoforge-1.21.1-2.7.1"
+filename = "createfood-neoforge-1.21.1-2.7.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8603/640/createfood-neoforge-1.21.1-2.7.1.jar"
+hash-format = "sha256"
+hash = "f156291f5e16caf918acd5e77d052a82b8789a6be7a365d2d8e637efeaf3eb93"
+
+[update.curseforge]
+file-id = 8603640
+project-id = 959439

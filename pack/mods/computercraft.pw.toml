@@ -1,0 +1,13 @@
+name = "cc-tweaked-1.21.1-forge-1.120.2"
+filename = "cc-tweaked-1.21.1-forge-1.120.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8778/582/cc-tweaked-1.21.1-forge-1.120.2.jar"
+hash-format = "sha256"
+hash = "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f"
+
+[update.curseforge]
+file-id = 8778582
+project-id = 1676502

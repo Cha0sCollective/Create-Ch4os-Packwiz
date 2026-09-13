@@ -1,0 +1,13 @@
+name = "JadeAddons-1.21.1-NeoForge-6.1.0"
+filename = "JadeAddons-1.21.1-NeoForge-6.1.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6315/149/JadeAddons-1.21.1-NeoForge-6.1.0.jar"
+hash-format = "sha256"
+hash = "5f242668ad710092964d4d9afda8a94fa2401665ea13eea67d55d07e4dff8a64"
+
+[update.curseforge]
+file-id = 6315149
+project-id = 583345

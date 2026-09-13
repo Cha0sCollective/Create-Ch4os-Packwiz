@@ -1,0 +1,13 @@
+name = "create_hypertube-0.6.0-NEOFORGE"
+filename = "create_hypertube-0.6.0-NEOFORGE.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8541/877/create_hypertube-0.6.0-NEOFORGE.jar"
+hash-format = "sha256"
+hash = "7bdb8979c7ff7d3b29f7a23771b6ae4870a6dcb7ce2e4a3214fdd6059aacace8"
+
+[update.curseforge]
+file-id = 8541877
+project-id = 1281336

@@ -1,0 +1,13 @@
+name = "create-new-age-1.2.0+neoforge-mc1.21.1"
+filename = "create-new-age-1.2.0+neoforge-mc1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8215/216/create-new-age-1.2.0%2bneoforge-mc1.21.1.jar"
+hash-format = "sha256"
+hash = "a217ea21ccc8364e99d86777e519436bc7c94516df9737ad0103047e48a44717"
+
+[update.curseforge]
+file-id = 8215216
+project-id = 905861

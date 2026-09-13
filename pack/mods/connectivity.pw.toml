@@ -1,0 +1,13 @@
+name = "connectivity-1.21.1-7.6"
+filename = "connectivity-1.21.1-7.6.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7367/221/connectivity-1.21.1-7.6.jar"
+hash-format = "sha256"
+hash = "2366973ddae5ba00b9ba15a26e5b610a6648038b9f2549bf81b9ae61342b281a"
+
+[update.curseforge]
+file-id = 7367221
+project-id = 470193

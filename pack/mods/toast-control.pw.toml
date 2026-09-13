@@ -1,0 +1,13 @@
+name = "ToastControl-1.21.1-9.0.1"
+filename = "ToastControl-1.21.1-9.0.1.jar"
+side = "client"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6751/464/ToastControl-1.21.1-9.0.1.jar"
+hash-format = "sha256"
+hash = "f80bc1be4375faaac73971e6d51cc1500935f7144fa33108ee4f2fdbd8f70f66"
+
+[update.curseforge]
+file-id = 6751464
+project-id = 271740

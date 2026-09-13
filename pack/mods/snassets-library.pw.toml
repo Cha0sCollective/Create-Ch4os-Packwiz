@@ -1,0 +1,13 @@
+name = "snassets-1.0.2"
+filename = "snassets-1.0.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8603/518/snassets-1.0.2.jar"
+hash-format = "sha256"
+hash = "63b86ba4b0f837202a867b14b9b1b2b77448fb79cfa531af7f2005a574c36bc7"
+
+[update.curseforge]
+file-id = 8603518
+project-id = 1592344

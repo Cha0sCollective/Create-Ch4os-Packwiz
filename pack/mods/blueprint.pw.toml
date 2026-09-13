@@ -1,0 +1,13 @@
+name = "blueprint-1.21.1-8.1.1"
+filename = "blueprint-1.21.1-8.1.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8397/829/blueprint-1.21.1-8.1.1.jar"
+hash-format = "sha256"
+hash = "6a60d361d6aaf61273b65036958a646ff05d9ecb22fc706074a7e886e55ec190"
+
+[update.curseforge]
+file-id = 8397829
+project-id = 382216

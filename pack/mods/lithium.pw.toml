@@ -1,0 +1,13 @@
+name = "lithium-neoforge-0.15.4+mc1.21.1"
+filename = "lithium-neoforge-0.15.4+mc1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8330/365/lithium-neoforge-0.15.4%2bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "488f33216030c1cb0baa33e59de3d657d08d5795a6c2080c8c8bbbc133fc8757"
+
+[update.curseforge]
+file-id = 8330365
+project-id = 360438

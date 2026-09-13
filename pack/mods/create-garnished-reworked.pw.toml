@@ -1,0 +1,13 @@
+name = "creategarnished-0.1.7.4+1.21.1-neoforged"
+filename = "creategarnished-0.1.7.4+1.21.1-neoforged.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7575/506/creategarnished-0.1.7.4%2b1.21.1-neoforged.jar"
+hash-format = "sha256"
+hash = "b92220f179391b85348a0b648e51f59cc2d434c30b831c2c75f0f5de16ab251c"
+
+[update.curseforge]
+file-id = 7575506
+project-id = 1236537

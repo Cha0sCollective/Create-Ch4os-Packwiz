@@ -1,0 +1,13 @@
+name = "jei-1.21.1-neoforge-19.44.0.405"
+filename = "jei-1.21.1-neoforge-19.44.0.405.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8732/390/jei-1.21.1-neoforge-19.44.0.405.jar"
+hash-format = "sha256"
+hash = "b2fb92ef7804733ed5156268cafe2bd9743ab1269c1e8189163be2a2f669b225"
+
+[update.curseforge]
+file-id = 8732390
+project-id = 238222

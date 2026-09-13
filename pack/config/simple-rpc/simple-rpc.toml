@@ -1,0 +1,148 @@
+# Uses Simple RPC's existing Discord application and Minecraft image.
+# This sets activity details, not the Discord application's top-level name.
+# Players can set enabled = false; Packwiz preserves this preference file.
+[general]
+applicationID = "762726289341677668"
+enabled = true
+debugging = false
+launcherIntegration = false
+rpcImageServer = false
+rpcImageServerUrl = "https://rpcavatar.firstdark.dev"
+version = 27
+
+[init]
+enabled = true
+
+[[init.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Starting Minecraft"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[main_menu]
+enabled = true
+
+[[main_menu.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "In the menu"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[server_list]
+enabled = true
+
+[[server_list.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Choosing a server"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[realms_list]
+enabled = true
+
+[[realms_list.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Browsing Realms"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[join_game]
+enabled = true
+
+[[join_game.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Joining a world"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[single_player]
+enabled = true
+
+[[single_player.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Building in single-player"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[multi_player]
+enabled = true
+
+[[multi_player.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Building together"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[realms]
+enabled = true
+
+[[realms.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Building together"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[paused]
+enabled = true
+
+[[paused.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Taking a break"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[generic]
+
+[[generic.presence]]
+type = "PLAYING"
+description = "Creating Ch4oS"
+state = "Create, explore, engineer"
+largeImageKey = ["mclogonew"]
+largeImageText = "Create: Ch4oS"
+smallImageKey = []
+smallImageText = ""
+buttons = []
+
+[custom]
+enabled = false
+variables = []
+
+[dimension_overrides]
+enabled = false
+dimensions = []

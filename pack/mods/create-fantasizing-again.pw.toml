@@ -1,0 +1,13 @@
+name = "create_fantasizing-1.21.1-1.2.0-b3"
+filename = "create_fantasizing-1.21.1-1.2.0-b3.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8585/611/create_fantasizing-1.21.1-1.2.0-b3.jar"
+hash-format = "sha256"
+hash = "1fdf90fdbe9d6dfab24d71793352a0b1c5af2eba0c88422710f5418ced6d09a5"
+
+[update.curseforge]
+file-id = 8585611
+project-id = 1279337

@@ -1,0 +1,13 @@
+name = "Create Immersive Aircrafts Datapack 1.21.1 - 3.0.zip"
+filename = "Create Immersive Aircrafts Datapack 1.21.1 - 3.0.zip"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7568/78/Create%20Immersive%20Aircrafts%20Datapack%201.21.1%20-%203.0.zip"
+hash-format = "sha256"
+hash = "27a45db3887c74c7e0f5ed6b9f8886f80a5126e2ede6445a174ed7ccf6698f08"
+
+[update.curseforge]
+file-id = 7568078
+project-id = 870545

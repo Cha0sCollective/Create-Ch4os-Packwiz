@@ -1,0 +1,13 @@
+name = "drippyloadingscreen_neoforge_3.1.5_MC_1.21.1"
+filename = "drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar"
+side = "client"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8552/907/drippyloadingscreen_neoforge_3.1.5_MC_1.21.1.jar"
+hash-format = "sha256"
+hash = "f1fcb6cf3cbc7a6055fed0912bf284a7c455a0830de42460943fc5e130072759"
+
+[update.curseforge]
+file-id = 8552907
+project-id = 511770

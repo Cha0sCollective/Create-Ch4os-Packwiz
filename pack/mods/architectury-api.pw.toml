@@ -1,0 +1,13 @@
+name = "architectury-13.0.11-neoforge"
+filename = "architectury-13.0.11-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar"
+hash-format = "sha256"
+hash = "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb"
+
+[update.curseforge]
+file-id = 8492726
+project-id = 419699

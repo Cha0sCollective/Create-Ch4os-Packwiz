@@ -1,0 +1,11 @@
+version:3955
+enableVsync:false
+maxFps:120
+renderDistance:12
+simulationDistance:12
+fullscreen:true
+overrideWidth:1280
+overrideHeight:720
+narrator:0
+onboardAccessibility:false
+soundCategory_music:0.25

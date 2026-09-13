@@ -1,0 +1,13 @@
+name = "ComplementaryReimagined_r5.8.1.zip"
+filename = "ComplementaryReimagined_r5.8.1.zip"
+side = "client"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8123/287/ComplementaryReimagined_r5.8.1.zip"
+hash-format = "sha256"
+hash = "3f1cd389e717b2e62f58edff222059b9c60de71b14bb49b517eb58318ce35b15"
+
+[update.curseforge]
+file-id = 8123287
+project-id = 627557

@@ -1,0 +1,13 @@
+name = "extra_create_recipes_1.21.1_v1"
+filename = "extra_create_recipes_1.21.1_v1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7370/449/extra_create_recipes_1.21.1_v1.jar"
+hash-format = "sha256"
+hash = "40b20257d3bef83319d2f21e437c2896fc732cfe68fb21f642dc051af17e2a23"
+
+[update.curseforge]
+file-id = 7370449
+project-id = 1266786

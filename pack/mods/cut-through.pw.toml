@@ -1,0 +1,13 @@
+name = "CutThrough-v21.1.0-1.21.1-NeoForge"
+filename = "CutThrough-v21.1.0-1.21.1-NeoForge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/5731/913/CutThrough-v21.1.0-1.21.1-NeoForge.jar"
+hash-format = "sha256"
+hash = "9b01eb578d8ba1e6fd463e7cc5fad33c484e5cef1ffd9ed77ef9c02424c40801"
+
+[update.curseforge]
+file-id = 5731913
+project-id = 969423

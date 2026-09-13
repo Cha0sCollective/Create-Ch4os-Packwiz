@@ -1,0 +1,13 @@
+name = "create_generators-1.2.5-neoforge-1.21.1"
+filename = "create_generators-1.2.5-neoforge-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7088/11/create_generators-1.2.5-neoforge-1.21.1.jar"
+hash-format = "sha256"
+hash = "04789729c6708f1ce03e2d8022007f91143da708820b2b54a227714fdc58ebd2"
+
+[update.curseforge]
+file-id = 7088011
+project-id = 1206505

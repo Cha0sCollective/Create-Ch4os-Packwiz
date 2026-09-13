@@ -1,0 +1,13 @@
+name = "someassemblyrequired-5.2.8"
+filename = "someassemblyrequired-5.2.8.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7701/961/someassemblyrequired-5.2.8.jar"
+hash-format = "sha256"
+hash = "df9f369a544418ca51011c3291382cdb9ac7fd014b0d54cf433f5875035226ae"
+
+[update.curseforge]
+file-id = 7701961
+project-id = 422951

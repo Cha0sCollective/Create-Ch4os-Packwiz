@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "someassemblyrequired:bread_slice"
+    },
+    {
+      "item": "someassemblyrequired:bread_slice"
+    },
+    {
+      "item": "someassemblyrequired:bread_slice"
+    },
+    {
+      "item": "someassemblyrequired:bread_slice"
+    }
+  ],
+  "result": {
+    "id": "createfood:bread_slice",
+    "count": 3
+  }
+}

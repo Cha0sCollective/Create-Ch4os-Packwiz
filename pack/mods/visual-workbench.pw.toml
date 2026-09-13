@@ -1,0 +1,13 @@
+name = "VisualWorkbench-v21.1.1-1.21.1-NeoForge"
+filename = "VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6798/196/VisualWorkbench-v21.1.1-1.21.1-NeoForge.jar"
+hash-format = "sha256"
+hash = "a5bb002229e30a44237282371cff48baf6e889bc69b5753e70323e1d41c0616d"
+
+[update.curseforge]
+file-id = 6798196
+project-id = 500273

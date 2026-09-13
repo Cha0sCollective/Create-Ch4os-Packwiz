@@ -1,0 +1,4 @@
+{
+  "items": ["create_sa:chunk_eater", "create_sa:above_the_clouds"],
+  "action": "remove_enchantment"
+}

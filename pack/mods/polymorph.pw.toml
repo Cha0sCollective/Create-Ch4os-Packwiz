@@ -1,0 +1,13 @@
+name = "polymorph-neoforge-1.1.0+1.21.1"
+filename = "polymorph-neoforge-1.1.0+1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6794/589/polymorph-neoforge-1.1.0%2b1.21.1.jar"
+hash-format = "sha256"
+hash = "bec8118978adeb052de9c4eaf9a595830621d82515a764f32f9c8a4dd52ab94b"
+
+[update.curseforge]
+file-id = 6794589
+project-id = 388800

@@ -1,0 +1,13 @@
+name = "createmechanicalconfection-0.3.0"
+filename = "createmechanicalconfection-0.3.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6519/954/createmechanicalconfection-0.3.0.jar"
+hash-format = "sha256"
+hash = "596be136459fec44b6ab8205016822933fb23e9b5bd00d8660468bf6a07a42e9"
+
+[update.curseforge]
+file-id = 6519954
+project-id = 1260229

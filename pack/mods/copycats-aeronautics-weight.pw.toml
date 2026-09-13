@@ -1,0 +1,13 @@
+name = "aerocopycats-1.1.1"
+filename = "aerocopycats-1.1.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/wjpmYU1u/versions/wsXjRa7l/aerocopycats-1.1.1.jar"
+hash-format = "sha256"
+hash = "3199c2afddb6eea98f041ea9a36aed71542213aedf0fdd0da21f6be4a1e72ae8"
+
+[update.modrinth]
+mod-id = "wjpmYU1u"
+version = "wsXjRa7l"

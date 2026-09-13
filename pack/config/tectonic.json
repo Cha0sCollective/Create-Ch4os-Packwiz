@@ -1,0 +1,46 @@
+{
+  "general": {
+    "mod_enabled": true,
+    "snow_start_offset": 128
+  },
+  "global_terrain": {
+    "vertical_scale": 1.2,
+    "elevation_boost": 0.15,
+    "min_y": -64,
+    "max_y": 320,
+    "lava_tunnels": true,
+    "ultrasmooth": false
+  },
+  "continents": {
+    "continents_scale": 0.11,
+    "erosion_scale": 0.2,
+    "flat_terrain_skew": 0.12,
+    "jungle_pillars": true,
+    "ocean_offset": -0.95,
+    "ridge_scale": 0.22,
+    "river_ice": false,
+    "river_lanterns": true,
+    "rolling_hills": true,
+    "underground_rivers": true
+  },
+  "islands": {
+    "enabled": true,
+    "noise_scale": 0.11,
+    "noise_multiplier": 1.0,
+    "noise_offset": 0.0
+  },
+  "oceans": {
+    "ocean_depth": -0.32,
+    "deep_ocean_depth": -0.75,
+    "monument_offset": -45,
+    "remove_frozen_ocean_ice": false
+  },
+  "biomes": {
+    "temperature_scale": 0.2,
+    "temperature_multiplier": 1.0,
+    "temperature_offset": 0.0,
+    "vegetation_scale": 0.2,
+    "vegetation_multiplier": 1.0,
+    "vegetation_offset": 0.0
+  }
+}

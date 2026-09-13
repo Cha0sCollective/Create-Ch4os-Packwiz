@@ -1,0 +1,5 @@
+# Use the monitor's current desktop resolution without exclusive fullscreen.
+# Later player choices are preserved by Packwiz.
+[general]
+enabled = true
+fullscreenMode = "BORDERLESS"

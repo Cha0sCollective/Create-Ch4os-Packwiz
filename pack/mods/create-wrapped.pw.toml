@@ -1,0 +1,13 @@
+name = "create_wrapped-1.0.3-neoforge-1.21.1"
+filename = "create_wrapped-1.0.3-neoforge-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7552/615/create_wrapped-1.0.3-neoforge-1.21.1.jar"
+hash-format = "sha256"
+hash = "2f56bb7508c8ae2eeffaea65d655080334a3d814394a89a7510b81b0e22790e5"
+
+[update.curseforge]
+file-id = 7552615
+project-id = 1394354

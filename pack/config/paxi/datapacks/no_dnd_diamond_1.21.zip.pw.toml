@@ -1,0 +1,13 @@
+name = "no_dnd_diamond_1.21.zip"
+filename = "no_dnd_diamond_1.21.zip"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7586/38/no_dnd_diamond_1.21.zip"
+hash-format = "sha256"
+hash = "826e0b0338434bf635270f86f3fd385ad92e4374ca0f4f04e5fd3f24b3614bb4"
+
+[update.curseforge]
+file-id = 7586038
+project-id = 1455778

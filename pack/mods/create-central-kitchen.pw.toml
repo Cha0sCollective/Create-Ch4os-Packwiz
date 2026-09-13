@@ -1,0 +1,13 @@
+name = "create-central-kitchen-2.6.0"
+filename = "create-central-kitchen-2.6.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8616/574/create-central-kitchen-2.6.0.jar"
+hash-format = "sha256"
+hash = "36df9749ca8a994c3b52284554307b47b990a18e43de347527726167614994cb"
+
+[update.curseforge]
+file-id = 8616574
+project-id = 820977

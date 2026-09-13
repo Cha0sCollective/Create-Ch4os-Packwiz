@@ -1,0 +1,13 @@
+name = "GnKinetics-1.21.1-1.0m"
+filename = "GnKinetics-1.21.1-1.0m.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/gEWECBVL/versions/qr9hMBnj/GnKinetics-1.21.1-1.0m.jar"
+hash-format = "sha256"
+hash = "9f5e699b59282464aad038b88f89634b080fbee23a1e5dab5b7d954b4f10893b"
+
+[update.modrinth]
+mod-id = "gEWECBVL"
+version = "qr9hMBnj"

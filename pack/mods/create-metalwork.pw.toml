@@ -1,0 +1,13 @@
+name = "createmetalwork-2.0.0"
+filename = "createmetalwork-2.0.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7287/996/createmetalwork-2.0.0.jar"
+hash-format = "sha256"
+hash = "2cc07f6c62219bf0434f322180330e7276b16a9af5b44527c494b2e7af274583"
+
+[update.curseforge]
+file-id = 7287996
+project-id = 966104

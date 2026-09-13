@@ -1,0 +1,13 @@
+name = "idas-1.13.7+1.21.1-neoforge"
+filename = "idas-1.13.7+1.21.1-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8232/359/idas-1.13.7%2b1.21.1-neoforge.jar"
+hash-format = "sha256"
+hash = "7f5031dd90ae0b32d7fe5c6c47c877cac1eb95a178bc78d196cb24c17ce82522"
+
+[update.curseforge]
+file-id = 8232359
+project-id = 605375

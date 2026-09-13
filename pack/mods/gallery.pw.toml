@@ -1,0 +1,13 @@
+name = "gallery-1.21.1-2.0.1"
+filename = "gallery-1.21.1-2.0.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8159/692/gallery-1.21.1-2.0.1.jar"
+hash-format = "sha256"
+hash = "76c6dc099bb0d05daf0f226bef99efa05aeabc0db1b6efa7b6187fcaa53a4ffb"
+
+[update.curseforge]
+file-id = 8159692
+project-id = 1173553

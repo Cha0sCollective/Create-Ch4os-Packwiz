@@ -1,0 +1,13 @@
+name = "integrated_api-neoforge-1.21.1-1.8.0"
+filename = "integrated_api-neoforge-1.21.1-1.8.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8636/576/integrated_api-neoforge-1.21.1-1.8.0.jar"
+hash-format = "sha256"
+hash = "48149e2aa1b3bc18e1d16a75e652b9e1405250045bfb434f04aea90b75d3c013"
+
+[update.curseforge]
+file-id = 8636576
+project-id = 817709

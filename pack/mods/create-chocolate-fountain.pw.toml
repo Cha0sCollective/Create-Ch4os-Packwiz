@@ -1,0 +1,13 @@
+name = "create_chocolate_fountain-1.21.1-1.1.0"
+filename = "create_chocolate_fountain-1.21.1-1.1.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7651/561/create_chocolate_fountain-1.21.1-1.1.0.jar"
+hash-format = "sha256"
+hash = "295a34095366147c206f101d1f00f81daf53735d05be865be4eba3d709461274"
+
+[update.curseforge]
+file-id = 7651561
+project-id = 1232926

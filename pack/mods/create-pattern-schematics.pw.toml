@@ -1,0 +1,13 @@
+name = "create_pattern_schematics-2.0.10"
+filename = "create_pattern_schematics-2.0.10.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7155/413/create_pattern_schematics-2.0.10.jar"
+hash-format = "sha256"
+hash = "d6525b9ab9914a194ca5aa00e6605f5977d8ac28722cdccce018da44f62bc5c5"
+
+[update.curseforge]
+file-id = 7155413
+project-id = 1072349

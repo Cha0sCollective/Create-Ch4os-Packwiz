@@ -1,0 +1,13 @@
+name = "create-confectionery1.21.1_v1.1.3b"
+filename = "create-confectionery1.21.1_v1.1.3b.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8063/74/create-confectionery1.21.1_v1.1.3b.jar"
+hash-format = "sha256"
+hash = "1a5022528f5c06bf2cdd39c71169c90cd61e80c3f44879c747a7debd63e25a96"
+
+[update.curseforge]
+file-id = 8063074
+project-id = 531834

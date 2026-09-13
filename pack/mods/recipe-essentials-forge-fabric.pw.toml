@@ -1,0 +1,13 @@
+name = "recipeessentials-1.21.1-4.7"
+filename = "recipeessentials-1.21.1-4.7.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8463/998/recipeessentials-1.21.1-4.7.jar"
+hash-format = "sha256"
+hash = "d2ab36a95424654bede6fd7aedceefd05912fc12f6de3f8bb0db8b8b245b6f85"
+
+[update.curseforge]
+file-id = 8463998
+project-id = 907856

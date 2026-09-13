@@ -1,0 +1,13 @@
+name = "aeroclaims-0.9.3"
+filename = "aeroclaims-0.9.3.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8493/955/aeroclaims-0.9.3.jar"
+hash-format = "sha256"
+hash = "0c42edd6b4c80dc4bfb06636373e087a2e0a392f9d1f1bdec68b4ccc9904efe1"
+
+[update.curseforge]
+file-id = 8493955
+project-id = 1514529

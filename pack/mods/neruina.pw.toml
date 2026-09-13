@@ -1,0 +1,13 @@
+name = "neruina-3.3.3+1.21.1-neoforge"
+filename = "neruina-3.3.3+1.21.1-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8451/84/neruina-3.3.3%2b1.21.1-neoforge.jar"
+hash-format = "sha256"
+hash = "6afd49ea130feaf337a39b12a936c61950da77ca59061d286b3dae67e5a2728e"
+
+[update.curseforge]
+file-id = 8451084
+project-id = 851046

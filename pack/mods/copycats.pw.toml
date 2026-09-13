@@ -1,0 +1,13 @@
+name = "copycats-3.0.8+mc.1.21.1-neoforge"
+filename = "copycats-3.0.8+mc.1.21.1-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8714/287/copycats-3.0.8%2bmc.1.21.1-neoforge.jar"
+hash-format = "sha256"
+hash = "f0655f3afac3829d3cda7782f2c64e935fdd7667dda137c108dc9055fc1e5c71"
+
+[update.curseforge]
+file-id = 8714287
+project-id = 968398

@@ -1,0 +1,13 @@
+name = "Create Encased-1.21.1-1.9.0-ht3"
+filename = "Create Encased-1.21.1-1.9.0-ht3.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8549/840/Create%20Encased-1.21.1-1.9.0-ht3.jar"
+hash-format = "sha256"
+hash = "e93bb110241ab8283c6238590eb04f1fb37199815623f53f3e981ee650f344a3"
+
+[update.curseforge]
+file-id = 8549840
+project-id = 829380

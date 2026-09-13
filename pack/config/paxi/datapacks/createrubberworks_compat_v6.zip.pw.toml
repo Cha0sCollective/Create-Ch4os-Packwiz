@@ -1,0 +1,13 @@
+name = "CreateRubberworks_Compat_v6.zip"
+filename = "CreateRubberworks_Compat_v6.zip"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8597/672/CreateRubberworks_Compat_v6.zip"
+hash-format = "sha256"
+hash = "e0ae045bd62336414f8bb9719ac32abf789e1c09ba474a57fd7c602abb10dd7c"
+
+[update.curseforge]
+file-id = 8597672
+project-id = 1540335

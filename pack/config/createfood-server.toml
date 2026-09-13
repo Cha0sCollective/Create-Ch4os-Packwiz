@@ -1,0 +1,12 @@
+# Intentional continuity settings; unspecified values use the pinned mod defaults.
+[items.effects]
+item_overrides = []
+
+[items.remainders]
+crafting_remainders = [
+    "minecraft:egg|createfood:eggshell",
+]
+
+[interactions.handcraft]
+enable_handcrafting = false
+exclude = []

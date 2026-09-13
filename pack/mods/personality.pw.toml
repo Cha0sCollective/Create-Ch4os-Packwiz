@@ -1,0 +1,13 @@
+name = "personality-1.21.1-5.0.2"
+filename = "personality-1.21.1-5.0.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8048/724/personality-1.21.1-5.0.2.jar"
+hash-format = "sha256"
+hash = "9c0fd81a32f60b8af933816d06f2cf58d53ce6433221b820ab0b90df686df248"
+
+[update.curseforge]
+file-id = 8048724
+project-id = 415974

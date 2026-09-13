@@ -1,0 +1,13 @@
+name = "connector-2.0.0-beta.17+1.21.1-full"
+filename = "connector-2.0.0-beta.17+1.21.1-full.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8654/89/connector-2.0.0-beta.17%2b1.21.1-full.jar"
+hash-format = "sha256"
+hash = "5a4ad10e57b8b1690832d9b77fc488fbe5e7cf41ac5a90d9f569bd78fbea25be"
+
+[update.curseforge]
+file-id = 8654089
+project-id = 890127

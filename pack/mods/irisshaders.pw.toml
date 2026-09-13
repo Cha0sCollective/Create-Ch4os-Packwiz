@@ -1,0 +1,13 @@
+name = "iris-neoforge-1.8.14-beta.1+mc1.21.1"
+filename = "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8242/804/iris-neoforge-1.8.14-beta.1%2bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "60d5f8bf52f25e9986440f4a4270a6bd986d9cff994510e1108ac1547063b314"
+
+[update.curseforge]
+file-id = 8242804
+project-id = 455508

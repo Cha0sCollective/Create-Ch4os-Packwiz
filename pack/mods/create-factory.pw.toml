@@ -1,0 +1,13 @@
+name = "create_factory-0.7b-1.21.1"
+filename = "create_factory-0.7b-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8653/64/create_factory-0.7b-1.21.1.jar"
+hash-format = "sha256"
+hash = "a2dc0e9dd3c894e1373512035a6483701827a42e1f3da334da9457c124639f6e"
+
+[update.curseforge]
+file-id = 8653064
+project-id = 623265

@@ -1,0 +1,13 @@
+name = "caelus-neoforge-7.0.1+1.21.1"
+filename = "caelus-neoforge-7.0.1+1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/5694/215/caelus-neoforge-7.0.1%2b1.21.1.jar"
+hash-format = "sha256"
+hash = "432a645557f29de159d9edde2fd109f8e3b32ff30895b4fede04ee5f1a1a682f"
+
+[update.curseforge]
+file-id = 5694215
+project-id = 308989

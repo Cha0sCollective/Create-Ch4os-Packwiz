@@ -1,0 +1,13 @@
+name = "Quark-4.1-482"
+filename = "Quark-4.1-482.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8420/966/Quark-4.1-482.jar"
+hash-format = "sha256"
+hash = "0f69ce0d31caa4f31e1fa4959541120121e27c652cd2d954839af6b5162f0c70"
+
+[update.curseforge]
+file-id = 8420966
+project-id = 243121

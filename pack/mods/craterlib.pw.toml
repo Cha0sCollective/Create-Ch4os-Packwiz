@@ -1,0 +1,13 @@
+name = "CraterLib-Neoforge-1.21-3.1.2"
+filename = "CraterLib-Neoforge-1.21-3.1.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8117/841/CraterLib-Neoforge-1.21-3.1.2.jar"
+hash-format = "sha256"
+hash = "2625398ddeb3ad6d9b16fd85f0f72f6a3bc4e58755966ff0085b8947c9bc6ad0"
+
+[update.curseforge]
+file-id = 8117841
+project-id = 867099

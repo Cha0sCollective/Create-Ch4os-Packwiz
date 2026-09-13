@@ -1,0 +1,13 @@
+name = "Highlighter-1.21-neoforge-1.1.11"
+filename = "Highlighter-1.21-neoforge-1.1.11.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/5591/15/Highlighter-1.21-neoforge-1.1.11.jar"
+hash-format = "sha256"
+hash = "cc9480a383a8f9bcf2c6c3bfc913aa7e3b1b9ad1062c5180c4d0d281000c9f8b"
+
+[update.curseforge]
+file-id = 5591015
+project-id = 521590

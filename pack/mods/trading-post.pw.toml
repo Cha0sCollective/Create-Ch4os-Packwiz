@@ -1,0 +1,13 @@
+name = "TradingPost-v21.1.1-1.21.1-NeoForge"
+filename = "TradingPost-v21.1.1-1.21.1-NeoForge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7143/451/TradingPost-v21.1.1-1.21.1-NeoForge.jar"
+hash-format = "sha256"
+hash = "655e6d187ac592caeac02e37a0325d5d5cfeee48a043c4e4a9d0e02366afc1b6"
+
+[update.curseforge]
+file-id = 7143451
+project-id = 539057

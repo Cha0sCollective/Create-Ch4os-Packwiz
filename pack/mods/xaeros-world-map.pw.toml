@@ -1,0 +1,13 @@
+name = "xaeroworldmap-neoforge-1.21.1-1.45.0"
+filename = "xaeroworldmap-neoforge-1.21.1-1.45.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8698/659/xaeroworldmap-neoforge-1.21.1-1.45.0.jar"
+hash-format = "sha256"
+hash = "d60899112e84616ba52a993c1722fd891872acc4779bfac34d9b170001451c6f"
+
+[update.curseforge]
+file-id = 8698659
+project-id = 317780

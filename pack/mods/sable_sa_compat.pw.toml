@@ -1,0 +1,13 @@
+name = "SableStuffAdditionsCompat v1.0.3-1.21.1"
+filename = "SableStuffAdditionsCompat v1.0.3-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8158/810/SableStuffAdditionsCompat%20v1.0.3-1.21.1.jar"
+hash-format = "sha256"
+hash = "4fbe277b75c5094a85cad86fde1e93f719b24876e3ecd62f614fe882d3223bf1"
+
+[update.curseforge]
+file-id = 8158810
+project-id = 1541139

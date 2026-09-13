@@ -1,0 +1,13 @@
+name = "bits_n_bobs-2.2.7"
+filename = "bits_n_bobs-2.2.7.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8706/168/bits_n_bobs-2.2.7.jar"
+hash-format = "sha256"
+hash = "bf1ad4920dfca8f9470af9a3a0f941a89362e8210ae4e2f4eb58a47126db1de5"
+
+[update.curseforge]
+file-id = 8706168
+project-id = 1398383

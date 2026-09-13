@@ -1,0 +1,3 @@
+# Intentional continuity settings; unspecified values use the pinned mod defaults.
+[Enchantments]
+enableChunkEaterEnchant = false

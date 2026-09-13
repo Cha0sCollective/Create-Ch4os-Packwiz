@@ -1,0 +1,13 @@
+name = "tradeworks-1.0.7"
+filename = "tradeworks-1.0.7.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8004/324/tradeworks-1.0.7.jar"
+hash-format = "sha256"
+hash = "661c1849e68ae5cb38c6e1871222067dc21858e9a966e3c61365596d3c9374da"
+
+[update.curseforge]
+file-id = 8004324
+project-id = 1477581

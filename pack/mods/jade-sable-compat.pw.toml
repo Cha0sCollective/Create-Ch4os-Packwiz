@@ -1,0 +1,13 @@
+name = "sablejade-1.3.0"
+filename = "sablejade-1.3.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8681/404/sablejade-1.3.0.jar"
+hash-format = "sha256"
+hash = "f26e974115226d83ec363e3d327e739c87ded760d781ca0538181094eb4bb9a2"
+
+[update.curseforge]
+file-id = 8681404
+project-id = 1530988

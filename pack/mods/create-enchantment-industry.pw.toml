@@ -1,0 +1,13 @@
+name = "create-enchantment-industry-2.4.2"
+filename = "create-enchantment-industry-2.4.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8241/347/create-enchantment-industry-2.4.2.jar"
+hash-format = "sha256"
+hash = "81f192bb53888e01f87a82eaac2f261c93715f2221dbcf5d8a8d414f912f75ef"
+
+[update.curseforge]
+file-id = 8241347
+project-id = 688768

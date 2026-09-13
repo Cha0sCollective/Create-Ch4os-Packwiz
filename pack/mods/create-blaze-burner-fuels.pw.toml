@@ -1,0 +1,13 @@
+name = "create_blaze_burner_fuels-1.0.2-neoforge-1.21.1"
+filename = "create_blaze_burner_fuels-1.0.2-neoforge-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7444/38/create_blaze_burner_fuels-1.0.2-neoforge-1.21.1.jar"
+hash-format = "sha256"
+hash = "69235a1ddd64fa7a37c898258b45ef90ed204b9626c48b73b3ed2d8aa614103e"
+
+[update.curseforge]
+file-id = 7444038
+project-id = 1320903

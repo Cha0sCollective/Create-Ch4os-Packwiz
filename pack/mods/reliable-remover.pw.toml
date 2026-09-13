@@ -1,0 +1,13 @@
+name = "reliable_remover-neoforge-1.21.1-2.12.1"
+filename = "reliable_remover-neoforge-1.21.1-2.12.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8651/826/reliable_remover-neoforge-1.21.1-2.12.1.jar"
+hash-format = "sha256"
+hash = "9d3d23f4c46c542daf88d2ecc785c7bec128cd80946d06024d02a14012a62dbb"
+
+[update.curseforge]
+file-id = 8651826
+project-id = 1420447

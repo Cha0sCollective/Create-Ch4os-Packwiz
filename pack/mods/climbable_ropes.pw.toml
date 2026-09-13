@@ -1,0 +1,13 @@
+name = "climbable_ropes-2.1.1"
+filename = "climbable_ropes-2.1.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8464/450/climbable_ropes-2.1.1.jar"
+hash-format = "sha256"
+hash = "2094081bb1b7f9647955570f190e697dc713eb25f36a028a5a02e461c75d281e"
+
+[update.curseforge]
+file-id = 8464450
+project-id = 1528764

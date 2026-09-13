@@ -1,0 +1,13 @@
+name = "electroenergetics-1.21.1-1.1.1"
+filename = "electroenergetics-1.21.1-1.1.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8345/582/electroenergetics-1.21.1-1.1.1.jar"
+hash-format = "sha256"
+hash = "ea5df2c5100a4aa178bd0054779015d85c63da221a782915240656601b51aefd"
+
+[update.curseforge]
+file-id = 8345582
+project-id = 1443327

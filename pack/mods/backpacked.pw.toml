@@ -1,0 +1,13 @@
+name = "backpacked-neoforge-1.21.1-3.0.5"
+filename = "backpacked-neoforge-1.21.1-3.0.5.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7866/688/backpacked-neoforge-1.21.1-3.0.5.jar"
+hash-format = "sha256"
+hash = "203f673ec7ea9e805ef10aff2725d770e0d9fba7add801dec5e31b312b419c01"
+
+[update.curseforge]
+file-id = 7866688
+project-id = 352835

@@ -1,0 +1,13 @@
+name = "e4mc-neoforge-6.2.1"
+filename = "e4mc-neoforge-6.2.1.jar"
+side = "client"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8526/346/e4mc-neoforge-6.2.1.jar"
+hash-format = "sha256"
+hash = "41ee0d18fafe39f7422712b342248ebffbf392910bdb8d160c928e575edb29f0"
+
+[update.curseforge]
+file-id = 8526346
+project-id = 849519

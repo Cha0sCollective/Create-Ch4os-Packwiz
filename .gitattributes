@@ -1,0 +1,3 @@
+# Packwiz hashes bytes. Keep the maintained tree identical in Windows checkouts
+# and Git source archives.
+pack/** text eol=lf

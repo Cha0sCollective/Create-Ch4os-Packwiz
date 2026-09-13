@@ -1,0 +1,13 @@
+name = "create_bb-1.0.8-1.21.1"
+filename = "create_bb-1.0.8-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8723/463/create_bb-1.0.8-1.21.1.jar"
+hash-format = "sha256"
+hash = "36a1cf8eaef08254085f9190b6a3130dd787747ee30fb8eeb606d6a6e0f9bf4f"
+
+[update.curseforge]
+file-id = 8723463
+project-id = 1317252

@@ -1,0 +1,13 @@
+name = "create_train_parts-0.5.2-1.21.1-6.0.10-281"
+filename = "create_train_parts-0.5.2-1.21.1-6.0.10-281.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/h0bu4oDk/versions/wSuDZsee/create_train_parts-0.5.2-1.21.1-6.0.10-281.jar"
+hash-format = "sha256"
+hash = "9355fb4086feb09645df5434ef98936f217f0ede914cff6fbeba531ab3ab9ddc"
+
+[update.modrinth]
+mod-id = "h0bu4oDk"
+version = "wSuDZsee"

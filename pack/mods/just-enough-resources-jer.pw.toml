@@ -1,0 +1,13 @@
+name = "JustEnoughResources-NeoForge-1.21.1-1.6.0.17"
+filename = "JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6506/298/JustEnoughResources-NeoForge-1.21.1-1.6.0.17.jar"
+hash-format = "sha256"
+hash = "7a47d69b5530704690d5a5f0726cd74a2d6c57df17dd4a8589c4ab5212f91460"
+
+[update.curseforge]
+file-id = 6506298
+project-id = 240630

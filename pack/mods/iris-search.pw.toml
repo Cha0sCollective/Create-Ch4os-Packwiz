@@ -1,0 +1,13 @@
+name = "IrisSearch-1.6.1-neoforge"
+filename = "IrisSearch-1.6.1-neoforge.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8729/982/IrisSearch-1.6.1-neoforge.jar"
+hash-format = "sha256"
+hash = "2d836e14884ab17b79da19d0340f54b0294d3a807e7ea4ca1fdf98cbc9ac161f"
+
+[update.curseforge]
+file-id = 8729982
+project-id = 1583035

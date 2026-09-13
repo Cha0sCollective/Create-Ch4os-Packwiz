@@ -1,0 +1,13 @@
+{
+  "type": "create:crushing",
+  "processing_time": 400,
+  "neoforge:conditions": [{
+    "type": "neoforge:not",
+    "value": { "type": "neoforge:tag_empty", "tag": "c:storage_blocks/raw_uranium" }
+  }],
+  "ingredients": [{ "tag": "c:storage_blocks/raw_uranium" }],
+  "results": [
+    { "id": "create:crushed_raw_uranium", "count": 9 },
+    { "id": "create:experience_nugget", "count": 9, "chance": 0.75 }
+  ]
+}

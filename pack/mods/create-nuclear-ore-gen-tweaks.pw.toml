@@ -1,0 +1,13 @@
+name = "Create Nuclear Ore Gen Tweaks 1.0.0"
+filename = "cnoregen-1.0.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/eSlJ5aKd/versions/6ylgFHmW/cnoregen-1.0.0.jar"
+hash-format = "sha512"
+hash = "c2f6a711064542911184e9c30f73ceea14a8cfbb6e8feeb7dec441c66337ffda9ef59c9815148ca20a5d78aedf41fef715dc2d94857b2ac0ab58bcdb4ea5b653"
+
+[update.modrinth]
+mod-id = "eSlJ5aKd"
+version = "6ylgFHmW"

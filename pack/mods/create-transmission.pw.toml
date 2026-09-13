@@ -1,0 +1,13 @@
+name = "createtransmission-1.2.2+neoforge-create6-1.21.1"
+filename = "createtransmission-1.2.2+neoforge-create6-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8646/664/createtransmission-1.2.2%2bneoforge-create6-1.21.1.jar"
+hash-format = "sha256"
+hash = "0869f9cbf7c291ed680df8bb345cfffb63ed2c7b494eddb8314778cda848e8fe"
+
+[update.curseforge]
+file-id = 8646664
+project-id = 1354280

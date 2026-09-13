@@ -1,0 +1,7 @@
+# Intentional continuity settings; unspecified values use the pinned mod defaults.
+[munitions.autocannonMunitions]
+autocannonAmmoContainerAutocannonRoundCapacity = 16
+autocannonAmmoContainerMachineGunRoundCapacity = 64
+
+[cannons]
+bigCannonRecoilScale = 4.0

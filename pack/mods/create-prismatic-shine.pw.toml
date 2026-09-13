@@ -1,0 +1,13 @@
+name = "createprism-1.2.2"
+filename = "createprism-1.2.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8050/591/createprism-1.2.2.jar"
+hash-format = "sha256"
+hash = "3b9c80f8a0104a2cee1af2b0a17b5a500f5600c55bccc441a34063154587a8fa"
+
+[update.curseforge]
+file-id = 8050591
+project-id = 1355767

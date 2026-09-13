@@ -1,0 +1,13 @@
+name = "lootintegrations-1.21.1-4.7"
+filename = "lootintegrations-1.21.1-4.7.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6640/970/lootintegrations-1.21.1-4.7.jar"
+hash-format = "sha256"
+hash = "1de9e6352f643f2850dce3e6b7aa8274902798a2243ea9e494fe13aabaa90d2c"
+
+[update.curseforge]
+file-id = 6640970
+project-id = 580689

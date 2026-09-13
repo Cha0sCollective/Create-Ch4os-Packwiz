@@ -1,0 +1,5 @@
+[global]
+spawn_multiplier = 0.7
+
+[spawn_rates]
+global_structure_multiplier = 1.0

@@ -1,0 +1,13 @@
+name = "pipeorgans-0.8.2+1.21.1"
+filename = "pipeorgans-0.8.2+1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7315/860/pipeorgans-0.8.2%2b1.21.1.jar"
+hash-format = "sha256"
+hash = "bf51565afb47d0c0d1fef3cced7c837eff18302740f472372845339f5f22d939"
+
+[update.curseforge]
+file-id = 7315860
+project-id = 1196142

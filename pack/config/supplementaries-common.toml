@@ -1,0 +1,8 @@
+# Intentional continuity settings; unspecified values use the pinned mod defaults.
+[functional.soap.special_blocks]
+"minecraft:sticky_piston" = "minecraft:piston"
+
+[tools.bomb.blue_bomb]
+explosion_radius = 5.15
+baby_explosion_radius = 1.6
+baby_fire_duration = 4

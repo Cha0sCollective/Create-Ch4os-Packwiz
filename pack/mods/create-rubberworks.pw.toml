@@ -1,0 +1,13 @@
+name = "rubberworks-neoforge-1.21.1-1.1.4"
+filename = "rubberworks-neoforge-1.21.1-1.1.4.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8572/299/rubberworks-neoforge-1.21.1-1.1.4.jar"
+hash-format = "sha256"
+hash = "ee2b26eb732ca1dda1e1923e5766428b19c061ca6032cfd13825ff488c3dbb35"
+
+[update.curseforge]
+file-id = 8572299
+project-id = 1425758

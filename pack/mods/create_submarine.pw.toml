@@ -1,0 +1,13 @@
+name = "create_submarine-2.2.4"
+filename = "create_submarine-2.2.4.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8268/622/create_submarine-2.2.4.jar"
+hash-format = "sha256"
+hash = "87a20bb20ae3c90e6838073d3a84839e251c8794f409ade8cab79f51d1de0c66"
+
+[update.curseforge]
+file-id = 8268622
+project-id = 1533137

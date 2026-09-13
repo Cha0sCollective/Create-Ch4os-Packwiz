@@ -1,0 +1,13 @@
+name = "trading_floor-3.0.16"
+filename = "trading_floor-3.0.16.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7625/579/trading_floor-3.0.16.jar"
+hash-format = "sha256"
+hash = "f0aacddb1f8f191f13b79c603e52bd49a6d1cb918078d8a3bdcb2621c88b8d40"
+
+[update.curseforge]
+file-id = 7625579
+project-id = 1102591

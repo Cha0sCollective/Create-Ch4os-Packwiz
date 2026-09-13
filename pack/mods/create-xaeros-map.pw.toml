@@ -1,0 +1,13 @@
+name = "sablexaeromaps-1.21.1-1.4.0"
+filename = "sablexaeromaps-1.21.1-1.4.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8736/99/sablexaeromaps-1.21.1-1.4.0.jar"
+hash-format = "sha256"
+hash = "e99bc926e1767c8d86757e33310b8db5178b06f4f7b0e0a8a769194f3428e22f"
+
+[update.curseforge]
+file-id = 8736099
+project-id = 1622142

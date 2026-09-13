@@ -1,0 +1,9 @@
+{
+  "type": "create:crushing",
+  "processing_time": 400,
+  "ingredients": [{ "tag": "c:raw_materials/copper" }],
+  "results": [
+    { "id": "create:crushed_raw_copper" },
+    { "id": "create:experience_nugget", "chance": 0.75 }
+  ]
+}

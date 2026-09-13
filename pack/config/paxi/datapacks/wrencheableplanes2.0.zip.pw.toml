@@ -1,0 +1,13 @@
+name = "WrencheablePlanes2.0.zip"
+filename = "WrencheablePlanes2.0.zip"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6850/945/WrencheablePlanes2.0.zip"
+hash-format = "sha256"
+hash = "be6d7e59b914f9d669f9be2ffcefc0e7fc75854e42e755882273ada86deec970"
+
+[update.curseforge]
+file-id = 6850945
+project-id = 1321349

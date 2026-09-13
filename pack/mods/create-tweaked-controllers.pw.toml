@@ -1,0 +1,13 @@
+name = "create_tweaked_controllers-1.21.1-1.2.7"
+filename = "create_tweaked_controllers-1.21.1-1.2.7.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7958/165/create_tweaked_controllers-1.21.1-1.2.7.jar"
+hash-format = "sha256"
+hash = "eda56263fabfcf4064dbaa8950a7f469775d4457dc807ee84ba29169690fda34"
+
+[update.curseforge]
+file-id = 7958165
+project-id = 898849

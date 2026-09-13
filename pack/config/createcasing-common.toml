@@ -1,0 +1,4 @@
+# Intentional continuity settings; unspecified values use the pinned mod defaults.
+[kinetics]
+shouldWoodenShaftBreak = true
+shouldGlassShaftBreak = true

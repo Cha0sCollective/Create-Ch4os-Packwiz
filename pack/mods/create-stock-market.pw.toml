@@ -1,0 +1,13 @@
+name = "create-stockmarket-1.1.0+mc1.21.1"
+filename = "create-stockmarket-1.1.0+mc1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8246/369/create-stockmarket-1.1.0%2bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "31f0574d13a00e97014bb07d7a5b5c65fdd7fc13de45fabb09937421b35c07fa"
+
+[update.curseforge]
+file-id = 8246369
+project-id = 1549447

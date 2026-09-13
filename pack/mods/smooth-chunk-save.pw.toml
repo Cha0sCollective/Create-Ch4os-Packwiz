@@ -1,0 +1,13 @@
+name = "smoothchunk-1.21-4.1"
+filename = "smoothchunk-1.21-4.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6296/628/smoothchunk-1.21-4.1.jar"
+hash-format = "sha256"
+hash = "a79f06eaffe7e5b834620da3c2cdad782aeaf4f1f207d03f8b0228a20bab65e3"
+
+[update.curseforge]
+file-id = 6296628
+project-id = 582327

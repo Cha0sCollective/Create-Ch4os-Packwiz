@@ -1,0 +1,13 @@
+name = "createornithopterglider-1.2.0-1.21.1"
+filename = "createornithopterglider-1.2.0-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8192/296/createornithopterglider-1.2.0-1.21.1.jar"
+hash-format = "sha256"
+hash = "4edd18f61e3a9accd81266aca59787ffa37c7f3361dd01e1e92be0e4ac978749"
+
+[update.curseforge]
+file-id = 8192296
+project-id = 1312780

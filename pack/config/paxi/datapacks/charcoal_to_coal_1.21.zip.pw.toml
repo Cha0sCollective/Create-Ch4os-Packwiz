@@ -1,0 +1,13 @@
+name = "charcoal_to_coal_1.21.zip"
+filename = "charcoal_to_coal_1.21.zip"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7585/727/charcoal_to_coal_1.21.zip"
+hash-format = "sha256"
+hash = "20e0035fb6ee8fa2736352c045084be6d190c39450c7185733e02f9ed02b25dd"
+
+[update.curseforge]
+file-id = 7585727
+project-id = 978589

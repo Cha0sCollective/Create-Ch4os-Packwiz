@@ -1,0 +1,13 @@
+name = "azimuth-1.4.7"
+filename = "azimuth-1.4.7.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8661/574/azimuth-1.4.7.jar"
+hash-format = "sha256"
+hash = "19e00a8268ffccc3165abd52b5d4cd7d415286b69d1ad2cde86e537e4b3ad8fb"
+
+[update.curseforge]
+file-id = 8661574
+project-id = 1466331

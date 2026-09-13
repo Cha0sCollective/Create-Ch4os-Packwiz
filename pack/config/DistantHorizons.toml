@@ -1,0 +1,30 @@
+# Create: Ch4oS first-install defaults for Distant Horizons 3.2.0-b.
+# Packwiz preserves this file, including later preferences and generated server IDs.
+
+[client.advanced.graphics.quality]
+lodChunkRenderDistanceRadius = 128
+
+[client.advanced.autoUpdater]
+# Update through reviewed pack releases.
+enableAutoUpdater = false
+enableSilentUpdates = false
+
+[common.worldGenerator]
+# Serve LODs of existing terrain without generating unexplored chunks for DH.
+enableDistantGeneration = true
+distantGeneratorMode = "PRE_EXISTING_ONLY"
+
+[common.multiThreading]
+# Leave CPU headroom for machinery, physics and the normal game renderer.
+numberOfThreads = 2
+threadRunTimeRatio = 0.5
+
+[server]
+enableServerGeneration = true
+# 256 is the upstream minimum for these request-distance limits (in chunks).
+maxGenerationRequestDistance = 256
+maxSyncOnLoadRequestDistance = 256
+realTimeUpdateDistanceRadiusInChunks = 128
+# DH LOD traffic only, in KB/s; ordinary game traffic is separate.
+playerBandwidthLimit = 500
+globalBandwidthLimit = 2000

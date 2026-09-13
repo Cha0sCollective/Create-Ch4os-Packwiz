@@ -1,0 +1,13 @@
+name = "aeroworks-1.5.0"
+filename = "aeroworks-1.5.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8743/51/aeroworks-1.5.0.jar"
+hash-format = "sha256"
+hash = "30bad4bf907ee5ae2849de163634cf9a5bc8507bb4b12d7d291c59f3265d7bad"
+
+[update.curseforge]
+file-id = 8743051
+project-id = 1522473

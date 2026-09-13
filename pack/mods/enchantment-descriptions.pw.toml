@@ -1,0 +1,13 @@
+name = "enchdesc-neoforge-1.21.1-21.1.11"
+filename = "enchdesc-neoforge-1.21.1-21.1.11.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8693/34/enchdesc-neoforge-1.21.1-21.1.11.jar"
+hash-format = "sha256"
+hash = "868d3eab3305d96dd3ecf510d18a7aa7444e2aea168695cf4aff23a96bec975f"
+
+[update.curseforge]
+file-id = 8693034
+project-id = 250419

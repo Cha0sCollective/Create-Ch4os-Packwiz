@@ -1,0 +1,13 @@
+name = "geckolib-neoforge-1.21.1-4.9.2"
+filename = "geckolib-neoforge-1.21.1-4.9.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8350/73/geckolib-neoforge-1.21.1-4.9.2.jar"
+hash-format = "sha256"
+hash = "5e548466af9ab6aca7a91a7c7d4dc0dc8bc385e22958aed5da0e7bebd0fa3fba"
+
+[update.curseforge]
+file-id = 8350073
+project-id = 388172

@@ -1,0 +1,13 @@
+name = "chunkactivitytracker-neoforge-1.0.1-1.21.1"
+filename = "chunkactivitytracker-neoforge-1.0.1-1.21.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/6164/360/chunkactivitytracker-neoforge-1.0.1-1.21.1.jar"
+hash-format = "sha256"
+hash = "4b0dc7252b626c80be0fb9e3e72ea3b461f33cdc66d6c08bad320a4ed4b864e3"
+
+[update.curseforge]
+file-id = 6164360
+project-id = 1193454

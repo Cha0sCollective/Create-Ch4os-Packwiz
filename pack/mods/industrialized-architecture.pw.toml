@@ -1,0 +1,13 @@
+name = "i_architecture-0.1.1b"
+filename = "i_architecture-0.1.1b.jar"
+side = "both"
+pin = true
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha256"
+hash = "295edfb0f3dec36bc294debe377425a9ad21f7ce98305ca9f7b03d4b0605a544"
+
+[update.curseforge]
+file-id = 7350975
+project-id = 1316585

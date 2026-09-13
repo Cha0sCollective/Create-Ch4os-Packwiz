@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+/dist/
+
+# Runtime files never belong in the maintained pack.
+*.jar
+*.jar.disabled
+/pack/world/
+/pack/logs/
+/pack/crash-reports/
+/pack/packwiz.json

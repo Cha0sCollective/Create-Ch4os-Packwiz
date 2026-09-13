@@ -1,0 +1,13 @@
+name = "coppersplashing_1.21.1_v1"
+filename = "coppersplashing_1.21.1_v1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/7370/476/coppersplashing_1.21.1_v1.jar"
+hash-format = "sha256"
+hash = "8c57197e1b079f06106902e02ed222998735a83eae30285d6b7d2565106777ff"
+
+[update.curseforge]
+file-id = 7370476
+project-id = 1266798
