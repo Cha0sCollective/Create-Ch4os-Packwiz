@@ -2,7 +2,8 @@
 
 Keep this an ordinary Packwiz pack. `pack/` is the source of truth for mods,
 configuration, recipes and tags. Use `beta` for work and testing; `public` moves
-only when the owner selects the release players should receive.
+only when the owner selects the release players should receive. `main` tracks
+the accepted release; keep it aligned when promoting a release.
 
 ## Add, remove or configure a mod
 
