@@ -1,19 +1,35 @@
 # Create: Ch4oS
 
-A Minecraft 1.21.1 / NeoForge 21.1.248 Packwiz modpack for factories, vehicles,
-exploration and ambitious construction.
+A Minecraft 1.21.1 / NeoForge 21.1.248 modpack for factories, vehicles and exploration.
 
-This repository starts with the unchanged gameplay files from
-[Create: Ch4oS 0.2.0-rc.1](https://github.com/Cha0sCollective/Create-Ch4oS/releases/tag/v0.2.0-rc.1).
-It has fresh Git history. Existing repositories and releases remain available.
+## Play
 
-- `public` holds the pack selected for players.
-- `beta` holds changes being prepared and tested.
-- `pack/` is the ordinary Packwiz definition and maintained configuration.
+Install [Prism Launcher](https://prismlauncher.org/), choose **Add Instance → Import**,
+and paste this link or select the [downloaded ZIP](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/download/v0.2.0/Create-Ch4oS-0.2.0-Prism.zip):
 
-The lightweight Prism import is being prepared on `beta`. Both branches remain
-within the repository's current visibility; the branch name does not make it public.
+```text
+https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/download/v0.2.0/Create-Ch4oS-0.2.0-Prism.zip
+```
 
-Project-authored files use the [MIT license](LICENSE.txt). Mods download from
-upstream providers. Industrialized Architecture is the sole licensed bundled mod
-exception; its [notice](third-party/industrialized-architecture-LICENSE.txt) is retained.
+Use Java 21, sign in with Minecraft and launch. Allow the Packwiz pre-launch
+command when prompted; it downloads the mods and keeps the pack updated.
+[Client setup and memory advice](docs/PRISM.md) · [Server setup with AMP](docs/SERVER.md)
+
+## About the pack
+
+Version 0.2.0 includes Distant Horizons, Tectonic, Terralith and Create integrations.
+Prism manages your client; AMP manages your server. Packwiz installs the pack files
+for both. No separate Ch4oS installer is needed.
+
+Mods download from their providers, except Industrialized Architecture, which uses
+our unchanged MIT-licensed release mirror. The import ZIP contains no gameplay JARs.
+
+## Contribute
+
+`public` supplies player updates, `main` holds the accepted release, and `beta`
+is for testing. Changes reach players only when promoted to `public`.
+
+[Contributing](docs/CONTRIBUTING.md) · [Configuration](docs/CONFIGURATION.md) ·
+[Mod sources](docs/MOD-SOURCES.csv) · [Build a ZIP](distribution/README.md)
+
+Project-authored files use the [MIT license](LICENSE.txt). Mods retain their own licenses.

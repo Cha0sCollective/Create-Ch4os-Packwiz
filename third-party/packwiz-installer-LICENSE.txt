@@ -1,11 +1,6 @@
-The following license applies to project-authored pack files, distribution
-metadata/glue and documentation. It does not license upstream mods or downloads.
-The mirrored Industrialized Architecture release has its own upstream MIT notice
-in pack/third-party-notices/industrialized-architecture-LICENSE.txt.
-
 MIT License
 
-Copyright (c) 2026 Cha0sCollective
+Copyright (c) 2021 comp500
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

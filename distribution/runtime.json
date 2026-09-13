@@ -1,0 +1,11 @@
+{
+  "minecraft": "1.21.1",
+  "neoforge": {
+    "version": "21.1.248"
+  },
+  "launch": {
+    "client": {
+      "garbageCollector": "generational-zgc"
+    }
+  }
+}
