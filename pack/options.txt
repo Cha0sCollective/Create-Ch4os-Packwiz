@@ -1,5 +1,5 @@
 version:3955
-enableVsync:false
+enableVsync:true
 maxFps:120
 renderDistance:12
 simulationDistance:12

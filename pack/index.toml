@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "6e6aad35656da914311641c2c8a6573aef15dfe1aebfcc93cc0e5230045b9995"
+hash = "e315929f7cb3fa3db3579baa3ccf405829e3a5014e0ba28d11012844b3d12d81"
 preserve = true
 
 [[files]]
@@ -15,7 +15,7 @@ hash = "96e2ea7208003af18fd6de8ec06eda22a340deeac43667190de10587021273d0"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "9e8df52fe6f32cad16ac890d132b5590cf5adbb0e216afdd3f362a59a5a1a658"
+hash = "bad18d215f4f75d2ea3f7e5918c0cd6857c146fafa2fd687bf315b1a08d9995b"
 
 [[files]]
 file = "config/bhmenu-client.toml"
@@ -236,7 +236,7 @@ hash = "c4a96335b8105f7614628d5d7692e23a99dffae4debef7745d21dabef4396a4e"
 
 [[files]]
 file = "config/reliable_remover.json"
-hash = "e8ba35aa749ee4fed1c6c04c03ef6b4cdcd84fd586c25619176baa77be6488e5"
+hash = "7aea1a52baef17d2705ebadb5c0ebb8792509176a4c3358b761d5696bced66b1"
 
 [[files]]
 file = "config/reliable_remover/disabled_enchantments.json"
@@ -264,6 +264,10 @@ preserve = true
 file = "config/xaero/world-map/client.cfg"
 hash = "3f560b0c8f6ab217286474e9c9423202db43db1c6b4cae53ef27af9377bd389f"
 preserve = true
+
+[[files]]
+file = "defaultconfigs/mapsyncer-server.toml"
+hash = "f93d54b50dd33e7c9455b3e6d786dc81bbbe6b20df613b257fa6c55757828be3"
 
 [[files]]
 file = "mods/aeroclaims.pw.toml"
@@ -1096,6 +1100,11 @@ hash = "3de9e64e8c5444f7d8aaa0cc817c539b5d3c8d8593111f4406d9a7b027637690"
 metafile = true
 
 [[files]]
+file = "mods/mapsyncer-for-xaeroworldmap.pw.toml"
+hash = "b8cc425184a41fde842788459ae94cb706399c4728ce725d66f7b2cf3a2de70e"
+metafile = true
+
+[[files]]
 file = "mods/melody.pw.toml"
 hash = "efaa6274675cb48665ed86e2a3c931bca042652d2cb9f657567cf32daf66ba2b"
 metafile = true
@@ -1412,8 +1421,18 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "3039be40ea8da00adb446de2ffe1fe9cf15bb6cf06ed7344e2b2421f6c2acb07"
+hash = "f80d342db9220fc22d27b955939851e20450645372eceb8a5d747633996995cd"
 preserve = true
+
+[[files]]
+file = "resourcepacks/create-ultra-pbr.pw.toml"
+hash = "ec266da3f816b5978dd7bda03e1cd1e1711f78e81f85f68704189df424526e9f"
+metafile = true
+
+[[files]]
+file = "resourcepacks/patrix-32x.pw.toml"
+hash = "c3b5c8eed6f8fc0769ed12e919c7231f0431a7e40d797f10763fa2837a122c82"
+metafile = true
 
 [[files]]
 file = "shaderpacks/bliss-shader.pw.toml"
