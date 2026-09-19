@@ -1,0 +1,13 @@
+name = "Derivative [main]"
+filename = "Derivative [25.1.0].zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "45342cbb6baf37da5f92b6d9bd23001eba6e180b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8529690
+project-id = 1604307

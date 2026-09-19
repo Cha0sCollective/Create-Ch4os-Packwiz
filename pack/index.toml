@@ -1425,6 +1425,16 @@ hash = "3039be40ea8da00adb446de2ffe1fe9cf15bb6cf06ed7344e2b2421f6c2acb07"
 preserve = true
 
 [[files]]
+file = "resourcepacks/create-ultra-pbr.pw.toml"
+hash = "ec266da3f816b5978dd7bda03e1cd1e1711f78e81f85f68704189df424526e9f"
+metafile = true
+
+[[files]]
+file = "resourcepacks/patrix-32x.pw.toml"
+hash = "c3b5c8eed6f8fc0769ed12e919c7231f0431a7e40d797f10763fa2837a122c82"
+metafile = true
+
+[[files]]
 file = "shaderpacks/bliss-shader.pw.toml"
 hash = "fc262c1cc52427f57dcfb195c5804e232d56be8a49d4e8f154df6164c6643620"
 metafile = true
@@ -1437,6 +1447,11 @@ metafile = true
 [[files]]
 file = "shaderpacks/complementaryunbound_r5.8.1.zip.pw.toml"
 hash = "4640bb9f40bea2902a69c5f57ae4b08386b967e5d2e896e595ad81199f9237ae"
+metafile = true
+
+[[files]]
+file = "shaderpacks/derivative-main.pw.toml"
+hash = "afbc3f8c1b242103520d9217b7b482ff8ccc037ef6ca29605e25bca9b117e55c"
 metafile = true
 
 [[files]]
