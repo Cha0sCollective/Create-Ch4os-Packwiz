@@ -1421,7 +1421,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "3039be40ea8da00adb446de2ffe1fe9cf15bb6cf06ed7344e2b2421f6c2acb07"
+hash = "f80d342db9220fc22d27b955939851e20450645372eceb8a5d747633996995cd"
 preserve = true
 
 [[files]]
@@ -1447,11 +1447,6 @@ metafile = true
 [[files]]
 file = "shaderpacks/complementaryunbound_r5.8.1.zip.pw.toml"
 hash = "4640bb9f40bea2902a69c5f57ae4b08386b967e5d2e896e595ad81199f9237ae"
-metafile = true
-
-[[files]]
-file = "shaderpacks/derivative-main.pw.toml"
-hash = "afbc3f8c1b242103520d9217b7b482ff8ccc037ef6ca29605e25bca9b117e55c"
 metafile = true
 
 [[files]]
