@@ -236,7 +236,7 @@ hash = "c4a96335b8105f7614628d5d7692e23a99dffae4debef7745d21dabef4396a4e"
 
 [[files]]
 file = "config/reliable_remover.json"
-hash = "e8ba35aa749ee4fed1c6c04c03ef6b4cdcd84fd586c25619176baa77be6488e5"
+hash = "7aea1a52baef17d2705ebadb5c0ebb8792509176a4c3358b761d5696bced66b1"
 
 [[files]]
 file = "config/reliable_remover/disabled_enchantments.json"
