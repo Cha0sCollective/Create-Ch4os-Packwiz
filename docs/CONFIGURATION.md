@@ -10,12 +10,12 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Deep Seas | Its additional ocean deepening is off; retained hull/pressure behavior is unchanged |
 | Structures | IDAS included with Labyrinth mining fatigue off; CSA global multipliers 0.7 and 1.0 |
 | Logging | Only CSA's repetitive DEBUG logger is filtered; warnings/errors and other diagnostics remain |
-| DH | Radius 128; 4 worker threads at 75% runtime for new installations; existing settings preserved; PRE_EXISTING_ONLY generation |
+| DH | Radius 128; 4 worker threads at 50% runtime for new installations; existing settings preserved; PRE_EXISTING_ONLY generation |
 | DH transfer | No server bandwidth caps for new installations; existing servers need a manual change |
-| Map sharing | MapSyncer 1.0.3; generated terrain shared, TICK updates every 6000 ticks; per-world defaults |
-| Display | Borderless fullscreen, VSync/shaders off, 120 FPS cap, 12-chunk render/simulation distance |
-| Shaders | Three downloaded archives: Bliss and two Complementary variants; installed patchers generate additional choices |
-| Resource packs | Patrix 32x basic release 72 and Create Ultra 2.1; both are exact Modrinth artifacts managed by Packwiz |
+| Map sharing | MapSyncer 1.0.4beta1 from the official GitHub release, pinned by checksum; generated terrain shared, TICK updates every 6000 ticks; per-world defaults |
+| Display | Borderless fullscreen at desktop resolution, VSync off, 120 FPS cap, render distance 12 and simulation distance 8 |
+| Shaders | Complementary Reimagined 5.8.1 preselected, shaders initially disabled; Reimagined, Unbound 5.8.1 and Bliss 2.1.2 ship tuned first-install presets |
+| Resource packs | Patrix 32x basic release 72 and Create Ultra 2.1 enabled by default, with Create Ultra above Patrix in priority; exact client-only Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
 
@@ -27,3 +27,28 @@ retain existing player edits. To inspect which files are managed or preserved,
 read `pack/index.toml`. Other config changes should be limited to intentional
 pack defaults, not copied generated state. Never distribute a DH server identity,
 LOD database, account, world or private server data.
+
+The first-start baseline targets a 4-core/8-thread CPU or better, 32 GB system RAM,
+a GTX 1080 8 GB and 1920x1080 display. Use Java 21 with a recommended 12 GiB maximum
+heap (Prism supplies 1024 MiB minimum, 12288 MiB maximum and Generational ZGC).
+The roughly 60+ FPS gameplay goal is a target, not a measured performance guarantee.
+
+Both Complementary presets use labPBR, moderate POM and a high-quality baseline,
+with Advanced Color Tracing, world-space reflections and motion blur off. Bliss
+uses labPBR-compatible materials and moderate POM, with LPV, the expensive DH
+shadow map, screen-space reflections and motion blur off. These settings were
+checked against the shipped shader sources; in-game export and visual checks
+remain necessary. Complementary's `COLORED_LIGHTING=0` is its shipped default/off
+value even though its source's explicit distance list starts at 128.
+
+Use a fresh isolated Beta instance to evaluate all defaults together. The seven
+preserved defaults covered here are Minecraft options, Iris settings, DH settings, borderless-window
+settings and the three shader preset sidecars. Existing copies retain player
+settings; missing files receive the new defaults. In Minecraft's serialized pack
+list, Patrix appears first and Create Ultra last so Create Ultra has higher priority.
+
+Client acceptance testing should cover dense Create machinery, moving contraptions,
+DH loading, rain/night, the Nether and the End, plus large-area MapSyncer transfers.
+Verify the intended Colorwheel backend using `/flywheel backend` with each shader.
+If GPU performance misses the target, reduce or disable POM first, then lower shader
+quality. A dedicated-server MVT pass does not verify these client behaviors.

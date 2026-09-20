@@ -1,14 +1,9 @@
 name = "MapSyncer-for-XaeroWorldmap"
-filename = "mapsyncer-1.0.3-neoforge-1.21.1.jar"
+filename = "mapsyncer-1.0.4-neoforge-1.21.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://cdn.modrinth.com/data/AW5A8Q2T/versions/rTv2rIvC/mapsyncer-1.0.3-neoforge-1.21.1.jar"
-hash-format = "sha512"
-hash = "e3a3b2a7e918f633443f6ca41f2c94803183cd3fec39ed88abb6e64b32bc7403180c6cd21d02b63c424da2cb3ef78bf1ab3c347d850af77213a898f17b6cd3b9"
-
-[update]
-[update.modrinth]
-mod-id = "AW5A8Q2T"
-version = "rTv2rIvC"
+url = "https://github.com/RuoChennn/MapSyncer-for-XaeroWorldmap/releases/download/1.0.4beta1/mapsyncer-1.0.4-neoforge-1.21.jar"
+hash-format = "sha256"
+hash = "f7cd59e7be2fbc8d0969951094d820de3ac9100f88adc80e0efb8589664e12d0"

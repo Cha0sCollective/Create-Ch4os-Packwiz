@@ -1,11 +1,13 @@
 version:3955
-enableVsync:true
+enableVsync:false
 maxFps:120
 renderDistance:12
-simulationDistance:12
+simulationDistance:8
 fullscreen:true
-overrideWidth:1280
-overrideHeight:720
+overrideWidth:0
+overrideHeight:0
+resourcePacks:["file/Patrix_1.21_32x_basic.zip","file/Create_Ultra_2.1.zip"]
+incompatibleResourcePacks:[]
 narrator:0
 onboardAccessibility:false
 soundCategory_music:0.25

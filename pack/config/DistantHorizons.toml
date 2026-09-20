@@ -17,7 +17,7 @@ distantGeneratorMode = "PRE_EXISTING_ONLY"
 [common.multiThreading]
 # Shared first-install default; existing client/server settings are preserved.
 numberOfThreads = 4
-threadRunTimeRatio = 0.75
+threadRunTimeRatio = 0.50
 
 [server]
 enableServerGeneration = true

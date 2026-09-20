@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "e315929f7cb3fa3db3579baa3ccf405829e3a5014e0ba28d11012844b3d12d81"
+hash = "22675bd744c2f7b563e79aa8749a55bef8a5ce57a1537544914863e69f5cd70a"
 preserve = true
 
 [[files]]
@@ -96,7 +96,7 @@ hash = "5caae84ed0e5818eccc886568a8d62f271b213ccac259d15556d90b9cbc2523a"
 
 [[files]]
 file = "config/iris.properties"
-hash = "99cef3fae39b3a33a0065cfae17b70ac825e1cce5b709cbc843c39401359001b"
+hash = "a4fd97bad1f90f21cce7850e160c477ec0c6df9adccd5eb60b6ade0fa465e665"
 preserve = true
 
 [[files]]
@@ -1021,7 +1021,7 @@ metafile = true
 
 [[files]]
 file = "mods/irisshaders.pw.toml"
-hash = "c9a1b77dce9153aa739027b65478db8f95871bd075a833f0a80b89714c0071c3"
+hash = "02054c3764a58f16b0e379ad2b803788c422417bcda80d3a18fe30ac3b88506b"
 metafile = true
 
 [[files]]
@@ -1101,7 +1101,7 @@ metafile = true
 
 [[files]]
 file = "mods/mapsyncer-for-xaeroworldmap.pw.toml"
-hash = "b8cc425184a41fde842788459ae94cb706399c4728ce725d66f7b2cf3a2de70e"
+hash = "437e43e7cec325ab18650ed7bc35a526c9dfbab63420311a13c17990b897bb76"
 metafile = true
 
 [[files]]
@@ -1421,18 +1421,33 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "f80d342db9220fc22d27b955939851e20450645372eceb8a5d747633996995cd"
+hash = "fe54b1d794b9745a01d85a1f45ba4695b76e86bf87491e609796c10b761538dc"
 preserve = true
 
 [[files]]
 file = "resourcepacks/create-ultra-pbr.pw.toml"
-hash = "ec266da3f816b5978dd7bda03e1cd1e1711f78e81f85f68704189df424526e9f"
+hash = "29e4ddfc19329f879307d5a2f628a1574742d52b360c4b11f89e8230b0861054"
 metafile = true
 
 [[files]]
 file = "resourcepacks/patrix-32x.pw.toml"
-hash = "c3b5c8eed6f8fc0769ed12e919c7231f0431a7e40d797f10763fa2837a122c82"
+hash = "9b533e4b0f44edd1ee5ffb2540c4d2c8ce618f7433576e250bb6dd64acd23267"
 metafile = true
+
+[[files]]
+file = "shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip.txt"
+hash = "a506f6f1a92e8d83343e132714e640dcee4f1112d2b9f7e5c2a6b4abab663cf5"
+preserve = true
+
+[[files]]
+file = "shaderpacks/ComplementaryReimagined_r5.8.1.zip.txt"
+hash = "8f8729a6d68f6bef9d0f2aa99d3c3ca578236461cca4af573a31dbac0e28136f"
+preserve = true
+
+[[files]]
+file = "shaderpacks/ComplementaryUnbound_r5.8.1.zip.txt"
+hash = "0e78419725d0b8e07a8e716083ab5086ee5dd2269c6edeeaeb499568d3a41011"
+preserve = true
 
 [[files]]
 file = "shaderpacks/bliss-shader.pw.toml"

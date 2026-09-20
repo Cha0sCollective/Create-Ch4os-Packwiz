@@ -1,6 +1,6 @@
 name = "Create Ultra"
 filename = "Create_Ultra_2.1.zip"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/9wrMXul2/versions/mu1qUqLs/Create_Ultra_2.1.zip"
