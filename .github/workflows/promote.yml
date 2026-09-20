@@ -1,0 +1,121 @@
+name: Promote beta to public
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'New stable version, without v (for example 0.2.2)'
+        required: true
+        type: string
+      accept_eula:
+        description: I have read and accept the Minecraft EULA for the disposable test server
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-promotion
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      contents: write # Only prepares the version commit on beta; no public writes here.
+      actions: read
+    outputs:
+      candidate: ${{ steps.prepare.outputs.candidate }}
+      artifact: release-${{ github.run_id }}-${{ github.run_attempt }}
+    steps:
+      - name: Require public workflow and EULA acceptance
+        env:
+          WORKFLOW_REF: ${{ github.ref }}
+          ACCEPT_EULA: ${{ inputs.accept_eula }}
+        run: |
+          test "$WORKFLOW_REF" = refs/heads/public || { echo 'Run this workflow from public.'; exit 1; }
+          test "$ACCEPT_EULA" = true || { echo 'Minecraft EULA acceptance is required.'; exit 1; }
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@924ae3a1cded613372ab5595356fb5720e22ba16 # v6
+        with:
+          go-version: '1.24.6'
+          cache: false
+      - name: Install pinned Packwiz
+        run: go install github.com/packwiz/packwiz@ef87d964f8cbd52b3b13ea42453ef322290e2b9e
+      - name: Test release safeguards
+        run: python3 -m unittest discover -s distribution/tests -v
+      - name: Prepare exact candidate on beta
+        id: prepare
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: python3 distribution/release.py prepare --version "$RELEASE_VERSION"
+      - name: Build and verify fixed and Public installers
+        run: python3 distribution/release.py package
+      - name: Check out pinned MVT harness
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: Cha0sCollective/Ch4oS-MVT
+          ref: 7ce3ef44910aeb5d95fc799badfcd73e450d4171
+          path: dist/mvt
+          persist-credentials: false
+      - name: Test harness
+        working-directory: dist/mvt
+        run: python3 -m unittest discover -p 'test_*.py' -v
+      - name: Run dedicated-server lifecycle
+        env:
+          PACK_SHA: ${{ steps.prepare.outputs.candidate }}
+        run: |
+          python3 dist/mvt/smoke.py --accept-eula --pack-sha "$PACK_SHA" \
+            --image itzg/minecraft-server:java21 --heap 4G --container-memory 6g \
+            --output dist/release/mvt-results
+      - name: Write review summary
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          out = Path('dist/release')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('# Review before approving public-release\n\n')
+              summary.write('Download the release artifact, review its notes, checksums and MVT phase logs. A lifecycle pass is not log approval or a client/upgrade test.\n\n')
+              for name in ('release.json', 'mvt-results/report.json'):
+                  path = out / name
+                  if path.exists():
+                      summary.write(f'## {name}\n\n```json\n{path.read_text()}\n```\n\n')
+              summary.write('The single maintainer may approve their own run after reviewing these results.\n')
+          PY
+      - name: Preserve candidate, installers and evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: release-${{ github.run_id }}-${{ github.run_attempt }}
+          path: dist/release/
+          retention-days: 30
+          if-no-files-found: warn
+
+  publish:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    environment: public-release
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5
+        with:
+          name: ${{ needs.prepare.outputs.artifact }}
+          path: dist/release
+      - name: Publish approved snapshot and promote exact tested commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 distribution/release.py publish

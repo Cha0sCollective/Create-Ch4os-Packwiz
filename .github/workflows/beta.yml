@@ -1,0 +1,30 @@
+name: Update Beta installer
+
+on:
+  push:
+    branches: [beta]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: beta-installer
+  cancel-in-progress: false
+
+jobs:
+  package:
+    if: github.ref == 'refs/heads/beta'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Test packaging safeguards
+        run: python3 -m unittest discover -s distribution/tests -v
+      - name: Validate, build and refresh Beta
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 distribution/release.py beta

@@ -3,7 +3,14 @@
 Keep this an ordinary Packwiz pack. `pack/` is the source of truth for mods,
 configuration, recipes and tags. Use `beta` for work and testing; `public` moves
 only when I select the release players should receive. `main` tracks
-the accepted release; keep it aligned when promoting a release.
+the accepted release; the promotion workflow keeps it aligned with public.
+
+For normal manual changes, edit, commit and push beta as usual. To promote, run
+**Actions → Promote beta to public** from public and enter the next stable version.
+Review its artifacts and MVT logs, then approve the waiting publication job yourself.
+The single-maintainer environment allows self-approval. Pull beta afterward because
+the workflow may add a version-alignment commit. See the [release process](../distribution/README.md)
+for retries and fixed versions. Direct public pushes bypass these checks and publishing.
 
 ## Add, remove or configure a mod
 
@@ -44,6 +51,6 @@ behavior in an isolated instance. Check managed updates and preservation when
 changing packaging. Record the exact revision, ZIP checksum and actual results
 in the PR. Reuse valid unchanged coverage; do not claim a hash check proves gameplay.
 
-Use a fresh independent review for consequential changes. A PR into `public`
-selects a player update only after my approval. Do not change repository
+Use a fresh independent review for consequential changes. Approving the workflow's
+publication job selects the tested beta commit as the player update. Do not change repository
 visibility, publish releases or touch production as a side effect of pack work.

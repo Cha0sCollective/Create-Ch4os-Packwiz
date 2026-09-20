@@ -1,0 +1,32 @@
+name: Check release tooling
+
+on:
+  pull_request:
+    paths:
+      - distribution/**
+      - .github/workflows/**
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - run: python3 -m unittest discover -s distribution/tests -v
+      - run: python3 distribution/release.py validate
+      - name: Build and inspect historical and rolling imports
+        run: |
+          python3 - <<'PY'
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, 'distribution')
+          import release
+          for selection in ('v0.2.0', 'v0.2.1', 'public', 'beta'):
+              sha = release.git('rev-parse', selection + '^{commit}' if selection.startswith('v') else 'HEAD')
+              release.build(Path('dist/check').resolve(), selection, sha)
+          PY

@@ -6,6 +6,10 @@ Do not add a custom installer, update framework, hosting service or server manag
 
 - `main` tracks the accepted release; `public` is the player release I select. Work on `beta` or a focused branch
   based on it; moving `public`, merging and release publication need my approval.
+  Normal manual beta commits remain supported. Use Actions → Promote beta to public
+  for releases; the sole maintainer can approve their own `public-release` deployment
+  after reviewing its exact candidate, artifacts and MVT logs. Pull workflow-created
+  beta version commits before further edits. Direct public pushes bypass the workflow.
 - Preserve the selected mod versions, gameplay and world boundary unless I
   request a change. The starting pack matches Create: Ch4oS 0.2.0-rc.1.
 - Edit maintained files under `pack/`, retain LF bytes, run ordinary `packwiz refresh`
