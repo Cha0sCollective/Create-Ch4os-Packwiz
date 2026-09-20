@@ -15,6 +15,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Map sharing | MapSyncer 1.0.3; generated terrain shared, TICK updates every 6000 ticks; per-world defaults |
 | Display | Borderless fullscreen, VSync/shaders off, 120 FPS cap, 12-chunk render/simulation distance |
 | Shaders | Three downloaded archives: Bliss and two Complementary variants; installed patchers generate additional choices |
+| Resource packs | Patrix 32x basic release 72 and Create Ultra 2.1; both are exact Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
 
