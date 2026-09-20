@@ -1,4 +1,4 @@
-![Create: Ch4oS — from steam to stars](branding/banner.jpg)
+![Create: Ch4oS — from steam to stars](branding/banner.png)
 
 # Create: Ch4oS
 
