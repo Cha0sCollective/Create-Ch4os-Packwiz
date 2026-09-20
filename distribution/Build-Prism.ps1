@@ -75,6 +75,12 @@ foreach ($notice in @('pack/third-party-notices/industrialized-architecture-LICE
 }
 Copy-Item -LiteralPath (Join-Path $repo 'LICENSE.txt') -Destination $instance
 Copy-Item -LiteralPath (Join-Path $repo 'docs/PRISM.md') -Destination (Join-Path $instance 'README.md')
+$iconSource = Join-Path $repo 'branding/icon.png'
+$iconKey = 'default'
+if (Test-Path -LiteralPath $iconSource -PathType Leaf) {
+    $iconKey = $profile.id
+    Copy-Item -LiteralPath $iconSource -Destination (Join-Path $instance ($iconKey + '.png'))
+}
 $guide = "# Create: Ch4oS - $selection`n`n$behavior`n`nImport this ZIP into Prism Launcher. Use Java 21 and allow the Packwiz pre-launch command.`nPack URL: $PackUrl`n`nFixed versions still download their mods from upstream providers. Use a separate instance to change versions; do not downgrade a live world.`n"
 [IO.File]::WriteAllText((Join-Path $instance 'README.md'), $guide, $utf8)
 $components = [ordered]@{ formatVersion = 1; components = @(
@@ -86,7 +92,7 @@ $config = @'
 [General]
 InstanceType=OneSix
 name=PACK_NAME
-iconKey=default
+iconKey=PACK_ICON
 OverrideMemory=true
 MinMemAlloc=1024
 MaxMemAlloc=12288
@@ -96,7 +102,7 @@ JvmArgs=-XX:+UseZGC -XX:+ZGenerational
 OverrideCommands=true
 PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -s client "PACK_URL"
 '@
-$config = $config.Replace('PACK_NAME', $profile.name).Replace('PACK_URL', $PackUrl)
+$config = $config.Replace('PACK_NAME', $profile.name).Replace('PACK_ICON', $iconKey).Replace('PACK_URL', $PackUrl)
 [IO.File]::WriteAllText((Join-Path $instance 'instance.cfg'), $config + "`n", $utf8)
 $provenance = "Create: Ch4oS Prism import`nSelection: $selection`n$behavior`nHistorical profile version: $($profile.version)`nBuild source: $revision`nPack source: $packRevision`nPack address: $PackUrl`nPackwiz bootstrap: $($tools.bootstrap.version)`nPackwiz installer: $($tools.installer.version)`n"
 [IO.File]::WriteAllText((Join-Path $instance 'release.txt'), $provenance, $utf8)

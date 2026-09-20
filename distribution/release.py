@@ -138,6 +138,26 @@ def inspect_zip(path, selection, sha):
         cfg = archive.read(prefix + "instance.cfg").decode("utf-8")
         if f'--bootstrap-no-update -s client "{expected}"' not in cfg:
             raise ValueError("ZIP follows the wrong pack URL.")
+        icon_match = re.search(r"(?m)^iconKey=([^\r\n]+)$", cfg)
+        if not icon_match:
+            raise ValueError("ZIP has no Prism icon key.")
+        icon_key = icon_match.group(1)
+        expected_icon_key = f"Create-Ch4oS-{selection.replace('.', '-')}"
+        legacy_fixed = {"v0.2.0", "v0.2.1", "v0.2.2"}
+        if icon_key == "default":
+            if selection not in legacy_fixed:
+                raise ValueError("Branded ZIP uses the legacy default Prism icon.")
+        else:
+            if icon_key != expected_icon_key:
+                raise ValueError("ZIP uses the wrong profile-specific Prism icon key.")
+            icon_path = prefix + icon_key + ".png"
+            if icon_path not in names:
+                raise ValueError("ZIP is missing its Prism icon.")
+            icon = archive.read(icon_path)
+            if icon[:8] != b"\x89PNG\r\n\x1a\n" or icon[12:16] != b"IHDR":
+                raise ValueError("ZIP has an invalid Prism icon.")
+            if int.from_bytes(icon[16:20], "big") != 512 or int.from_bytes(icon[20:24], "big") != 512:
+                raise ValueError("Prism icon must be 512 by 512 pixels.")
         if f"Pack source: {sha}\n" not in archive.read(prefix + "release.txt").decode("utf-8"):
             raise ValueError("ZIP pack provenance differs.")
         if not any(name.endswith("industrialized-architecture-LICENSE.txt") for name in names):

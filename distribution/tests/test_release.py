@@ -63,12 +63,16 @@ class ReleaseTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 r.validate(root, aligned=True)
 
-    def zip_fixture(self, out, selection="v0.2.0", source="a" * 40, url_ref=None):
+    def zip_fixture(self, out, selection="v0.2.0", source="a" * 40, url_ref=None, icon_key=None, include_icon=True):
         path = out / "pack.zip"
         prefix = f"Create-Ch4oS-{selection.replace('.', '-')}/"
         target = url_ref or (source if selection.startswith("v") else selection)
+        if icon_key is None:
+            icon_key = "default" if selection in {"v0.2.0", "v0.2.1", "v0.2.2"} else f"Create-Ch4oS-{selection.replace('.', '-')}"
         with zipfile.ZipFile(path, "w") as z:
-            z.writestr(prefix + "instance.cfg", f'PreLaunchCommand=java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -s client "{r.RAW}/{target}/pack/pack.toml"\n')
+            z.writestr(prefix + "instance.cfg", f'iconKey={icon_key}\nPreLaunchCommand=java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -s client "{r.RAW}/{target}/pack/pack.toml"\n')
+            if icon_key != "default" and include_icon:
+                z.writestr(prefix + icon_key + ".png", (r.ROOT / "branding/icon.png").read_bytes())
             z.writestr(prefix + "release.txt", f"Pack source: {source}\n")
             z.writestr(prefix + ".minecraft/packwiz-installer-bootstrap.jar", b"tool")
             z.writestr(prefix + ".minecraft/packwiz-installer.jar", b"tool")
@@ -99,6 +103,24 @@ class ReleaseTests(unittest.TestCase):
             path = self.zip_fixture(Path(tmp), "v0.2.0", url_ref="beta")
             with self.assertRaises(ValueError):
                 r.inspect_zip(path, "v0.2.0", "a" * 40)
+
+    def test_profile_specific_prism_icon_is_validated(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = self.zip_fixture(root, "beta", icon_key="Create-Ch4oS-beta")
+            r.inspect_zip(path, "beta", "a" * 40)
+            path = self.zip_fixture(root, "beta", icon_key="default")
+            with self.assertRaisesRegex(ValueError, "legacy default"):
+                r.inspect_zip(path, "beta", "a" * 40)
+            path = self.zip_fixture(root, "beta", icon_key="Create-Ch4oS-public")
+            with self.assertRaisesRegex(ValueError, "wrong profile-specific"):
+                r.inspect_zip(path, "beta", "a" * 40)
+            path = self.zip_fixture(root, "beta", icon_key="Create-Ch4oS-beta", include_icon=False)
+            with self.assertRaisesRegex(ValueError, "missing its Prism icon"):
+                r.inspect_zip(path, "beta", "a" * 40)
+            for selection in ("public", "v0.2.3"):
+                path = self.zip_fixture(root, selection)
+                r.inspect_zip(path, selection, "a" * 40)
 
     def test_failed_or_wrong_candidate_mvt_blocks_publication(self):
         with tempfile.TemporaryDirectory() as tmp:
