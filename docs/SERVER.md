@@ -23,6 +23,12 @@ Run these in PowerShell, not the Minecraft console. If `java` is unavailable,
 replace it with `& 'C:\path\to\java.exe'`, using the Java path configured in AMP.
 Start Minecraft through AMP only after the installation succeeds.
 
+The URL above follows **Public**. For testing, replace `public` with `beta`.
+For a fixed version, use the full commit URL shown in that numbered release's
+notes; its command stays on that version even when branches advance. Clients must
+use the corresponding channel or fixed version. Each release supplies a ready-to-copy
+server command. Switching to an older pack does not safely roll back a world.
+
 ## Update
 
 Stop the server, take an AMP backup, and run the install command again. You only

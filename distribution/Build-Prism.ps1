@@ -4,16 +4,36 @@ param(
     [Parameter(Mandatory)][string]$Output,
     [string]$CacheDirectory,
     [ValidateSet('public','beta')][string]$Channel = 'public',
-    [string]$PackUrl
+    [string]$PackUrl,
+    [string]$VersionTag,
+    [string]$SourceRevision = 'HEAD'
 )
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $PSScriptRoot
+if ($VersionTag -and ($PackUrl -or $PSBoundParameters.ContainsKey('Channel') -or $PSBoundParameters.ContainsKey('SourceRevision'))) { throw 'VersionTag cannot be combined with Channel, SourceRevision or PackUrl.' }
+if ($VersionTag -and $VersionTag -cnotmatch '^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$') { throw 'Use a stable version tag such as v0.2.2.' }
+if ($VersionTag) { $SourceRevision = "refs/tags/$VersionTag" }
+if ($SourceRevision.StartsWith('-')) { throw 'Invalid source revision.' }
+$packRevision = & git -C $repo rev-parse --verify "$SourceRevision^{commit}"
+if ($LASTEXITCODE -ne 0) { throw 'Source revision must resolve to a commit.' }
+if ($VersionTag) { $PackUrl = "https://raw.githubusercontent.com/Cha0sCollective/Create-Ch4os-Packwiz/$packRevision/pack/pack.toml" }
 if (-not $PackUrl) { $PackUrl = "https://raw.githubusercontent.com/Cha0sCollective/Create-Ch4os-Packwiz/$Channel/pack/pack.toml" }
 if (-not $CacheDirectory) { $CacheDirectory = Join-Path $repo 'dist/prism-tools' }
+$packagingRepo = $repo
+$sourceStage = Join-Path ([IO.Path]::GetTempPath()) ('ch4os-prism-source-' + [Guid]::NewGuid().ToString('N'))
+New-Item -ItemType Directory -Path $sourceStage | Out-Null
+& git -C $repo archive --format=zip --output="$sourceStage/source.zip" $packRevision
+if ($LASTEXITCODE -ne 0) { throw 'Could not export source revision.' }
+Expand-Archive -LiteralPath "$sourceStage/source.zip" -DestinationPath "$sourceStage/source"
+$repo = Join-Path $sourceStage 'source'
 $utf8 = New-Object Text.UTF8Encoding($false)
-$profile = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'profile.json') -Raw -Encoding UTF8 | ConvertFrom-Json
-$runtime = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'runtime.json') -Raw -Encoding UTF8 | ConvertFrom-Json
-$tools = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'prism-tools.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$profile = Get-Content -LiteralPath (Join-Path $repo 'distribution/profile.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$runtime = Get-Content -LiteralPath (Join-Path $repo 'distribution/runtime.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$tools = Get-Content -LiteralPath (Join-Path $repo 'distribution/prism-tools.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$selection = if ($VersionTag) { $VersionTag } else { $Channel }
+$profile.id = 'Create-Ch4oS-' + $selection
+$profile.name = 'Create: Ch4oS - ' + $selection
+$behavior = if ($VersionTag) { "Fixed version $VersionTag. Does not follow Public or Beta." } else { "Follows the $Channel branch for updates at launch." }
 if ($runtime.launch.client.garbageCollector -cne 'generational-zgc') { throw 'Review Prism Java arguments when the pack collector changes.' }
 $uri = [Uri]$PackUrl
 if (-not $uri.IsAbsoluteUri -or ($uri.Scheme -ne 'https' -and -not ($uri.Scheme -eq 'http' -and $uri.IsLoopback))) {
@@ -23,9 +43,9 @@ $PackUrl = $uri.AbsoluteUri
 if ($profile.id -notmatch '^[A-Za-z0-9][A-Za-z0-9_-]*$' -or $profile.name -match '[\r\n]') { throw 'Invalid Prism instance identity.' }
 $outputPath = [IO.Path]::GetFullPath($Output)
 if (Test-Path -LiteralPath $outputPath) { throw 'Choose a new output ZIP; existing artifacts are not overwritten.' }
-$revision = & git -C $repo rev-parse HEAD
+$revision = & git -C $packagingRepo rev-parse HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Build from a Git checkout.' }
-$dirty = & git -C $repo status --porcelain --untracked-files=normal
+$dirty = & git -C $packagingRepo status --porcelain --untracked-files=normal
 if ($LASTEXITCODE -ne 0 -or $dirty) { throw 'Commit or isolate local changes before building.' }
 New-Item -ItemType Directory -Force -Path $CacheDirectory | Out-Null
 New-Item -ItemType Directory -Force -Path (Split-Path -Parent $outputPath) | Out-Null
@@ -53,6 +73,8 @@ foreach ($notice in @('pack/third-party-notices/industrialized-architecture-LICE
 }
 Copy-Item -LiteralPath (Join-Path $repo 'LICENSE.txt') -Destination $instance
 Copy-Item -LiteralPath (Join-Path $repo 'docs/PRISM.md') -Destination (Join-Path $instance 'README.md')
+$guide = "# Create: Ch4oS - $selection`n`n$behavior`n`nImport this ZIP into Prism Launcher. Use Java 21 and allow the Packwiz pre-launch command.`nPack URL: $PackUrl`n`nFixed versions still download their mods from upstream providers. Use a separate instance to change versions; do not downgrade a live world.`n"
+[IO.File]::WriteAllText((Join-Path $instance 'README.md'), $guide, $utf8)
 $components = [ordered]@{ formatVersion = 1; components = @(
     [ordered]@{ uid = 'net.minecraft'; version = $runtime.minecraft; important = $true },
     [ordered]@{ uid = 'net.neoforged'; version = $runtime.neoforge.version; important = $true }
@@ -74,7 +96,7 @@ PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar --bootstrap-n
 '@
 $config = $config.Replace('PACK_NAME', $profile.name).Replace('PACK_URL', $PackUrl)
 [IO.File]::WriteAllText((Join-Path $instance 'instance.cfg'), $config + "`n", $utf8)
-$provenance = "Create: Ch4oS Prism import`nInitial pack version: $($profile.version)`nBuild source: $revision`nPack address: $PackUrl`nPackwiz bootstrap: $($tools.bootstrap.version)`nPackwiz installer: $($tools.installer.version)`n"
+$provenance = "Create: Ch4oS Prism import`nSelection: $selection`n$behavior`nHistorical profile version: $($profile.version)`nBuild source: $revision`nPack source: $packRevision`nPack address: $PackUrl`nPackwiz bootstrap: $($tools.bootstrap.version)`nPackwiz installer: $($tools.installer.version)`n"
 [IO.File]::WriteAllText((Join-Path $instance 'release.txt'), $provenance, $utf8)
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 [IO.Compression.ZipFile]::CreateFromDirectory($stage, $outputPath)
@@ -87,3 +109,6 @@ if ([IO.Path]::GetFullPath($stage).StartsWith([IO.Path]::GetFullPath([IO.Path]::
 Write-Output "Prism ZIP: $outputPath"
 Write-Output "SHA-256: $hash"
 Write-Output "Pack address: $PackUrl"
+if ([IO.Path]::GetFullPath($sourceStage).StartsWith([IO.Path]::GetFullPath([IO.Path]::GetTempPath()), [StringComparison]::OrdinalIgnoreCase) -and (Split-Path -Leaf $sourceStage) -match '^ch4os-prism-source-[0-9a-f]{32}$') {
+    Remove-Item -LiteralPath $sourceStage -Recurse -Force
+}
