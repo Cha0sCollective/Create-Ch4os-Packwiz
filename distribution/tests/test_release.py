@@ -65,7 +65,7 @@ class ReleaseTests(unittest.TestCase):
 
     def zip_fixture(self, out, selection="v0.2.0", source="a" * 40, url_ref=None):
         path = out / "pack.zip"
-        prefix = f"Create-Ch4oS-{selection}/"
+        prefix = f"Create-Ch4oS-{selection.replace('.', '-')}/"
         target = url_ref or (source if selection.startswith("v") else selection)
         with zipfile.ZipFile(path, "w") as z:
             z.writestr(prefix + "instance.cfg", f'PreLaunchCommand=java -jar packwiz-installer-bootstrap.jar --bootstrap-no-update -s client "{r.RAW}/{target}/pack/pack.toml"\n')
@@ -86,7 +86,7 @@ class ReleaseTests(unittest.TestCase):
                 r.inspect_zip(path, "v0.2.0", "a" * 40)
             path = self.zip_fixture(root)
             with zipfile.ZipFile(path, "a") as z:
-                z.writestr("Create-Ch4oS-v0.2.0/.minecraft/mods/gameplay.jar", b"bad")
+                z.writestr("Create-Ch4oS-v0-2-0/.minecraft/mods/gameplay.jar", b"bad")
             with self.assertRaisesRegex(ValueError, "only the two Packwiz"):
                 r.inspect_zip(path, "v0.2.0", "a" * 40)
 

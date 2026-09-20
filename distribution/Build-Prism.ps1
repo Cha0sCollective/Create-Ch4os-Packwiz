@@ -22,6 +22,8 @@ if (-not $CacheDirectory) { $CacheDirectory = Join-Path $repo 'dist/prism-tools'
 $packagingRepo = $repo
 $sourceStage = Join-Path ([IO.Path]::GetTempPath()) ('ch4os-prism-source-' + [Guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Path $sourceStage | Out-Null
+$stage = $null
+try {
 & git -C $repo archive --format=zip --output="$sourceStage/source.zip" $packRevision
 if ($LASTEXITCODE -ne 0) { throw 'Could not export source revision.' }
 Expand-Archive -LiteralPath "$sourceStage/source.zip" -DestinationPath "$sourceStage/source"
@@ -31,7 +33,7 @@ $profile = Get-Content -LiteralPath (Join-Path $repo 'distribution/profile.json'
 $runtime = Get-Content -LiteralPath (Join-Path $repo 'distribution/runtime.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $tools = Get-Content -LiteralPath (Join-Path $repo 'distribution/prism-tools.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $selection = if ($VersionTag) { $VersionTag } else { $Channel }
-$profile.id = 'Create-Ch4oS-' + $selection
+$profile.id = 'Create-Ch4oS-' + $selection.Replace('.', '-')
 $profile.name = 'Create: Ch4oS - ' + $selection
 $behavior = if ($VersionTag) { "Fixed version $VersionTag. Does not follow Public or Beta." } else { "Follows the $Channel branch for updates at launch." }
 if ($runtime.launch.client.garbageCollector -cne 'generational-zgc') { throw 'Review Prism Java arguments when the pack collector changes.' }
@@ -42,7 +44,7 @@ if (-not $uri.IsAbsoluteUri -or ($uri.Scheme -ne 'https' -and -not ($uri.Scheme 
 $PackUrl = $uri.AbsoluteUri
 if ($profile.id -notmatch '^[A-Za-z0-9][A-Za-z0-9_-]*$' -or $profile.name -match '[\r\n]') { throw 'Invalid Prism instance identity.' }
 $outputPath = [IO.Path]::GetFullPath($Output)
-if (Test-Path -LiteralPath $outputPath) { throw 'Choose a new output ZIP; existing artifacts are not overwritten.' }
+if ((Test-Path -LiteralPath $outputPath) -or (Test-Path -LiteralPath ($outputPath + '.sha256'))) { throw 'Choose a new output ZIP; existing artifacts are not overwritten.' }
 $revision = & git -C $packagingRepo rev-parse HEAD
 if ($LASTEXITCODE -ne 0) { throw 'Build from a Git checkout.' }
 $dirty = & git -C $packagingRepo status --porcelain --untracked-files=normal
@@ -102,13 +104,15 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 [IO.Compression.ZipFile]::CreateFromDirectory($stage, $outputPath)
 $hash = (Get-FileHash -LiteralPath $outputPath -Algorithm SHA256).Hash.ToLowerInvariant()
 [IO.File]::WriteAllText(($outputPath + '.sha256'), "$hash  $([IO.Path]::GetFileName($outputPath))`n", $utf8)
-# Only the exact temporary directory created above is eligible for cleanup.
-if ([IO.Path]::GetFullPath($stage).StartsWith([IO.Path]::GetFullPath([IO.Path]::GetTempPath()), [StringComparison]::OrdinalIgnoreCase) -and (Split-Path -Leaf $stage) -match '^ch4os-prism-[0-9a-f]{32}$') {
-    Remove-Item -LiteralPath $stage -Recurse -Force
-}
 Write-Output "Prism ZIP: $outputPath"
 Write-Output "SHA-256: $hash"
 Write-Output "Pack address: $PackUrl"
+} finally {
+# Only the exact temporary directories created above are eligible for cleanup.
+if ($stage -and [IO.Path]::GetFullPath($stage).StartsWith([IO.Path]::GetFullPath([IO.Path]::GetTempPath()), [StringComparison]::OrdinalIgnoreCase) -and (Split-Path -Leaf $stage) -match '^ch4os-prism-[0-9a-f]{32}$') {
+    Remove-Item -LiteralPath $stage -Recurse -Force
+}
 if ([IO.Path]::GetFullPath($sourceStage).StartsWith([IO.Path]::GetFullPath([IO.Path]::GetTempPath()), [StringComparison]::OrdinalIgnoreCase) -and (Split-Path -Leaf $sourceStage) -match '^ch4os-prism-source-[0-9a-f]{32}$') {
     Remove-Item -LiteralPath $sourceStage -Recurse -Force
+}
 }

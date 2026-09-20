@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import re
 import subprocess
+import sys
 import tempfile
 import tomllib
 import zipfile
@@ -128,7 +129,7 @@ def inspect_zip(path, selection, sha):
     expected = f"{RAW}/{sha if fixed else selection}/pack/pack.toml"
     with zipfile.ZipFile(path) as archive:
         names = archive.namelist()
-        prefix = f"Create-Ch4oS-{selection}/"
+        prefix = f"Create-Ch4oS-{selection.replace('.', '-')}/"
         if any(not name.startswith(prefix) or ".." in Path(name).parts for name in names):
             raise ValueError("Unexpected ZIP layout.")
         jars = sorted(Path(name).name for name in names if name.endswith(".jar"))
@@ -368,4 +369,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except subprocess.CalledProcessError as exc:
+        print(exc.stdout or "", file=sys.stderr)
+        print(exc.stderr or "", file=sys.stderr)
+        raise SystemExit(f"Command failed with exit code {exc.returncode}: {exc.cmd[0]}") from None
