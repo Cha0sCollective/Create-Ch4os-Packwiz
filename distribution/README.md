@@ -6,6 +6,9 @@ Edit your local beta repository, commit, and push to `beta` normally. Small manu
 changes need no special tooling. The Beta release ZIP is refreshed automatically
 after packaging checks. Beta installations follow the branch at launch, including
 changes that have not passed a server smoke test.
+If another push arrives during packaging, the next successful Beta run refreshes
+its installer metadata. If that refresh fails, rerun **Update Beta installer** from
+beta, especially when Minecraft, NeoForge or tool pins changed.
 
 To release to players:
 
@@ -65,6 +68,13 @@ The initial migration preserves `v0.2.0` and `v0.2.1`, replaces the old rolling
 `channel-public` and `channel-beta`. Historical 0.2.1 version-label inconsistencies
 remain unchanged; future promotions enforce matching labels. IA's release is untouched.
 Already-imported legacy 0.2.0 instances continue to follow public.
+
+Prepare the four migration ZIPs, notes, checksums and a backup of the legacy
+download from a clean setup checkout with
+`python distribution/migrate.py --out C:\Candidates\migration`.
+This command only prepares local artifacts; publication and branch synchronization
+remain an owner-approved setup action. Its manifest records the expected branch
+heads and tag commits so concurrent manual work can be detected before publication.
 
 ## Build a ZIP locally
 
