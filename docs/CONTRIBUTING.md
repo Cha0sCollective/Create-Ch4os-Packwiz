@@ -33,7 +33,9 @@ integration datapack. Preserve LF line endings and run `packwiz refresh` after
 changes. `preserve = true` in the index keeps existing player edits; other managed
 files can be replaced on update. Do not copy a whole personal config directory.
 Update the [configuration guide](CONFIGURATION.md) and [source list](MOD-SOURCES.csv)
-when a change affects them. Keep the Packwiz, BCC and distribution version fields
+when a change affects them. The source list must contain one row for every Packwiz
+metadata file under `pack/mods/` and `pack/resourcepacks/`, with no stale rows.
+Keep the Packwiz, BCC and distribution version fields
 aligned when changing the release version.
 
 Prefer small original configuration, recipes and tags. Do not copy restricted
