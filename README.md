@@ -41,6 +41,6 @@ version. Review the results and approve publication yourself; one maintainer is
 enough. See the [release process](distribution/README.md).
 
 [Beta map-sharing setup](docs/MAPS.md) · [Contributing](docs/CONTRIBUTING.md) · [Configuration](docs/CONFIGURATION.md) ·
-[Mod and resource-pack sources](docs/MOD-SOURCES.csv) · [Build a ZIP](distribution/README.md)
+[Mod and resource-pack sources](docs/MOD-SOURCES.md) · [Build a ZIP](distribution/README.md)
 
 Project-authored files use the [MIT license](LICENSE.txt). Mods retain their own licenses.
