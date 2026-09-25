@@ -54,3 +54,28 @@ DH loading, rain/night, the Nether and the End, plus large-area MapSyncer transf
 Verify the intended Colorwheel backend using `/flywheel backend` with each shader.
 If GPU performance misses the target, reduce or disable POM first, then lower shader
 quality. A dedicated-server MVT pass does not verify these client behaviors.
+
+## Guns and vehicle linkage
+
+Beta includes the unofficial TaCZ NeoForge port 1.1.8-hotfix-r6, TaCZ Tweaks
+3.0.0-alpha.10 and Create Aeronautics: Transmission & Linkage 0.2.8. These are
+required on both clients and servers. Guns, ammunition, recipes, damage and
+movement use the installed mods' upstream defaults; no extra gun or example
+interaction packs are supplied. Transmission & Linkage also uses upstream settings.
+
+The pack supplies `config/tacztweaks.json` with configuration `version` 1 and
+`general.compatibility.sableCompat` set to `true`. This enables Tweaks' Sable
+integration for Aeronautics structures. Other settings use upstream defaults.
+The file is preserved by Packwiz so later player or server edits are retained.
+For installations that already have this file, close the client or stop the server
+and set `sableCompat` to `true` inside the existing `general.compatibility` object;
+retain the other settings. New installations receive the pack default.
+
+On multiplayer servers, TaCZ Tweaks synchronizes this compatibility setting from
+the server. Enable it on the server as well as clients; a client-only change does
+not override the server. Operators with permission level 2 can change synchronized
+settings through the mod's configuration screen.
+
+Gun rendering with shaders, key bindings, multiplayer synchronization, hits and
+explosions on moving Sable structures, and linkage physics need in-game testing.
+Dedicated-server lifecycle checks do not establish those behaviors.

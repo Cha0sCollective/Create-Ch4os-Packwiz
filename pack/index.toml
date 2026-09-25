@@ -257,6 +257,11 @@ file = "config/supplementaries-common.toml"
 hash = "e04affe80ee314b81e4408d0fcb6996c56a2820b0f5c6c3c6719ae89cf98cfcf"
 
 [[files]]
+file = "config/tacztweaks.json"
+hash = "2fd1cd8867cfdb86a4aef478c94ad04662ecc542963d921dfe25c8e1a72f918e"
+preserve = true
+
+[[files]]
 file = "config/tectonic.json"
 hash = "3067a5c72bebaeb1156da5771b2def8bcc1e367c5976690fc17ad7dea2975adc"
 
@@ -482,6 +487,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics-throwable-rope-connector.pw.toml"
 hash = "14c00cb9bf570d944d72633ec7cdfd4863c9c809a8e999a95a5f2831b82a133f"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-transmission-linkage.pw.toml"
+hash = "41f2910714cce123e4226c8c571e1b554f10b03c65dbceea8cab7a7c908defbe"
 metafile = true
 
 [[files]]
@@ -1357,6 +1367,16 @@ metafile = true
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "f07d8e9afe8aa4ace0a590ef6bc3718cdae8c0a9b36de0d53f8d4ad85367e74a"
+metafile = true
+
+[[files]]
+file = "mods/tacz-1.21.1.pw.toml"
+hash = "5840061461645a264ee437260581a550b8e9b2540cb9ea2a39a450671b2d1be0"
+metafile = true
+
+[[files]]
+file = "mods/tacz-tweaks.pw.toml"
+hash = "27529451128a45a170e61a4510068f844f22d9dda6b05a42e0eba2d76a6ea645"
 metafile = true
 
 [[files]]
