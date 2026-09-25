@@ -58,10 +58,11 @@ quality. A dedicated-server MVT pass does not verify these client behaviors.
 ## Guns and vehicle linkage
 
 Beta includes the unofficial TaCZ NeoForge port 1.1.8-hotfix-r6, TaCZ Tweaks
-3.0.0-alpha.10 and Create Aeronautics: Transmission & Linkage 0.2.8. These are
+3.0.0-alpha.10, Create Aeronautics: Transmission & Linkage 0.2.8, and
+Create Aeronautics: Toolgun 0.3.6. These are
 required on both clients and servers. Guns, ammunition, recipes, damage and
 movement use the installed mods' upstream defaults; no extra gun or example
-interaction packs are supplied. Transmission & Linkage also uses upstream settings.
+interaction packs are supplied. Transmission & Linkage and Toolgun use upstream settings.
 
 The pack supplies `config/tacztweaks.json` with configuration `version` 1 and
 `general.compatibility.sableCompat` set to `true`. This enables Tweaks' Sable
