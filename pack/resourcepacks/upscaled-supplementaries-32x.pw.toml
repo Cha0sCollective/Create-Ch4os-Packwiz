@@ -1,0 +1,13 @@
+name = "Upscaled Supplementaries 32x"
+filename = "Upscaled Supplementaries 32x v1.2 - [1.21.1].zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/riEqFt7b/versions/ZzFVQkOO/Upscaled%20Supplementaries%2032x%20v1.2%20-%20%5B1.21.1%5D.zip"
+hash-format = "sha512"
+hash = "b35ab97d64519222dec1f53f27cb47cbe9a30ceb246796b53414401b26e88a6ef7dcb83fb579b890a31548d393db90e849c8ced22953c37d55539126cab65ad1"
+
+[update]
+[update.modrinth]
+mod-id = "riEqFt7b"
+version = "ZzFVQkOO"

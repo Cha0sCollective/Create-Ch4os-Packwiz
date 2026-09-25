@@ -1436,7 +1436,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "fe54b1d794b9745a01d85a1f45ba4695b76e86bf87491e609796c10b761538dc"
+hash = "e27cd27f6a55db79b891005fa82f9519c17bae0ba907ed0e14989a6a84139722"
 preserve = true
 
 [[files]]
@@ -1445,8 +1445,18 @@ hash = "29e4ddfc19329f879307d5a2f628a1574742d52b360c4b11f89e8230b0861054"
 metafile = true
 
 [[files]]
+file = "resourcepacks/improved-create-32x.pw.toml"
+hash = "7105fd32911c437be089020d80fcef21c10e511e85acfd1b9a3f67ca53f0f49c"
+metafile = true
+
+[[files]]
 file = "resourcepacks/patrix-32x.pw.toml"
 hash = "9b533e4b0f44edd1ee5ffb2540c4d2c8ce618f7433576e250bb6dd64acd23267"
+metafile = true
+
+[[files]]
+file = "resourcepacks/upscaled-supplementaries-32x.pw.toml"
+hash = "7ee7fcaf1601db580d9849470870a19bc1f32ec497d4887b1a9763221870d9f1"
 metafile = true
 
 [[files]]

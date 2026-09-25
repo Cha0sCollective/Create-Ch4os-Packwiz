@@ -15,7 +15,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Map sharing | MapSyncer 1.0.4beta1 from the official GitHub release, pinned by checksum; generated terrain shared, TICK updates every 6000 ticks; distant synchronized regions retained on disk and loaded by Xaero only when viewed |
 | Display | Borderless fullscreen at desktop resolution, VSync off, 120 FPS cap, render distance 12 and simulation distance 8 |
 | Shaders | Complementary Reimagined 5.8.1 preselected, shaders initially disabled; Reimagined, Unbound 5.8.1 and Bliss 2.1.2 ship tuned first-install presets |
-| Resource packs | Patrix 32x basic release 72 and Create Ultra 2.1 enabled by default, with Create Ultra above Patrix in priority; exact client-only Modrinth artifacts managed by Packwiz |
+| Resource packs | Create Ultra 2.1, Improved Create 32x 0.06, Upscaled Supplementaries 32x 1.2 and Patrix 32x release 72 enabled by default in that priority order; exact client-only Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
 
@@ -44,8 +44,10 @@ value even though its source's explicit distance list starts at 128.
 Use a fresh isolated Beta instance to evaluate all defaults together. The eight
 preserved defaults covered here are Minecraft options, Iris settings, DH settings, borderless-window
 settings, MapSyncer's client settings and the three shader preset sidecars. Existing copies retain player
-settings; missing files receive the new defaults. In Minecraft's serialized pack
-list, Patrix appears first and Create Ultra last so Create Ultra has higher priority.
+settings; missing files receive the new defaults. Minecraft serializes the lowest
+priority first: vanilla and generated mod packs are followed by Patrix, Upscaled
+Supplementaries, Improved Create and Create Ultra. The resource-pack screen displays
+those four custom packs in the reverse order, with Create Ultra at the top.
 
 Client acceptance testing should cover dense Create machinery, moving contraptions,
 DH loading, rain/night, the Nether and the End, plus large-area MapSyncer transfers.

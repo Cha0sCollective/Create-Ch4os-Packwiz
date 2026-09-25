@@ -6,7 +6,7 @@ simulationDistance:8
 fullscreen:true
 overrideWidth:0
 overrideHeight:0
-resourcePacks:["file/Patrix_1.21_32x_basic.zip","file/Create_Ultra_2.1.zip"]
+resourcePacks:["vanilla","fabric","mod_resources","moonlight:merged_pack","file/Patrix_1.21_32x_basic.zip","file/Upscaled Supplementaries 32x v1.2 - [1.21.1].zip","file/[1.21.1_ver_0.06]_Improved_Create_32x.zip","file/Create_Ultra_2.1.zip"]
 incompatibleResourcePacks:[]
 narrator:0
 onboardAccessibility:false
