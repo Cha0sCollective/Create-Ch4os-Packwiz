@@ -12,7 +12,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Logging | Only CSA's repetitive DEBUG logger is filtered; warnings/errors and other diagnostics remain |
 | DH | Radius 128; 4 worker threads at 50% runtime for new installations; existing settings preserved; PRE_EXISTING_ONLY generation |
 | DH transfer | No server bandwidth caps for new installations; existing servers need a manual change |
-| Map sharing | MapSyncer 1.0.4beta1 from the official GitHub release, pinned by checksum; generated terrain shared, TICK updates every 6000 ticks; per-world defaults |
+| Map sharing | MapSyncer 1.0.4beta1 from the official GitHub release, pinned by checksum; generated terrain shared, TICK updates every 6000 ticks; distant synchronized regions retained on disk and loaded by Xaero only when viewed |
 | Display | Borderless fullscreen at desktop resolution, VSync off, 120 FPS cap, render distance 12 and simulation distance 8 |
 | Shaders | Complementary Reimagined 5.8.1 preselected, shaders initially disabled; Reimagined, Unbound 5.8.1 and Bliss 2.1.2 ship tuned first-install presets |
 | Resource packs | Patrix 32x basic release 72 and Create Ultra 2.1 enabled by default, with Create Ultra above Patrix in priority; exact client-only Modrinth artifacts managed by Packwiz |
@@ -41,9 +41,9 @@ checked against the shipped shader sources; in-game export and visual checks
 remain necessary. Complementary's `COLORED_LIGHTING=0` is its shipped default/off
 value even though its source's explicit distance list starts at 128.
 
-Use a fresh isolated Beta instance to evaluate all defaults together. The seven
+Use a fresh isolated Beta instance to evaluate all defaults together. The eight
 preserved defaults covered here are Minecraft options, Iris settings, DH settings, borderless-window
-settings and the three shader preset sidecars. Existing copies retain player
+settings, MapSyncer's client settings and the three shader preset sidecars. Existing copies retain player
 settings; missing files receive the new defaults. In Minecraft's serialized pack
 list, Patrix appears first and Create Ultra last so Create Ultra has higher priority.
 

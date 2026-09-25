@@ -1,8 +1,17 @@
 # Maps and distant terrain
 
-The beta adds MapSyncer 1.0.3 on clients and servers. It shares maps of generated
+The beta adds MapSyncer 1.0.4beta1 on clients and servers. It shares maps of generated
 terrain, including pregenerated areas nobody has visited. It does not share
 waypoints or generate missing Minecraft chunks. Map caches stay outside the pack.
+
+New clients use `mapRegionLoadIntervalTicks = 0`. The full synchronized map is
+still downloaded and saved, but only regions within the player's current view
+distance are immediately loaded into Xaero. Distant regions load from disk when
+needed instead of being queued together after a large first sync. Existing clients
+should make the same change in `config/mapsyncer-client.toml` while Minecraft is
+closed. Players may later choose a positive interval if they want gradual background
+loading; `20` loads one distant region per second, while the upstream default `1`
+loads up to twenty per second.
 
 ## Set up map sharing
 

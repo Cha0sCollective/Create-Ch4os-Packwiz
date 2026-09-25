@@ -108,6 +108,11 @@ file = "config/logfilter.json"
 hash = "4c60856289704fecc5ddba8ee429a68ac9bdd4b8d23aa7f17c0ec59a2124a0f3"
 
 [[files]]
+file = "config/mapsyncer-client.toml"
+hash = "06e4a25a2049ddf91f3a43b6a3878783a913e10fe71ca87257d9e60d851b45a6"
+preserve = true
+
+[[files]]
 file = "config/modernfix-mixins.properties"
 hash = "c3b0cac4038b881b5aab34311fe153ae55742a7a4b702db360ec83e2257f5d28"
 
@@ -267,7 +272,7 @@ preserve = true
 
 [[files]]
 file = "defaultconfigs/mapsyncer-server.toml"
-hash = "f93d54b50dd33e7c9455b3e6d786dc81bbbe6b20df613b257fa6c55757828be3"
+hash = "aa7df500dfd0ad9fb4d175f991a4ffda51ba17a2b386592c56ed9eb523c5ad45"
 
 [[files]]
 file = "mods/aeroclaims.pw.toml"
