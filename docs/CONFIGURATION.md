@@ -64,16 +64,19 @@ required on both clients and servers. Guns, ammunition, recipes, damage and
 movement use the installed mods' upstream defaults; no extra gun or example
 interaction packs are supplied. Transmission & Linkage and Toolgun use upstream settings.
 
-The pack supplies `config/tacztweaks.json` with configuration `version` 1 and
-`general.compatibility.sableCompat` set to `true`. This enables Tweaks' Sable
-integration for Aeronautics structures. Other settings use upstream defaults.
+The pack supplies `config/tacztweaks.json` with configuration `version` 1,
+`general.compatibility.forceDisableCrawl` set to `true`, and
+`general.compatibility.sableCompat` set to `true`. This disables TaCZ's crawl
+system and enables Tweaks' Sable integration for Aeronautics structures.
+Other settings use upstream defaults.
 The file is preserved by Packwiz so later player or server edits are retained.
 For installations that already have this file, close the client or stop the server
-and set `sableCompat` to `true` inside the existing `general.compatibility` object;
-retain the other settings. New installations receive the pack default.
+and set both `forceDisableCrawl` and `sableCompat` to `true` inside the existing
+`general.compatibility` object. Retain the other settings. New installations
+receive the pack default.
 
-On multiplayer servers, TaCZ Tweaks synchronizes this compatibility setting from
-the server. Enable it on the server as well as clients; a client-only change does
+On multiplayer servers, TaCZ Tweaks synchronizes these compatibility settings from
+the server. Enable them on the server as well as clients; a client-only change does
 not override the server. Operators with permission level 2 can change synchronized
 settings through the mod's configuration screen.
 

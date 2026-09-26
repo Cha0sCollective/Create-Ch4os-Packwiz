@@ -2,6 +2,7 @@
   "version": 1,
   "general": {
     "compatibility": {
+      "forceDisableCrawl": true,
       "sableCompat": true
     }
   }

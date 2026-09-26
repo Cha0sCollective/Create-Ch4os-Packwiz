@@ -258,7 +258,7 @@ hash = "e04affe80ee314b81e4408d0fcb6996c56a2820b0f5c6c3c6719ae89cf98cfcf"
 
 [[files]]
 file = "config/tacztweaks.json"
-hash = "2fd1cd8867cfdb86a4aef478c94ad04662ecc542963d921dfe25c8e1a72f918e"
+hash = "99e9566a675d4f43abc00c1730ec66e1ba11567e44e4fe4e5e9062049763b2af"
 preserve = true
 
 [[files]]
