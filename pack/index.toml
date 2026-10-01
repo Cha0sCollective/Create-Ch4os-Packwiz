@@ -286,7 +286,7 @@ metafile = true
 
 [[files]]
 file = "mods/aeronautics_bundled.pw.toml"
-hash = "8b5c930ce4cdc4ed8fff12964b5bfc111537e4a0dc9677c7a3686a216f030423"
+hash = "a65ee2cac733edcba6a317fd10344ea3956affeedfccd77ee35718e0462ec868"
 metafile = true
 
 [[files]]
