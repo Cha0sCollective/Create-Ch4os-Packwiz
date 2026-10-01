@@ -1,13 +1,13 @@
-name = "createthrusters-bundled-V1.1.3"
-filename = "createthrusters-bundled-V1.1.3.jar"
+name = "Create Aeronautics: Gadgets & Gizmos"
+filename = "gadgets-and-gizmos-bundled-V1.2.2.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://edge.forgecdn.net/files/8523/257/createthrusters-bundled-V1.1.3.jar"
-hash-format = "sha256"
-hash = "fea408b24feeb49dc85ba4b4378e9dda2dad239fc2607dc20f6477e28fe2d592"
+url = "https://cdn.modrinth.com/data/Sza3GgEL/versions/MjBMc4RD/gadgets-and-gizmos-bundled-V1.2.2.jar"
+hash-format = "sha512"
+hash = "4a4e085937c35d068c268c55e640c789fb7899afe1ce58614f44a93c45b288e950e516a279510c4dc50a537acb1589624f56a351810a601e2882002ef7045558"
 
-[update.curseforge]
-file-id = 8523257
-project-id = 1537945
+[update.modrinth]
+mod-id = "Sza3GgEL"
+version = "MjBMc4RD"
