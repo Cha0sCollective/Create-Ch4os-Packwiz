@@ -15,6 +15,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Map sharing | MapSyncer 1.0.4beta1 from the official GitHub release, pinned by checksum; generated terrain shared, TICK updates every 6000 ticks; distant synchronized regions retained on disk and loaded by Xaero only when viewed |
 | Display | Borderless fullscreen at desktop resolution, VSync off, 120 FPS cap, render distance 12 and simulation distance 8 |
 | Shaders | Complementary Reimagined 5.8.1 preselected, shaders initially disabled; Reimagined, Unbound 5.8.1 and Bliss 2.1.2 ship tuned first-install presets |
+| Controls | Beta shader reload defaults to F8; weapon reload remains R; other bindings use upstream defaults. See [Player controls](CONTROLS.md) for assignments and shared keys |
 | Resource packs | Create Ultra 2.1, Improved Create 32x 0.06, Upscaled Supplementaries 32x 1.2 and Patrix 32x release 72 enabled by default in that priority order; exact client-only Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
@@ -27,6 +28,11 @@ retain existing player edits. To inspect which files are managed or preserved,
 read `pack/index.toml`. Other config changes should be limited to intentional
 pack defaults, not copied generated state. Never distribute a DH server identity,
 LOD database, account, world or private server data.
+
+Existing players can adopt the shader-reload change through **Options → Controls
+→ Key Binds → Reload Shaders → F8**. Only the fresh-install `options.txt` contains
+this override; preserved player options are not overwritten. Iris's reset-to-default
+binding is still R, so assign F8 again if you reset it.
 
 The first-start baseline targets a 4-core/8-thread CPU or better, 32 GB system RAM,
 a GTX 1080 8 GB and 1920x1080 display. Use Java 21 with a recommended 12 GiB maximum

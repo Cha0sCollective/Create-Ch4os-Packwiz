@@ -18,6 +18,9 @@ may need more memory. Existing instances keep their current memory setting;
 set **Edit Instance → Settings → Java → Maximum memory** to **12288 MiB** to adopt it.
 
 See [Maps and distant terrain](MAPS.md) for beta defaults and existing-instance settings.
+See [Player controls](CONTROLS.md) for extra mod shortcuts and shared keys. Beta's
+shader-reload default is F8; existing players must rebind it themselves because
+their Minecraft options are preserved.
 
 ## Updates and removal
 

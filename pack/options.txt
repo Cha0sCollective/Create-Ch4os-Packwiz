@@ -11,3 +11,4 @@ incompatibleResourcePacks:[]
 narrator:0
 onboardAccessibility:false
 soundCategory_music:0.25
+key_iris.keybind.reload:key.keyboard.f8

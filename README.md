@@ -21,7 +21,7 @@ command when prompted; it downloads the mods and keeps the pack updated.
 | [Beta](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-beta) | Follows beta changes for testing |
 | [Numbered releases](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases) | Stay on the exact tagged version |
 
-[Client setup and memory advice](docs/PRISM.md) · [Server setup with AMP](docs/SERVER.md)
+[Client setup and memory advice](docs/PRISM.md) · [Player controls](docs/CONTROLS.md) · [Server setup with AMP](docs/SERVER.md)
 
 ## About the pack
 
