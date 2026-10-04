@@ -1,13 +1,13 @@
-name = "create_submarine-2.2.4"
-filename = "create_submarine-2.2.4.jar"
+name = "create_submarine-3.3.0"
+filename = "create_submarine-3.3.0.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://edge.forgecdn.net/files/8268/622/create_submarine-2.2.4.jar"
+url = "https://edge.forgecdn.net/files/9042/70/create_submarine-3.3.0.jar"
 hash-format = "sha256"
-hash = "87a20bb20ae3c90e6838073d3a84839e251c8794f409ade8cab79f51d1de0c66"
+hash = "99709e004c8a7a36cb3439c0200ffd0c8ff5d7ca4fb77d49f76395d803864ba1"
 
 [update.curseforge]
-file-id = 8268622
+file-id = 9042070
 project-id = 1533137

@@ -1,7 +1,3 @@
-# Tectonic owns ocean geometry. Retain the pinned hull and pressure behavior.
+# Tectonic owns ocean geometry; Deep Seas must not deepen it again.
 [gameplay]
 enableDeeperOceans = false
-
-# Players do not need the mod-author setup screens.
-[client]
-disableStartupScreens = true

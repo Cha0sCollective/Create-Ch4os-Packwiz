@@ -55,8 +55,13 @@ file = "config/create_structures_arise-server.toml"
 hash = "aa2c7b089d67a6fd2851cc6421eee6e7693d4497efa091155ddc079c0fc9d5fc"
 
 [[files]]
+file = "config/create_submarine-client.toml"
+hash = "c3c4afdfa792d69d31e9c22ce47fbf3e00979e80fbe743dbeb4d2e4ad3147f2b"
+preserve = true
+
+[[files]]
 file = "config/create_submarine-common.toml"
-hash = "11794dae7853dc18f253ae98fe2110240f75c24d6333b4a2e5564014277b5aac"
+hash = "f139675d276c277bf4e566d976f9add54ca1436a99e451bb3f1df76513d079c1"
 
 [[files]]
 file = "config/createbigcannons-server.toml"
@@ -811,7 +816,7 @@ metafile = true
 
 [[files]]
 file = "mods/create_submarine.pw.toml"
-hash = "9143d35d3fee69a96b80fe5509f536a7336b1019d800d5ee9f0ae1fe624990cb"
+hash = "e4080ca65f75e287d76d13553d64c9c58bf51db8952dbfdfe64419a94116da4b"
 metafile = true
 
 [[files]]

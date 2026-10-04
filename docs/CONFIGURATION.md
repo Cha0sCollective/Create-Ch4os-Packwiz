@@ -7,7 +7,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Terrain | Tectonic + Terralith, ordinary default world type; Y -64 to 320; larger continents and deeper oceans |
 | Tectonic | Vertical scale 1.2, elevation boost 0.15; continent scale 0.11, ocean offset -0.95; ocean/deep-ocean depth -0.32/-0.75 |
 | Nuclear ores | Uranium: 2 attempts, Y -64..-8, bottom-biased; lead: 4 attempts, Y -48..32, uniform; striated deposits: rarity 48, Y -56..0, bottom-biased |
-| Deep Seas | Its additional ocean deepening is off; retained hull/pressure behavior is unchanged |
+| Deep Seas | 3.3.0 with additional ocean deepening off and startup screens disabled; hull, pressure and High Seas settings use upstream defaults |
 | Structures | IDAS included with Labyrinth mining fatigue off; CSA global multipliers 0.7 and 1.0 |
 | Logging | Only CSA's repetitive DEBUG logger is filtered; warnings/errors and other diagnostics remain |
 | DH | Radius 128; 4 worker threads at 50% runtime for new installations; existing settings preserved; PRE_EXISTING_ONLY generation |
@@ -60,6 +60,35 @@ DH loading, rain/night, the Nether and the End, plus large-area MapSyncer transf
 Verify the intended Colorwheel backend using `/flywheel backend` with each shader.
 If GPU performance misses the target, reduce or disable POM first, then lower shader
 quality. A dedicated-server MVT pass does not verify these client behaviors.
+
+## Deep Seas and High Seas
+
+Beta uses Create Deep Seas 3.3.0, including its High Seas content. The pack keeps
+`gameplay.enableDeeperOceans = false` in `config/create_submarine-common.toml`
+so Tectonic continues to own ocean geometry. Hull strength, pressure, flooding,
+boat engines and sails use this release's upstream defaults.
+
+Version 3.3.0 separates common, server and client settings. The startup-screen
+choice now lives in `config/create_submarine-client.toml` as
+`client.disableStartupScreens = true`. Packwiz preserves this client file;
+existing installations with their own file must set that value themselves if
+they want to suppress the screens. Server settings are generated per world in
+`serverconfig/create_submarine-server.toml`; no generated hull or server settings
+are supplied by the pack.
+
+The [upstream compatibility notes](https://github.com/MaxCreateMC/Create-Deep-Seas#compatibility)
+describe limitations with Iris: sonar/alarm coloured Veil lights are disabled,
+and sails do not billow while a shader pack is active. Keep the pack's Colorwheel
+setup; the author [confirms Iris/Flywheel Compat is optional](https://github.com/MaxCreateMC/Create-Deep-Seas/issues/93).
+WaterWorks breaks interior water culling, but is not part of this pack.
+
+Before promotion, test large ships and submarines, ballast and oxygen systems,
+water culling with Sodium/Iris/Colorwheel/Distant Horizons, sails and boat engines,
+and upgraded saved structures. Upstream reports include
+[large-sublevel server lag](https://github.com/MaxCreateMC/Create-Deep-Seas/issues/98)
+and an [oxygen-system duplication bug](https://github.com/MaxCreateMC/Create-Deep-Seas/issues/99);
+these are reports to evaluate, not reproduced pack failures. A fresh server
+lifecycle cannot validate these behaviors or existing-world upgrades.
 
 ## Guns and vehicle linkage
 

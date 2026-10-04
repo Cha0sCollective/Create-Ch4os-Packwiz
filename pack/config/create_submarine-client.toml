@@ -1,0 +1,3 @@
+# Players do not need the mod-author setup screens.
+[client]
+disableStartupScreens = true
