@@ -16,6 +16,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Display | Borderless fullscreen at desktop resolution, VSync off, 120 FPS cap, render distance 12 and simulation distance 8 |
 | Shaders | Complementary Reimagined 5.8.1 preselected, shaders initially disabled; Reimagined, Unbound 5.8.1 and Bliss 2.1.2 ship tuned first-install presets |
 | Controls | Beta shader reload defaults to F8; weapon reload remains R; other bindings use upstream defaults. See [Player controls](CONTROLS.md) for assignments and shared keys |
+| Update notifications | Xaero Minimap and World Map notifications disabled; NeoForge version checks, Collective checks, DH auto-updates, Iris messages and Euphoria update checks/messages also disabled |
 | Resource packs | Create Ultra 2.1, Improved Create 32x 0.06, Upscaled Supplementaries 32x 1.2 and Patrix 32x release 72 enabled by default in that priority order; exact client-only Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
@@ -60,6 +61,25 @@ DH loading, rain/night, the Nether and the End, plus large-area MapSyncer transf
 Verify the intended Colorwheel backend using `/flywheel backend` with each shader.
 If GPU performance misses the target, reduce or disable POM first, then lower shader
 quality. A dedicated-server MVT pass does not verify these client behaviors.
+
+## Mod update notifications
+
+Packwiz supplies the reviewed mod versions. New installations disable Xaero's
+update notifications with `update_notifications = false` in both
+`config/xaero/minimap/client.cfg` and `config/xaero/world-map/client.cfg`.
+The shipped Xaero versions require an equals sign; the previous colon-separated
+lines were ignored.
+
+Both files remain preserved so personal map settings are retained. Existing
+players should turn **Update Notifications** off in each mod's settings, or close
+Minecraft and set that line to `false` in both files. Pack updates do not overwrite
+an existing preserved file, including one created with the previous syntax.
+
+NeoForge version checks, Collective update checks, Distant Horizons auto-updates,
+Iris update messages, Euphoria update checks and shader messages, and Deep Seas
+startup screens are also disabled by the supplied settings. These choices do not
+prevent the normal Packwiz update at launch. Existing preserved files can retain
+different choices.
 
 ## Deep Seas and High Seas
 

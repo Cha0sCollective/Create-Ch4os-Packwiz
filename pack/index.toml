@@ -272,12 +272,12 @@ hash = "3067a5c72bebaeb1156da5771b2def8bcc1e367c5976690fc17ad7dea2975adc"
 
 [[files]]
 file = "config/xaero/minimap/client.cfg"
-hash = "3f560b0c8f6ab217286474e9c9423202db43db1c6b4cae53ef27af9377bd389f"
+hash = "d9d126c87b6ecea7f9a26e18828f133317cb7720c37ff9069ae976c2b9f67dd5"
 preserve = true
 
 [[files]]
 file = "config/xaero/world-map/client.cfg"
-hash = "3f560b0c8f6ab217286474e9c9423202db43db1c6b4cae53ef27af9377bd389f"
+hash = "d9d126c87b6ecea7f9a26e18828f133317cb7720c37ff9069ae976c2b9f67dd5"
 preserve = true
 
 [[files]]
