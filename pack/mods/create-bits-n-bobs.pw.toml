@@ -1,13 +1,13 @@
-name = "bits_n_bobs-2.2.7"
-filename = "bits_n_bobs-2.2.7.jar"
+name = "bits_n_bobs-2.2.8"
+filename = "bits_n_bobs-2.2.8.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://edge.forgecdn.net/files/8706/168/bits_n_bobs-2.2.7.jar"
-hash-format = "sha256"
-hash = "bf1ad4920dfca8f9470af9a3a0f941a89362e8210ae4e2f4eb58a47126db1de5"
+url = "https://cdn.modrinth.com/data/T8bvmqVZ/versions/TBMo5Aah/bits_n_bobs-2.2.8.jar"
+hash-format = "sha512"
+hash = "269c7bb7d75d7422a82f788195b59330b9abd8e5b306523896256a8d0a8b3109b4a4c464372555a5a36124507384ab0f1dd5794fb481ab066e591394c75b2193"
 
-[update.curseforge]
-file-id = 8706168
-project-id = 1398383
+[update.modrinth]
+mod-id = "T8bvmqVZ"
+version = "TBMo5Aah"
