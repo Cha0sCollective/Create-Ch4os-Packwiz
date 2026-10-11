@@ -596,7 +596,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-electro-energetics.pw.toml"
-hash = "bbe89d2dfa5c15583854100de5d720e8e8251cebc080c0a6618824b09417abc5"
+hash = "aed0f2f8c5775ef063f24a0ad71288078fe3c34b004161ed7f12905ec9316706"
 metafile = true
 
 [[files]]
