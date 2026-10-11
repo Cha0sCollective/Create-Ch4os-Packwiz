@@ -19,6 +19,7 @@ command when prompted; it downloads the mods and keeps the pack updated.
 | --- | --- |
 | [Public](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-public) | Follows public; recommended for normal play |
 | [Beta](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-beta) | Follows beta changes for testing |
+| [Experimental](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-experimental) | Full pack with development builds; isolated mod testing |
 | [Numbered releases](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases) | Stay on the exact tagged version |
 
 [Client setup and memory advice](docs/PRISM.md) · [Player controls](docs/CONTROLS.md) · [Server setup with AMP](docs/SERVER.md)
@@ -39,6 +40,10 @@ is for testing. Changes reach players only when promoted to `public`.
 Push beta normally, then run **Actions → Promote beta to public** with the next
 version. Review the results and approve publication yourself; one maintainer is
 enough. See the [release process](distribution/README.md).
+
+Use `experimental` to test self-developed mods against the complete pack in a
+separate instance. Pushes automatically refresh its prerelease installer.
+See [Experimental mod development](docs/EXPERIMENTAL.md) for setup and updates.
 
 [Beta map-sharing setup](docs/MAPS.md) · [Contributing](docs/CONTRIBUTING.md) · [Configuration](docs/CONFIGURATION.md) ·
 [Mod and resource-pack sources](docs/MOD-SOURCES.md) · [Build a ZIP](distribution/README.md)

@@ -25,8 +25,10 @@ their Minecraft options are preserved.
 ## Updates and removal
 
 The Public import follows `public`; the [Beta import](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-beta)
-follows `beta`. A numbered release ZIP stays on its tagged commit, even after
-either branch advances. Download its attached Prism ZIP, not the source archive.
+follows `beta`. The [Experimental import](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-experimental)
+follows `experimental` for self-developed mod testing; see [its guide](EXPERIMENTAL.md).
+A numbered release ZIP stays on its tagged commit, even after
+rolling branches advance. Download its attached Prism ZIP, not the source archive.
 Each choice has a separate instance identity. Use a separate instance when
 switching versions; do not downgrade an existing world.
 

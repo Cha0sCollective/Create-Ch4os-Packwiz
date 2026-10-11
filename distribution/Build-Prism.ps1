@@ -3,7 +3,7 @@
 param(
     [Parameter(Mandatory)][string]$Output,
     [string]$CacheDirectory,
-    [ValidateSet('public','beta')][string]$Channel = 'public',
+    [ValidateSet('public','beta','experimental')][string]$Channel = 'public',
     [string]$PackUrl,
     [string]$VersionTag,
     [string]$SourceRevision = 'HEAD'
@@ -35,7 +35,8 @@ $tools = Get-Content -LiteralPath (Join-Path $repo 'distribution/prism-tools.jso
 $selection = if ($VersionTag) { $VersionTag } else { $Channel }
 $profile.id = 'Create-Ch4oS-' + $selection.Replace('.', '-')
 $profile.name = 'Create: Ch4oS - ' + $selection
-$behavior = if ($VersionTag) { "Fixed version $VersionTag. Does not follow Public or Beta." } else { "Follows the $Channel branch for updates at launch." }
+$behavior = if ($VersionTag) { "Fixed version $VersionTag. Does not follow a rolling branch." } else { "Follows the $Channel branch for updates at launch." }
+if ($Channel -eq 'experimental' -and -not $VersionTag) { $behavior += ' Experimental mod development; use a separate test instance and disposable worlds.' }
 if ($runtime.launch.client.garbageCollector -cne 'generational-zgc') { throw 'Review Prism Java arguments when the pack collector changes.' }
 $uri = [Uri]$PackUrl
 if (-not $uri.IsAbsoluteUri -or ($uri.Scheme -ne 'https' -and -not ($uri.Scheme -eq 'http' -and $uri.IsLoopback))) {

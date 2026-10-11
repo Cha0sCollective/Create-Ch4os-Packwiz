@@ -12,6 +12,11 @@ The single-maintainer environment allows self-approval. Pull beta afterward beca
 the workflow may add a version-alignment commit. See the [release process](../distribution/README.md)
 for retries and fixed versions. Direct public pushes bypass these checks and publishing.
 
+Use `experimental` for self-developed mods against the full pack. It publishes a
+separate prerelease installer on pushes and has a separate Prism identity.
+Bring ready changes deliberately into Beta before normal promotion. See
+[Experimental mod development](EXPERIMENTAL.md).
+
 ## Add, remove or configure a mod
 
 Run Packwiz commands from `pack/`:

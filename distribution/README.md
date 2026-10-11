@@ -39,7 +39,17 @@ can reach players immediately; it does not trigger release publishing or MVT.
 Use the promotion workflow for normal releases. Main follows approved public;
 avoid separate development on main.
 
-## If a run fails
+## Experimental channel
+
+For self-developed mods, push to `experimental` normally. **Update Experimental
+installer** validates the pack and publishes `channel-experimental` as a prerelease,
+with the stable `Create-Ch4oS-Experimental-Prism.zip` filename and SHA-256 file.
+Its Prism identity and pack URL are separate from Beta and Public. This path runs
+packaging checks, not MVT, and never enters the approved Public promotion path.
+Experimental starts from Beta and receives later Beta changes only when explicitly
+merged. See [the development guide](../docs/EXPERIMENTAL.md).
+
+## If a promotion run fails
 
 - Before approval: public is unchanged. Fix the problem on beta and start again.
   Failed preparation may already have added the version commit to beta.
@@ -84,6 +94,7 @@ and internet access. No installed game, server or world is needed.
 ```powershell
 pwsh -NoProfile -File distribution/Build-Prism.ps1 -Channel public -Output C:\Candidates\Create-Ch4oS-Public-Prism.zip
 pwsh -NoProfile -File distribution/Build-Prism.ps1 -Channel beta -Output C:\Candidates\Create-Ch4oS-Beta-Prism.zip
+pwsh -NoProfile -File distribution/Build-Prism.ps1 -Channel experimental -Output C:\Candidates\Create-Ch4oS-Experimental-Prism.zip
 pwsh -NoProfile -File distribution/Build-Prism.ps1 -VersionTag v0.2.0 -Output C:\Candidates\Create-Ch4oS-0.2.0-Prism.zip
 ```
 

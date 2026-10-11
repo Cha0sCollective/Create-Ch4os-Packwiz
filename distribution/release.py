@@ -263,8 +263,12 @@ def build(out, selection, sha):
 def notes(selection, sha):
     fixed = selection.startswith("v")
     url = f"{RAW}/{sha if fixed else selection}/pack/pack.toml"
-    behavior = (f"Fixed snapshot **{selection}**. This installer stays on commit `{sha}` and does not follow Public or Beta."
+    behavior = (f"Fixed snapshot **{selection}**. This installer stays on commit `{sha}` and does not follow a rolling branch."
                 if fixed else f"Follows the **{selection}** branch. Packwiz installs its current files at launch.")
+    if selection == "experimental":
+        behavior += ("\n\nExperimental mod development against the complete pack. Use a separate test instance "
+                     "and disposable worlds. Packaging checks do not establish server or gameplay compatibility. "
+                     "This channel is published automatically and is not part of Beta-to-Public promotion.")
     extra = "\nHistorical 0.2.1 files contain beta version labels; they are preserved exactly as tagged.\n" if selection == "v0.2.1" else ""
     return (f"# Create: Ch4oS — {selection}\n\n{behavior}\n{extra}\n"
             "Import the attached Prism ZIP (not GitHub's source-code archive). Use Java 21 and allow the Packwiz pre-launch command. "
@@ -317,7 +321,7 @@ def publish_assets(tag, sha, out, selection, rolling=False):
     body = (out / (selection + ".md")).read_text(encoding="utf-8")
     if rel is None:
         rel = api("releases", {"tag_name": tag, "name": title, "body": body, "draft": True,
-                               "prerelease": selection == "beta"})
+                               "prerelease": selection in {"beta", "experimental"}})
     if rolling:
         run("gh", "release", "upload", tag, *(str(p) for p in assets), "--repo", REPO, "--clobber")
     else:
@@ -333,7 +337,7 @@ def publish_assets(tag, sha, out, selection, rolling=False):
                     raise ValueError("Published fixed release is missing an asset; refusing to change it.")
                 run("gh", "release", "upload", tag, str(path), "--repo", REPO)
     api(f"releases/{rel['id']}", {"name": title, "body": body, "draft": False,
-                                "prerelease": selection == "beta", "make_latest": "true" if selection == "public" else "false"}, method="PATCH")
+                                "prerelease": selection in {"beta", "experimental"}, "make_latest": "true" if selection == "public" else "false"}, method="PATCH")
     if rolling and existing_sha and existing_sha != sha:
         api(f"git/refs/tags/{tag}", {"sha": sha, "force": True}, method="PATCH")
 
@@ -362,20 +366,30 @@ def publish(out):
     publish_assets("channel-public", sha, out, "public", rolling=True)
 
 
-def beta(out):
+def rolling_test_channel(out, channel):
+    if channel not in {"beta", "experimental"}:
+        raise ValueError("Only Beta and Experimental can publish through this testing path.")
     sha = git("rev-parse", "HEAD")
     validate()
-    build(out, "beta", sha)
-    (out / "beta.md").write_text(notes("beta", sha), encoding="utf-8", newline="\n")
-    if remote("beta") != sha:
-        print("Beta advanced while packaging; the newer push will refresh its installer.")
+    build(out, channel, sha)
+    (out / (channel + ".md")).write_text(notes(channel, sha), encoding="utf-8", newline="\n")
+    if remote(channel) != sha:
+        print(f"{channel.title()} advanced while packaging; the newer push will refresh its installer.")
         return
-    publish_assets("channel-beta", sha, out, "beta", rolling=True)
+    publish_assets("channel-" + channel, sha, out, channel, rolling=True)
+
+
+def beta(out):
+    rolling_test_channel(out, "beta")
+
+
+def experimental(out):
+    rolling_test_channel(out, "experimental")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["validate", "prepare", "package", "publish", "beta"])
+    parser.add_argument("command", choices=["validate", "prepare", "package", "publish", "beta", "experimental"])
     parser.add_argument("--version")
     parser.add_argument("--out", type=Path, default=ROOT / "dist/release")
     args = parser.parse_args()

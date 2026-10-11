@@ -26,7 +26,7 @@ jobs:
           from pathlib import Path
           sys.path.insert(0, 'distribution')
           import release
-          for selection in ('v0.2.0', 'v0.2.1', 'public', 'beta'):
+          for selection in ('v0.2.0', 'v0.2.1', 'public', 'beta', 'experimental'):
               sha = release.git('rev-parse', selection + '^{commit}' if selection.startswith('v') else 'HEAD')
               release.build(Path('dist/check').resolve(), selection, sha)
           PY

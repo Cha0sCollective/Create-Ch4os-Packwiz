@@ -104,6 +104,52 @@ class ReleaseTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 r.inspect_zip(path, "v0.2.0", "a" * 40)
 
+    def test_experimental_zip_rejects_beta_url_and_identity(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = self.zip_fixture(root, "experimental")
+            r.inspect_zip(path, "experimental", "a" * 40)
+            path = self.zip_fixture(root, "experimental", url_ref="beta")
+            with self.assertRaisesRegex(ValueError, "wrong pack URL"):
+                r.inspect_zip(path, "experimental", "a" * 40)
+            path = self.zip_fixture(root, "experimental", icon_key="Create-Ch4oS-beta")
+            with self.assertRaisesRegex(ValueError, "wrong profile-specific"):
+                r.inspect_zip(path, "experimental", "a" * 40)
+
+    def test_testing_channel_advanced_during_packaging_skips_publication(self):
+        for channel in ("beta", "experimental"):
+            with self.subTest(channel=channel), tempfile.TemporaryDirectory() as tmp, \
+                    patch.object(r, "git", return_value="candidate"), patch.object(r, "validate"), \
+                    patch.object(r, "build"), patch.object(r, "remote", return_value="newer") as remote, \
+                    patch.object(r, "publish_assets") as publish:
+                r.rolling_test_channel(Path(tmp), channel)
+                remote.assert_called_once_with(channel)
+                publish.assert_not_called()
+        with self.assertRaises(ValueError):
+            r.rolling_test_channel(Path("unused"), "public")
+
+    def test_experimental_publishes_only_its_rolling_release(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(r, "git", return_value="candidate"), \
+                patch.object(r, "validate"), patch.object(r, "build"), \
+                patch.object(r, "remote", return_value="candidate"), patch.object(r, "publish_assets") as publish:
+            out = Path(tmp)
+            r.experimental(out)
+            publish.assert_called_once_with("channel-experimental", "candidate", out, "experimental", rolling=True)
+            self.assertIn("not part of Beta-to-Public", (out / "experimental.md").read_text())
+
+    def test_experimental_release_is_prerelease_and_never_latest(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            (out / "experimental.md").write_text("test notes")
+            with patch.object(r, "tag_sha", return_value="candidate"), \
+                    patch.object(r, "release", return_value=None), patch.object(r, "run"), \
+                    patch.object(r, "api", return_value={"id": 7}) as api:
+                r.publish_assets("channel-experimental", "candidate", out, "experimental", rolling=True)
+            create, update = api.call_args_list
+            self.assertTrue(create.args[1]["prerelease"])
+            self.assertTrue(update.args[1]["prerelease"])
+            self.assertEqual(update.args[1]["make_latest"], "false")
+
     def test_profile_specific_prism_icon_is_validated(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
