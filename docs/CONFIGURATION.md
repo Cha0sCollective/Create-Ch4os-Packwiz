@@ -73,8 +73,9 @@ ranges accept these versions; the full pack still needs player compatibility tes
 `defaultconfigs/powergrid-server.toml` sets `[electricity.solver]` to
 `solverBackend = "NATIVE"` and `multiTicks = 16` for fresh worlds. Other Power Grid
 values use upstream defaults. Existing worlds retain their generated server config:
-stop the server or game, edit those settings in
-`<world>/serverconfig/powergrid-server.toml`, and restart. CEE's `microTicks` does
+stop the server or game, edit those settings in the generated
+`config/powergrid-server.toml` (or `<world>/serverconfig/powergrid-server.toml`
+if the installation uses world-local server configs), and restart. CEE's `microTicks` does
 not control the simulation schedule with WWPG installed.
 
 WWPG supplies Power Grid's missing native v7 binaries, preserving an existing
