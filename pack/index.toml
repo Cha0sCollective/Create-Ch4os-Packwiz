@@ -285,6 +285,10 @@ file = "defaultconfigs/mapsyncer-server.toml"
 hash = "aa7df500dfd0ad9fb4d175f991a4ffda51ba17a2b386592c56ed9eb523c5ad45"
 
 [[files]]
+file = "defaultconfigs/powergrid-server.toml"
+hash = "19323b71d210e90de1be59654d27a62e56b778c7ddb0d09ec610b7022f83ebaa"
+
+[[files]]
 file = "mods/aeroclaims.pw.toml"
 hash = "98abc906d12e301604c02aebfd86386db8110e4f3d3eb85266115c2a966803cb"
 metafile = true
@@ -1432,6 +1436,11 @@ metafile = true
 [[files]]
 file = "mods/what-are-they-up-to.pw.toml"
 hash = "fddd027a56561d05874f7e112708bacf24afecaac4f2dc0a069bfbae5ea76f9f"
+metafile = true
+
+[[files]]
+file = "mods/world-wide-power-grid.pw.toml"
+hash = "b8ae1148db36993e88d46fb3c636bdb8c775cbeb73b23996a4f96012ba289060"
 metafile = true
 
 [[files]]

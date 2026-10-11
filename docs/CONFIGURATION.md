@@ -20,6 +20,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Resource packs | Create Ultra 2.1, Improved Create 32x 0.06, Upscaled Supplementaries 32x 1.2 and Patrix 32x release 72 enabled by default in that priority order; exact client-only Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
+| Experimental electricity | World-Wide Power Grid 0.2.1 connects stationary CEE 1.1.3 and Power Grid 0.6.2 devices; fresh worlds use the native solver with 16 electrical substeps |
 
 Ore attempts and terrain settings are not guaranteed yields or geometry. This
 world line began as a fresh save and does not provide an RC8 world conversion.
@@ -61,6 +62,31 @@ DH loading, rain/night, the Nether and the End, plus large-area MapSyncer transf
 Verify the intended Colorwheel backend using `/flywheel backend` with each shader.
 If GPU performance misses the target, reduce or disable POM first, then lower shader
 quality. A dedicated-server MVT pass does not verify these client behaviors.
+
+## Experimental electricity
+
+Experimental includes [World-Wide Power Grid 0.2.1](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.1)
+on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
+NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
+ranges accept these versions; the full pack still needs player compatibility testing.
+
+`defaultconfigs/powergrid-server.toml` sets `[electricity.solver]` to
+`solverBackend = "NATIVE"` and `multiTicks = 16` for fresh worlds. Other Power Grid
+values use upstream defaults. Existing worlds retain their generated server config:
+stop the server or game, edit those settings in
+`<world>/serverconfig/powergrid-server.toml`, and restart. CEE's `microTicks` does
+not control the simulation schedule with WWPG installed.
+
+WWPG supplies Power Grid's missing native v7 binaries, preserving an existing
+administrator-installed binary. Supported native platforms are Windows x86-64
+and Linux x86-64 with glibc 2.38 or newer; Power Grid retains its Java fallback.
+Use operator commands `/wwpg` and `/wwpg errors` to inspect actual backend activity
+and compatibility diagnostics. Native selection alone does not prove it was used.
+
+Stationary circuits are the release's supported scope. Moving Sable systems,
+large networks, mixed-machine behavior and real client rendering require testing
+in an isolated Experimental instance. No example worlds, SDKs or example add-ons
+are installed by the pack.
 
 ## Mod update notifications
 
