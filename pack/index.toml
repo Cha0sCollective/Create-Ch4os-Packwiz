@@ -179,6 +179,14 @@ file = "config/paxi/datapacks/create-ch4os-continuity/data/create/tags/block/saf
 hash = "e29797ea07de2b3f4fdb67a07301ae4054ac617f977620f5d4047d39d7ed11fb"
 
 [[files]]
+file = "config/paxi/datapacks/create-ch4os-continuity/data/create_generators/recipe/generator_obsidian.json"
+hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+
+[[files]]
+file = "config/paxi/datapacks/create-ch4os-continuity/data/create_generators/recipe/generator_obsidian_8x.json"
+hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+
+[[files]]
 file = "config/paxi/datapacks/create-ch4os-continuity/data/create_hypertube/recipe/hypertube_entrance.json"
 hash = "5d7982cb01e2bdf5305f2960d77f9ac7f4366af816b05711ce4fda1b071112fb"
 
@@ -189,6 +197,22 @@ hash = "dc7066db532fedca923187e3007f17471d88e8ccd7e8945a6a46069c227155c3"
 [[files]]
 file = "config/paxi/datapacks/create-ch4os-continuity/data/createdieselgenerators/recipe/mechanical_crafting/chemcial_sprayer.json"
 hash = "1e35274c53fd38856fa0e19fde186f5a34a7cf4f1151079440e8eb6f2f6707e8"
+
+[[files]]
+file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/crafting/diamond_from_diamond_shard.json"
+hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+
+[[files]]
+file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/crafting/diamond_shard_from_diamond.json"
+hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+
+[[files]]
+file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/seething/diamond_shard_from_coal_block.json"
+hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+
+[[files]]
+file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/seething/diamond_shard_from_deepslate_coal_ore.json"
+hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
 
 [[files]]
 file = "config/paxi/datapacks/create-ch4os-continuity/data/minecraft/tags/block/mineable/axe.json"
@@ -263,7 +287,7 @@ hash = "e04affe80ee314b81e4408d0fcb6996c56a2820b0f5c6c3c6719ae89cf98cfcf"
 
 [[files]]
 file = "config/tacztweaks.json"
-hash = "99e9566a675d4f43abc00c1730ec66e1ba11567e44e4fe4e5e9062049763b2af"
+hash = "3520ca0774026015ae0e0801372b511d41d067d6e82212bb3034075ed252e9f3"
 preserve = true
 
 [[files]]
