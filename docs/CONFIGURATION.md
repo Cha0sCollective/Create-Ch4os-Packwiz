@@ -20,7 +20,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Resource packs | Create Ultra 2.1, Improved Create 32x 0.06, Upscaled Supplementaries 32x 1.2 and Patrix 32x release 72 enabled by default in that priority order; exact client-only Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
-| Experimental electricity | World-Wide Power Grid 0.2.1 connects stationary CEE 1.1.3 and Power Grid 0.6.2 devices; fresh worlds use the native solver with 16 electrical substeps |
+| Experimental electricity | World-Wide Power Grid 0.2.2-beta.2 connects stationary CEE 1.1.3 and Power Grid 0.6.2 devices; fresh worlds use the native solver with 16 electrical substeps |
 
 Ore attempts and terrain settings are not guaranteed yields or geometry. This
 world line began as a fresh save and does not provide an RC8 world conversion.
@@ -65,7 +65,7 @@ quality. A dedicated-server MVT pass does not verify these client behaviors.
 
 ## Experimental electricity
 
-Experimental includes [World-Wide Power Grid 0.2.1](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.1)
+Experimental includes [World-Wide Power Grid 0.2.2-beta.2](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.2)
 on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
 NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
 ranges accept these versions; the full pack still needs player compatibility testing.
