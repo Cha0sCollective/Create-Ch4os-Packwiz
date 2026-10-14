@@ -138,3 +138,29 @@ settings through the mod's configuration screen.
 Gun rendering with shaders, key bindings, multiplayer synchronization, hits and
 explosions on moving Sable structures, and linkage physics need in-game testing.
 Dedicated-server lifecycle checks do not establish those behaviors.
+
+## Beta electricity
+
+Beta includes [World-Wide Power Grid 0.2.2-beta.2](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.2)
+on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
+NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
+ranges accept these versions; the full pack still needs player compatibility testing.
+
+`defaultconfigs/powergrid-server.toml` sets `[electricity.solver]` to
+`solverBackend = "NATIVE"` and `multiTicks = 16` for fresh worlds. Other Power Grid
+values use upstream defaults. Existing worlds retain their generated server config:
+stop the server or game, edit those settings in the generated
+`config/powergrid-server.toml` (or `<world>/serverconfig/powergrid-server.toml`
+if the installation uses world-local server configs), and restart. CEE's `microTicks` does
+not control the simulation schedule with WWPG installed.
+
+WWPG supplies Power Grid's missing native v7 binaries, preserving an existing
+administrator-installed binary. Supported native platforms are Windows x86-64
+and Linux x86-64 with glibc 2.38 or newer; Power Grid retains its Java fallback.
+Use operator commands `/wwpg` and `/wwpg errors` to inspect actual backend activity
+and compatibility diagnostics. Native selection alone does not prove it was used.
+
+Stationary circuits are the release's supported scope. Moving Sable systems,
+large networks, mixed-machine behavior and real client rendering require testing
+in an isolated Beta instance. No example worlds, SDKs or example add-ons
+are installed by the pack.

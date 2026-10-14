@@ -1,0 +1,5 @@
+# WWPG's supported stationary circuits use 16 electrical substeps.
+# NeoForge copies this template into new worlds; other PG values use upstream defaults.
+[electricity.solver]
+solverBackend = "NATIVE"
+multiTicks = 16
