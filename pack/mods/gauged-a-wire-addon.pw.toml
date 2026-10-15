@@ -1,0 +1,13 @@
+name = "Gauged: A Wire Addon"
+filename = "gauged_wires-1.0.6a.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/LemfA2Y5/versions/f1ywSCNc/gauged_wires-1.0.6a.jar"
+hash-format = "sha512"
+hash = "f2e78ccb1b9b3c6af9769dd19c4975a7a4058c7fd93f042b8e16904f2b328244ecb1617dd3bc1f71454ae1023f42b5d8cd757b1863c0279171656d87528bac41"
+
+[update.modrinth]
+mod-id = "LemfA2Y5"
+version = "f1ywSCNc"

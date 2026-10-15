@@ -554,6 +554,11 @@ hash = "4fd78c41839e4ff1a012065e067fbcc063a05e64dc26794b4089843667c48ba0"
 metafile = true
 
 [[files]]
+file = "mods/create-coasters-simulated.pw.toml"
+hash = "6d46ef869c588bca1cc33cd54d7fbba4e3bd1c2c505ca4a54f005913b534ff18"
+metafile = true
+
+[[files]]
 file = "mods/create-confectionery.pw.toml"
 hash = "76022ecb240f2fdbd24b0240250cd58d4c02d797ef831693546be0426bd5d518"
 metafile = true
@@ -716,6 +721,11 @@ metafile = true
 [[files]]
 file = "mods/create-petrochem.pw.toml"
 hash = "66735c441cc9a9b950e10d98ebefc44143e24a662505fe6a2cd7138d0551faf1"
+metafile = true
+
+[[files]]
+file = "mods/create-power-components.pw.toml"
+hash = "60ff7643cb416b004611abeed102f4bcfeafdf644384715e7d760fecdd4daa29"
 metafile = true
 
 [[files]]
@@ -981,6 +991,11 @@ metafile = true
 [[files]]
 file = "mods/gallery.pw.toml"
 hash = "4e78f0e057fe75377e7490b0ba2e61182c323534858de3c67fbb838273637b9a"
+metafile = true
+
+[[files]]
+file = "mods/gauged-a-wire-addon.pw.toml"
+hash = "a67693b6ed6410cb664ba813138b876bef8936e707f45b36b26efc63b3a4519f"
 metafile = true
 
 [[files]]
@@ -1369,6 +1384,11 @@ hash = "b78cc4902579cd27a73f4c0834ea9d3fbe8ca0e95f7b3a26f0cf3915ec6db0a1"
 metafile = true
 
 [[files]]
+file = "mods/steam-n-rails-neoforge.pw.toml"
+hash = "836057d677acf855dc475bc350f6a2324c260feff59517854959a51b415a5104"
+metafile = true
+
+[[files]]
 file = "mods/structure-essentials-forge-fabric.pw.toml"
 hash = "9a566b981ef3878fe1dce63add9b701508458b8baaedb193abfdc512e9f37909"
 metafile = true
@@ -1440,7 +1460,7 @@ metafile = true
 
 [[files]]
 file = "mods/world-wide-power-grid.pw.toml"
-hash = "773974ef0788b22df70c57258f066fc091d2bb995eedfe46ae73d98966725a8e"
+hash = "74b33a321877e5ec8aa4ba9550f22602522add5094cb3c49f2499c95aecebf22"
 metafile = true
 
 [[files]]

@@ -141,7 +141,7 @@ Dedicated-server lifecycle checks do not establish those behaviors.
 
 ## Beta electricity
 
-Beta includes [World-Wide Power Grid 0.2.2-beta.2](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.2)
+Beta includes [World-Wide Power Grid 0.2.2-beta.3](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.3)
 on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
 NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
 ranges accept these versions; the full pack still needs player compatibility testing.
@@ -177,3 +177,15 @@ can use `/mapsyncer autosync off` or set `autoSyncEnabled = false` themselves.
 Existing worlds retain their server config; stop the server, set
 `incrementalUpdateMode = "DISABLED"` in `<world>/serverconfig/mapsyncer-server.toml`,
 and restart. Updating the pack does not force either setting on existing installs.
+
+## Beta engineering additions
+
+Beta includes Power Components 1.3.0, Gauged 1.0.6a, Coasters Simulated 0.1.5,
+and the approved unofficial Steam n Rails NeoForge 0.3.0-beta.2 port. All four
+are installed on clients and servers with upstream recipes and settings. Existing
+Create, Power Grid, Sable and Flywheel versions satisfy their declared requirements.
+
+WWPG 0.2.2-beta.3 retains the native solver and 16 substeps. Its stationary CEE/PG
+support does not establish compatibility for every component or wire added by these
+mods. Railways Navigator integration, coaster assembly and physics, custom wire
+behavior, electrical components and client rendering require focused player tests.
