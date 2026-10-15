@@ -1,3 +1,5 @@
 # Keep full synchronized maps on disk without loading every distant region into Xaero at once.
 [client]
 mapRegionLoadIntervalTicks = 0
+# Automatic join and periodic synchronization are opt-in. Manual sync remains available.
+autoSyncEnabled = false

@@ -114,7 +114,7 @@ hash = "4c60856289704fecc5ddba8ee429a68ac9bdd4b8d23aa7f17c0ec59a2124a0f3"
 
 [[files]]
 file = "config/mapsyncer-client.toml"
-hash = "06e4a25a2049ddf91f3a43b6a3878783a913e10fe71ca87257d9e60d851b45a6"
+hash = "2fe11668ae34d4fc1f8c9b96b2704c19d502ba57d881ff23f46671c8896d0bdf"
 preserve = true
 
 [[files]]
@@ -282,7 +282,7 @@ preserve = true
 
 [[files]]
 file = "defaultconfigs/mapsyncer-server.toml"
-hash = "aa7df500dfd0ad9fb4d175f991a4ffda51ba17a2b386592c56ed9eb523c5ad45"
+hash = "2447fcff162f68a3369740f03ca2051b4fcc01eb76c5281eb428f19ff39d6854"
 
 [[files]]
 file = "defaultconfigs/powergrid-server.toml"

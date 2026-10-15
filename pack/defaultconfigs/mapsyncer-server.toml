@@ -6,5 +6,5 @@ maxConcurrentRegions = 4
 syncSpeedLimitKBps = 1024
 
 [incremental_update]
-incrementalUpdateMode = "TICK"
+incrementalUpdateMode = "DISABLED"
 incrementalUpdateIntervalTicks = 6000
