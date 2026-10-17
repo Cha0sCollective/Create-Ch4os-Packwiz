@@ -1,12 +1,12 @@
 name = "Create: Ch4oS — New World"
 author = "Cha0sCollective"
-version = "0.3.2"
+version = "0.3.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "03443623532c9f837c87d8dccc1cbfd4b3d1d2ebec1473ebb6d654469b202176"
+hash = "37884d17e8309b412f06611bbdcef26d30d037270650b75cee78f1d0a8063e29"
 
 [versions]
 minecraft = "1.21.1"
