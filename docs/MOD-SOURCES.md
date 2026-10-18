@@ -2,9 +2,9 @@
 
 This is the reader-friendly view of [`MOD-SOURCES.csv`](MOD-SOURCES.csv). It preserves every catalog field and row; the CSV remains the machine-readable source of record.
 
-The catalog currently has **245 entries**: 241 Packwiz-managed mod artifacts and 4 resource packs. This is different from the mod count shown in-game. NeoForge also counts mod IDs and dependencies embedded inside downloaded JARs, so one Packwiz artifact can contribute multiple entries to the runtime mod list.
+The catalog currently has **246 entries**: 242 Packwiz-managed mod artifacts and 4 resource packs. This is different from the mod count shown in-game. NeoForge also counts mod IDs and dependencies embedded inside downloaded JARs, so one Packwiz artifact can contribute multiple entries to the runtime mod list.
 
-The public-source audit was refreshed on **2026-09-24** against official provider pages, author-owned GitHub repositories, GitHub repository history, and GitLab project search. It links **220 entries** to public source repositories; **22 mod implementations** remain unverified, and **3 resource packs** advertise no public source repository.
+The public-source audit was refreshed on **2026-09-24** against official provider pages, author-owned GitHub repositories, GitHub repository history, and GitLab project search. It links **220 entries** to public source repositories; **23 mod implementations** remain unverified, and **3 resource packs** advertise no public source repository.
 
 The TaCZ, Transmission & Linkage, and Toolgun additions were verified against their provider metadata and downloaded artifacts on **2026-09-25**. The six selected mod updates, required JEI compatibility update, and Polymorph 1.2.0 compatibility update were verified against official Modrinth releases and embedded metadata on **2026-10-01**. Aeronautics bundled 1.3.2 and its JEI compatibility fix were verified against the official release and embedded bundle metadata on **2026-10-01**.
 
@@ -20,13 +20,15 @@ WWPG was updated to **0.2.2-beta.4** on **2026-10-16** after verifying its offic
 
 WWPG was updated to **0.2.2-beta.5** on **2026-10-17** after verifying its official JAR checksum, source tag and embedded dependency ranges.
 
+Easy Mob Spawn Control **1.6.2** was added on **2026-10-17**, verified against its official Modrinth artifact and embedded dependency metadata. No custom spawn rules are supplied.
+
 Entries are grouped by their existing `discovery_batch`: world generation (`05`), graphics (`07`), performance (`08`), compatibility (`09`), and gameplay (all other batches). Within each section, entries are sorted by display name. The inventory and provenance tables share the `pack_metadata` value, so their rows can be matched exactly.
 
 The inventory tables retain `pack_metadata`, `pack_side`, `jar_filename`, `mod_id`, `mod_name`, `version`, `classification`, and `discovery_batch`. The provenance tables retain `source_repository`, `repository_host`, `mapping_status`, `version_match_status`, `evidence_basis`, `evidence_url`, and `notes`. Long notes are collapsed for easier scanning; select **View notes** to read the complete original text.
 
 | Section | Entries | Covers |
 |---|---:|---|
-| [Gameplay](#gameplay) | 146 | Core content, Create add-ons, building, food, quality-of-life, maps, and pack-specific gameplay |
+| [Gameplay](#gameplay) | 147 | Core content, Create add-ons, building, food, quality-of-life, maps, and pack-specific gameplay |
 | [Performance](#performance) | 27 | Performance, stability, memory, networking, and diagnostics |
 | [World generation](#world-generation) | 13 | World generation, structures, terrain, dimensions, and exploration |
 | [Graphics](#graphics) | 19 | Visual presentation, menus, animation, shaders, and client graphics |
@@ -36,7 +38,7 @@ The inventory tables retain `pack_metadata`, `pack_side`, `jar_filename`, `mod_i
 
 Core content, Create add-ons, building, food, quality-of-life, maps, social features, and pack-specific gameplay.
 
-**146 entries**
+**147 entries**
 
 ### Inventory
 
@@ -143,6 +145,7 @@ Core content, Create add-ons, building, food, quality-of-life, maps, social feat
 | Cut Through<br><small>Mod ID: <code>cut-through</code></small> | 21.1.0 | both | <code>CutThrough-v21.1.0-1.21.1-NeoForge.jar</code> | <code>cut-through.pw.toml</code> | <code>gameplay_support</code><br><small>Discovery batch: <code>06_qol_ui_maps_social_progression</code></small> |
 | Easy Anvils<br><small>Mod ID: <code>easy-anvils</code></small> | 21.1.0 | both | <code>EasyAnvils-v21.1.0-1.21.1-NeoForge.jar</code> | <code>easy-anvils.pw.toml</code> | <code>gameplay_support</code><br><small>Discovery batch: <code>06_qol_ui_maps_social_progression</code></small> |
 | Easy Magic<br><small>Mod ID: <code>easy-magic</code></small> | 21.1.4 | both | <code>EasyMagic-v21.1.4-1.21.1-NeoForge.jar</code> | <code>easy-magic.pw.toml</code> | <code>gameplay_support</code><br><small>Discovery batch: <code>06_qol_ui_maps_social_progression</code></small> |
+| Easy Mob Spawn Control<br><small>Mod ID: <code>easy_mob_spawn_control</code></small> | 1.6.2 | both | <code>easy_mob_spawn_control-1.6.2.jar</code> | <code>easy-mob-spawn-control.pw.toml</code> | <code>gameplay_support</code><br><small>Discovery batch: <code>06_qol_ui_maps_social_progression</code></small> |
 | Enchantment Descriptions<br><small>Mod ID: <code>enchantment-descriptions</code></small> | 21.1.11 | both | <code>enchdesc-neoforge-1.21.1-21.1.11.jar</code> | <code>enchantment-descriptions.pw.toml</code> | <code>gameplay_support</code><br><small>Discovery batch: <code>06_qol_ui_maps_social_progression</code></small> |
 | Extra Create Recipe<br><small>Mod ID: <code>extra-create-recipe</code></small> | 1 | both | <code>extra_create_recipes_1.21.1_v1.jar</code> | <code>extra-create-recipe.pw.toml</code> | <code>gameplay_integration</code><br><small>Discovery batch: <code>10_aoca_specific_authored_pack_layer</code></small> |
 | Farmer's Delight<br><small>Mod ID: <code>farmers-delight</code></small> | 1.3.3 | both | <code>FarmersDelight-1.21.1-1.3.3.jar</code> | <code>farmers-delight.pw.toml</code> | <code>gameplay_primary</code><br><small>Discovery batch: <code>03_food_farming_cooking</code></small> |
@@ -285,6 +288,7 @@ Core content, Create add-ons, building, food, quality-of-life, maps, social feat
 | <code>cut-through.pw.toml</code> | [Repository](https://github.com/Fuzss/cut-through)<br><small>Host: github.com</small> | Mapping: <code>repository_verified</code><br>Version: <code>pending</code> | Basis: <code>official_project_source_link</code><br>[Evidence link](https://github.com/Fuzss/cut-through) | <details><summary>View notes</summary>Official project Source link resolves to this implementation repository; no exact source tag was verified for version 21.1.0.</details> |
 | <code>easy-anvils.pw.toml</code> | [Repository](https://github.com/Fuzss/easy-anvils)<br><small>Host: github.com</small> | Mapping: <code>repository_verified</code><br>Version: <code>pending</code> | Basis: <code>official_project_source_link</code><br>[Evidence link](https://github.com/Fuzss/easy-anvils) | <details><summary>View notes</summary>Official project Source link resolves to this implementation repository; no exact source tag was verified for version 21.1.0.</details> |
 | <code>easy-magic.pw.toml</code> | [Repository](https://github.com/Fuzss/easy-magic)<br><small>Host: github.com</small> | Mapping: <code>repository_verified</code><br>Version: <code>pending</code> | Basis: <code>official_project_source_link</code><br>[Evidence link](https://github.com/Fuzss/easy-magic) | <details><summary>View notes</summary>Official project Source link resolves to this implementation repository; no exact source tag was verified for version 21.1.4.</details> |
+| <code>easy-mob-spawn-control.pw.toml</code> |  | Mapping: <code>no_verifiable_public_repository_found</code><br>Version: <code>not_applicable</code> | Basis: <code>official_modrinth_sha512_and_embedded_metadata</code><br>[Evidence link](https://modrinth.com/mod/pTXV6gwq/version/mfDzYK72) | <details><summary>View notes</summary>Modrinth projectID=pTXV6gwq; versionID=mfDzYK72; artifact=easy_mob_spawn_control-1.6.2.jar; size=517612 bytes; SHA-512=31dbf9d7a19996b30298121622c58869baa325d376f57cc394c332fd73cd33ac3408445568349e04c695663c67887413bc390a7c3222d6c93043e2da6f8c2cda. Official NeoForge 1.21.1 release. Embedded requirements Minecraft 1.21.1 and NeoForge &gt;=21.1.218 accept the pack runtime. Provider declares server required and client optional; installed on both for the client menu and singleplayer use. Upstream defaults retained; no custom spawn rules supplied. Menu via /easymsc or /easymobspawncontrol and upstream K key. Multiplayer editing requires operator permission level 2 or easy_mob_spawn_control.admin. Provider source URL is absent and JAR declares ARR; no public implementation source mapping asserted.</details> |
 | <code>enchantment-descriptions.pw.toml</code> | [Repository](https://github.com/Darkhax-Minecraft/Enchantment-Descriptions)<br><small>Host: github.com</small> | Mapping: <code>repository_verified</code><br>Version: <code>pending</code> | Basis: <code>official_project_source_link</code><br>[Evidence link](https://github.com/Darkhax-Minecraft/Enchantment-Descriptions) | <details><summary>View notes</summary>Official project Source link resolves to this implementation repository; no exact source tag was verified for version 21.1.11.</details> |
 | <code>extra-create-recipe.pw.toml</code> |  | Mapping: <code>no_verifiable_public_repository_found</code><br>Version: <code>not_applicable</code> | Basis: <code>official_project_page_and_repository_search_no_mapping</code><br>[Evidence link](https://www.curseforge.com/minecraft/mc-mods/extra-create-recipe/files/7370449) | <details><summary>View notes</summary>Official project provides no Source link. Author-profile review and targeted searches found no verifiable public implementation repository as of 2026-09-23.</details> |
 | <code>farmers-delight.pw.toml</code> | [Repository](https://github.com/vectorwing/FarmersDelight)<br><small>Host: github.com</small> | Mapping: <code>repository_verified</code><br>Version: <code>source_aligned</code> | Basis: <code>official_project_source_link</code><br>[Evidence link](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) | <details><summary>View notes</summary>Official CurseForge Source link; no exact public tag or commit pinned.</details> |

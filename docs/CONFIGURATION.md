@@ -192,3 +192,13 @@ WWPG 0.2.2-beta.5 retains the native solver and 16 substeps. Its stationary CEE/
 support does not establish compatibility for every component or wire added by these
 mods. Railways Navigator integration, coaster assembly and physics, custom wire
 behavior, electrical components and client rendering require focused player tests.
+
+## Easy Mob Spawn Control
+
+Beta includes Easy Mob Spawn Control 1.6.2 on clients and servers, with upstream
+defaults and no custom spawn rules or mob bans supplied by the pack. Open its
+menu using `/easymsc` or `/easymobspawncontrol`; the upstream shortcut is **K**,
+which shares keys with Iris and other mods. Rebind it in Controls if needed.
+Multiplayer edits require operator permission level 2 or the
+`easy_mob_spawn_control.admin` permission. The provider marks the client optional;
+the pack includes it for the menu and singleplayer use.

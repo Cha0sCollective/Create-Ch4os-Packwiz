@@ -181,7 +181,7 @@ the actions you use if they interfere; this update changes only Iris reload.
 | G | Curios inventory, gun firing mode, portable stock ticker, physics-goggles force gizmo |
 | H | Gun inspection, player networks, physics-goggles diagram |
 | J | Clear toasts, Tracks tuning, physics-goggles interactive mode |
-| K | Iris shader toggle, Quark rotation lock, physics-goggles overlay editor |
+| K | Iris shader toggle, Quark rotation lock, physics-goggles overlay editor, Easy Mob Spawn Control menu |
 | O | Iris shader selection, TaCZ interact; JEI's overlay uses Ctrl+O |
 | R | Weapon reload, Quark variants, aircraft dismount, controller mouse reset, route overlay; JEI recipes and Power Grid rotation apply in their screens |
 | U | Waypoint list, death history; JEI's Show Uses uses U over an item |
@@ -190,6 +190,13 @@ the actions you use if they interfere; this update changes only Iris reload.
 | Z | Hotbar swapper, sit, enlarge minimap, gun attachment refit |
 | Tab | Vanilla player list, Toolgun modes, Physics Staff rotate mode, controller exit |
 | Left Alt / Left Shift | Several held-tool/equipment modifiers and ordinary Minecraft actions |
+
+## Spawn administration
+
+Easy Mob Spawn Control 1.6.2 documents **K** for its menu; `/easymsc` and
+`/easymobspawncontrol` are alternatives that avoid shared-key conflicts. Multiplayer
+edits require operator permission level 2 or `easy_mob_spawn_control.admin`.
+This new menu shortcut has not been tested in a graphical client.
 
 ## Reference scope
 

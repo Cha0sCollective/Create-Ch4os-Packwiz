@@ -904,6 +904,11 @@ hash = "e77431b8e7e88ba27b74ce8f03624a4d5e45137a5bc5f96d8f00904effb3092b"
 metafile = true
 
 [[files]]
+file = "mods/easy-mob-spawn-control.pw.toml"
+hash = "bd57bea837d1cac1614180ebe81bc6355199129e7138feebfd283583628580f3"
+metafile = true
+
+[[files]]
 file = "mods/embers-log-filtering.pw.toml"
 hash = "7c6a850495c6482503733592384fb88bd90868e704d54dc5f33751923270e1dc"
 metafile = true
