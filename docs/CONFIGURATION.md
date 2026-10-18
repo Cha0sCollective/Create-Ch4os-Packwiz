@@ -141,7 +141,7 @@ Dedicated-server lifecycle checks do not establish those behaviors.
 
 ## Beta electricity
 
-Beta includes [World-Wide Power Grid 0.2.2-beta.4](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.4)
+Beta includes [World-Wide Power Grid 0.2.2-beta.5](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.5)
 on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
 NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
 ranges accept these versions; the full pack still needs player compatibility testing.
@@ -154,7 +154,7 @@ stop the server or game, edit those settings in the generated
 if the installation uses world-local server configs), and restart. CEE's `microTicks` does
 not control the simulation schedule with WWPG installed.
 
-WWPG beta.4 loads its verified guarded native v7 engine from a checksum-named
+WWPG beta.5 loads its verified guarded native v7 engine from a checksum-named
 folder within `.pg-native`, preserving administrator-installed files. Its tested
 native platforms are Windows x86-64 with AVX2 and Linux x86-64 with AVX2 on
 Ubuntu 24.04; other Linux distributions remain unverified upstream. Failure to
@@ -188,7 +188,7 @@ and the approved unofficial Steam n Rails NeoForge 0.3.0-beta.2 port. All four
 are installed on clients and servers with upstream recipes and settings. Existing
 Create, Power Grid, Sable and Flywheel versions satisfy their declared requirements.
 
-WWPG 0.2.2-beta.4 retains the native solver and 16 substeps. Its stationary CEE/PG
+WWPG 0.2.2-beta.5 retains the native solver and 16 substeps. Its stationary CEE/PG
 support does not establish compatibility for every component or wire added by these
 mods. Railways Navigator integration, coaster assembly and physics, custom wire
 behavior, electrical components and client rendering require focused player tests.
