@@ -112,7 +112,7 @@ lifecycle cannot validate these behaviors or existing-world upgrades.
 
 ## Guns and vehicle linkage
 
-Beta includes the unofficial TaCZ NeoForge port 1.1.8-hotfix-r6, TaCZ Tweaks
+Beta includes the unofficial TaCZ NeoForge port 1.1.8-hotfix-r7, TaCZ Tweaks
 3.0.0-alpha.10, Create Aeronautics: Transmission & Linkage 0.2.8, and
 Create Aeronautics: Toolgun 0.3.6. These are
 required on both clients and servers. Guns, ammunition, recipes, damage and

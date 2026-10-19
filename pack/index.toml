@@ -1410,7 +1410,7 @@ metafile = true
 
 [[files]]
 file = "mods/tacz-1.21.1.pw.toml"
-hash = "5840061461645a264ee437260581a550b8e9b2540cb9ea2a39a450671b2d1be0"
+hash = "662d015c1d8eaf07f83a6b42ecb130a243e09f0cc0dc57886a3fdf9e3b41f366"
 metafile = true
 
 [[files]]
