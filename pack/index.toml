@@ -880,7 +880,7 @@ metafile = true
 
 [[files]]
 file = "mods/dragonlib.pw.toml"
-hash = "8522b9746a19016ff50c5b36d1362720bb73037cde028076f5ac1adf2376d12f"
+hash = "b80ebc591e8371d294c117a65c6f34898dc91bcafe646dbb7dcab99edcc19046"
 metafile = true
 
 [[files]]
