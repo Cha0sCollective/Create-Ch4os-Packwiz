@@ -1355,7 +1355,7 @@ metafile = true
 
 [[files]]
 file = "mods/sliceanddice.pw.toml"
-hash = "a320269e66f2946aec289ce644d8fa431ec5ad6c13e4b3c21a15f7e3438f8391"
+hash = "682aa3defd8e56d78dd38ac09287ba295f606f124e367ee2c734f3fdb3ff34f7"
 metafile = true
 
 [[files]]
