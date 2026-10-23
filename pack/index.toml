@@ -1200,7 +1200,7 @@ metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "90f4decad9f8c0edae18b4c99e105424cb3584dd013227a6f365a5fa782ed5ab"
+hash = "700d6808334f634e7296ebff7c07efc208f1d63e1b682e7725c439d22ca5dec7"
 metafile = true
 
 [[files]]
@@ -1470,12 +1470,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "adc2392ae9f8e6557a3178e6abcd0bf0f4592506dd425a54fd5f0e9885cb32dd"
+hash = "4ad78e9b9c75c1805643939252a20a19ffd49c9d8eaa6f8ac6536aeea1b1fd8a"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "e36998e4d9acf6b72eb4da10688bbb5408211a32a05d607b20fc97a7950a8a8d"
+hash = "4644eec67e6ec3ab4a9df5c56f688e7b1f4893d891bff4d071df01c69b784e45"
 metafile = true
 
 [[files]]
