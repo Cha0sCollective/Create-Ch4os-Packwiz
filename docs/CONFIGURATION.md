@@ -12,7 +12,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Logging | Only CSA's repetitive DEBUG logger is filtered; warnings/errors and other diagnostics remain |
 | DH | Radius 128; 4 worker threads at 50% runtime for new installations; existing settings preserved; PRE_EXISTING_ONLY generation |
 | DH transfer | No server bandwidth caps for new installations; existing servers need a manual change |
-| Map sharing | MapSyncer 1.0.4beta1 from the official GitHub release, pinned by checksum; generated terrain shared, TICK updates every 6000 ticks; distant synchronized regions retained on disk and loaded by Xaero only when viewed |
+| Map sharing | MapSyncer 1.0.4beta1 from the official GitHub release, pinned by checksum; client autosync and server incremental updates disabled by default; manual sync remains available; distant synchronized regions retained on disk and loaded by Xaero only when viewed |
 | Display | Borderless fullscreen at desktop resolution, VSync off, 120 FPS cap, render distance 12 and simulation distance 8 |
 | Shaders | Complementary Reimagined 5.8.1 preselected, shaders initially disabled; Reimagined, Unbound 5.8.1 and Bliss 2.1.2 ship tuned first-install presets |
 | Controls | Beta shader reload defaults to F8; weapon reload remains R; other bindings use upstream defaults. See [Player controls](CONTROLS.md) for assignments and shared keys |
@@ -20,7 +20,6 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | Resource packs | Create Ultra 2.1, Improved Create 32x 0.06, Upscaled Supplementaries 32x 1.2 and Patrix 32x release 72 enabled by default in that priority order; exact client-only Modrinth artifacts managed by Packwiz |
 | Java | Java 21 Generational ZGC arguments supplied by the Prism instance; new beta Prism instances use a 12 GiB maximum heap |
 | Integration | Existing continuity recipes/filters and four Tracks loot/tag corrections retained; quests remain retired |
-| Experimental electricity | World-Wide Power Grid 0.2.2-beta.2 connects stationary CEE 1.1.3 and Power Grid 0.6.2 devices; fresh worlds use the native solver with 16 electrical substeps |
 
 Ore attempts and terrain settings are not guaranteed yields or geometry. This
 world line began as a fresh save and does not provide an RC8 world conversion.
@@ -62,32 +61,6 @@ DH loading, rain/night, the Nether and the End, plus large-area MapSyncer transf
 Verify the intended Colorwheel backend using `/flywheel backend` with each shader.
 If GPU performance misses the target, reduce or disable POM first, then lower shader
 quality. A dedicated-server MVT pass does not verify these client behaviors.
-
-## Experimental electricity
-
-Experimental includes [World-Wide Power Grid 0.2.2-beta.2](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.2)
-on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
-NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
-ranges accept these versions; the full pack still needs player compatibility testing.
-
-`defaultconfigs/powergrid-server.toml` sets `[electricity.solver]` to
-`solverBackend = "NATIVE"` and `multiTicks = 16` for fresh worlds. Other Power Grid
-values use upstream defaults. Existing worlds retain their generated server config:
-stop the server or game, edit those settings in the generated
-`config/powergrid-server.toml` (or `<world>/serverconfig/powergrid-server.toml`
-if the installation uses world-local server configs), and restart. CEE's `microTicks` does
-not control the simulation schedule with WWPG installed.
-
-WWPG supplies Power Grid's missing native v7 binaries, preserving an existing
-administrator-installed binary. Supported native platforms are Windows x86-64
-and Linux x86-64 with glibc 2.38 or newer; Power Grid retains its Java fallback.
-Use operator commands `/wwpg` and `/wwpg errors` to inspect actual backend activity
-and compatibility diagnostics. Native selection alone does not prove it was used.
-
-Stationary circuits are the release's supported scope. Moving Sable systems,
-large networks, mixed-machine behavior and real client rendering require testing
-in an isolated Experimental instance. No example worlds, SDKs or example add-ons
-are installed by the pack.
 
 ## Mod update notifications
 
@@ -139,7 +112,7 @@ lifecycle cannot validate these behaviors or existing-world upgrades.
 
 ## Guns and vehicle linkage
 
-Beta includes the unofficial TaCZ NeoForge port 1.1.8-hotfix-r6, TaCZ Tweaks
+Beta includes the unofficial TaCZ NeoForge port 1.1.8-hotfix-r7, TaCZ Tweaks
 3.0.0-alpha.10, Create Aeronautics: Transmission & Linkage 0.2.8, and
 Create Aeronautics: Toolgun 0.3.6. These are
 required on both clients and servers. Guns, ammunition, recipes, damage and
@@ -165,3 +138,67 @@ settings through the mod's configuration screen.
 Gun rendering with shaders, key bindings, multiplayer synchronization, hits and
 explosions on moving Sable structures, and linkage physics need in-game testing.
 Dedicated-server lifecycle checks do not establish those behaviors.
+
+## Beta electricity
+
+Beta includes [World-Wide Power Grid 0.2.2-beta.5](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.2-beta.5)
+on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
+NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
+ranges accept these versions; the full pack still needs player compatibility testing.
+
+`defaultconfigs/powergrid-server.toml` sets `[electricity.solver]` to
+`solverBackend = "NATIVE"` and `multiTicks = 16` for fresh worlds. Other Power Grid
+values use upstream defaults. Existing worlds retain their generated server config:
+stop the server or game, edit those settings in the generated
+`config/powergrid-server.toml` (or `<world>/serverconfig/powergrid-server.toml`
+if the installation uses world-local server configs), and restart. CEE's `microTicks` does
+not control the simulation schedule with WWPG installed.
+
+WWPG beta.5 loads its verified guarded native v7 engine from a checksum-named
+folder within `.pg-native`, preserving administrator-installed files. Its tested
+native platforms are Windows x86-64 with AVX2 and Linux x86-64 with AVX2 on
+Ubuntu 24.04; other Linux distributions remain unverified upstream. Failure to
+load the bundled guarded engine disables native support and reports the problem.
+Power Grid's Java solver remains available as an operator-selected alternative.
+Use operator commands `/wwpg` and `/wwpg errors` to inspect actual backend activity
+and compatibility diagnostics. Native selection alone does not prove it was used.
+
+Stationary circuits are the release's supported scope. Moving Sable systems,
+large networks, mixed-machine behavior and real client rendering require testing
+in an isolated Beta instance. No example worlds, SDKs or example add-ons
+are installed by the pack.
+
+## MapSyncer synchronization defaults
+
+Fresh client settings set `[client] autoSyncEnabled = false`. New worlds use
+`[incremental_update] incrementalUpdateMode = "DISABLED"` in the server template.
+Manual `/mapsyncer sync` remains available. The 6000-tick interval is retained but
+inactive while incremental updates are disabled.
+
+Packwiz preserves existing `config/mapsyncer-client.toml` files, so current players
+can use `/mapsyncer autosync off` or set `autoSyncEnabled = false` themselves.
+Existing worlds retain their server config; stop the server, set
+`incrementalUpdateMode = "DISABLED"` in `<world>/serverconfig/mapsyncer-server.toml`,
+and restart. Updating the pack does not force either setting on existing installs.
+
+## Beta engineering additions
+
+Beta includes Power Components 1.3.0, Gauged 1.0.6a, Coasters Simulated 0.1.5,
+and the approved unofficial Steam n Rails NeoForge 0.3.0-beta.2 port. All four
+are installed on clients and servers with upstream recipes and settings. Existing
+Create, Power Grid, Sable and Flywheel versions satisfy their declared requirements.
+
+WWPG 0.2.2-beta.5 retains the native solver and 16 substeps. Its stationary CEE/PG
+support does not establish compatibility for every component or wire added by these
+mods. Railways Navigator integration, coaster assembly and physics, custom wire
+behavior, electrical components and client rendering require focused player tests.
+
+## Easy Mob Spawn Control
+
+Beta includes Easy Mob Spawn Control 1.6.2 on clients and servers, with upstream
+defaults and no custom spawn rules or mob bans supplied by the pack. Open its
+menu using `/easymsc` or `/easymobspawncontrol`; the upstream shortcut is **K**,
+which shares keys with Iris and other mods. Rebind it in Controls if needed.
+Multiplayer edits require operator permission level 2 or the
+`easy_mob_spawn_control.admin` permission. The provider marks the client optional;
+the pack includes it for the menu and singleplayer use.

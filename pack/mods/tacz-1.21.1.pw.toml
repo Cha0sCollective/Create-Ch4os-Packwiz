@@ -1,12 +1,12 @@
 name = "Timeless & Classics Guns: Zero (unofficial NeoForge port)"
-filename = "tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar"
+filename = "tacz-neoforge-1.21.1-1.1.8-hotfix-r7.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/OypNE65K/versions/wPvGWIj9/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar"
+url = "https://cdn.modrinth.com/data/OypNE65K/versions/62q6mB5Q/tacz-neoforge-1.21.1-1.1.8-hotfix-r7.jar"
 hash-format = "sha512"
-hash = "ce14e985ce16d0517e7b1d41969a244818f46c1e4ae93842c3149963990aa488692c5372ecc4b71fe560a99794a3f865244dbef5b182beec4411148b4f83c53c"
+hash = "7700ed99a080729c3aa21f9619e018fbe9e2303cfbcaa463175ee5170553a000b692bc4cfa2e8ce0778747eed34dcc0197fb5e4344bb258cff1ba90adc842642"
 
 [update.modrinth]
 mod-id = "OypNE65K"
-version = "wPvGWIj9"
+version = "62q6mB5Q"

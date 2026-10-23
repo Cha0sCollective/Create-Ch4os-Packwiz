@@ -15,7 +15,7 @@ hash = "96e2ea7208003af18fd6de8ec06eda22a340deeac43667190de10587021273d0"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "61a71f89eb44bb08bc53689921c2e12ff7f5cdbcb00a6aed73bac604b0ee4c7b"
+hash = "deffe4efd05afda90464fa9ca939055c627d1b0580076c1affe9de051836dbff"
 
 [[files]]
 file = "config/bhmenu-client.toml"
@@ -114,7 +114,7 @@ hash = "4c60856289704fecc5ddba8ee429a68ac9bdd4b8d23aa7f17c0ec59a2124a0f3"
 
 [[files]]
 file = "config/mapsyncer-client.toml"
-hash = "06e4a25a2049ddf91f3a43b6a3878783a913e10fe71ca87257d9e60d851b45a6"
+hash = "2fe11668ae34d4fc1f8c9b96b2704c19d502ba57d881ff23f46671c8896d0bdf"
 preserve = true
 
 [[files]]
@@ -179,14 +179,6 @@ file = "config/paxi/datapacks/create-ch4os-continuity/data/create/tags/block/saf
 hash = "e29797ea07de2b3f4fdb67a07301ae4054ac617f977620f5d4047d39d7ed11fb"
 
 [[files]]
-file = "config/paxi/datapacks/create-ch4os-continuity/data/create_generators/recipe/generator_obsidian.json"
-hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
-
-[[files]]
-file = "config/paxi/datapacks/create-ch4os-continuity/data/create_generators/recipe/generator_obsidian_8x.json"
-hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
-
-[[files]]
 file = "config/paxi/datapacks/create-ch4os-continuity/data/create_hypertube/recipe/hypertube_entrance.json"
 hash = "5d7982cb01e2bdf5305f2960d77f9ac7f4366af816b05711ce4fda1b071112fb"
 
@@ -197,22 +189,6 @@ hash = "dc7066db532fedca923187e3007f17471d88e8ccd7e8945a6a46069c227155c3"
 [[files]]
 file = "config/paxi/datapacks/create-ch4os-continuity/data/createdieselgenerators/recipe/mechanical_crafting/chemcial_sprayer.json"
 hash = "1e35274c53fd38856fa0e19fde186f5a34a7cf4f1151079440e8eb6f2f6707e8"
-
-[[files]]
-file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/crafting/diamond_from_diamond_shard.json"
-hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
-
-[[files]]
-file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/crafting/diamond_shard_from_diamond.json"
-hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
-
-[[files]]
-file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/seething/diamond_shard_from_coal_block.json"
-hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
-
-[[files]]
-file = "config/paxi/datapacks/create-ch4os-continuity/data/dndesires/recipe/seething/diamond_shard_from_deepslate_coal_ore.json"
-hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
 
 [[files]]
 file = "config/paxi/datapacks/create-ch4os-continuity/data/minecraft/tags/block/mineable/axe.json"
@@ -287,7 +263,7 @@ hash = "e04affe80ee314b81e4408d0fcb6996c56a2820b0f5c6c3c6719ae89cf98cfcf"
 
 [[files]]
 file = "config/tacztweaks.json"
-hash = "3520ca0774026015ae0e0801372b511d41d067d6e82212bb3034075ed252e9f3"
+hash = "99e9566a675d4f43abc00c1730ec66e1ba11567e44e4fe4e5e9062049763b2af"
 preserve = true
 
 [[files]]
@@ -306,7 +282,7 @@ preserve = true
 
 [[files]]
 file = "defaultconfigs/mapsyncer-server.toml"
-hash = "aa7df500dfd0ad9fb4d175f991a4ffda51ba17a2b386592c56ed9eb523c5ad45"
+hash = "2447fcff162f68a3369740f03ca2051b4fcc01eb76c5281eb428f19ff39d6854"
 
 [[files]]
 file = "defaultconfigs/powergrid-server.toml"
@@ -578,6 +554,11 @@ hash = "4fd78c41839e4ff1a012065e067fbcc063a05e64dc26794b4089843667c48ba0"
 metafile = true
 
 [[files]]
+file = "mods/create-coasters-simulated.pw.toml"
+hash = "6d46ef869c588bca1cc33cd54d7fbba4e3bd1c2c505ca4a54f005913b534ff18"
+metafile = true
+
+[[files]]
 file = "mods/create-confectionery.pw.toml"
 hash = "76022ecb240f2fdbd24b0240250cd58d4c02d797ef831693546be0426bd5d518"
 metafile = true
@@ -743,6 +724,11 @@ hash = "66735c441cc9a9b950e10d98ebefc44143e24a662505fe6a2cd7138d0551faf1"
 metafile = true
 
 [[files]]
+file = "mods/create-power-components.pw.toml"
+hash = "60ff7643cb416b004611abeed102f4bcfeafdf644384715e7d760fecdd4daa29"
+metafile = true
+
+[[files]]
 file = "mods/create-prismatic-shine.pw.toml"
 hash = "8e01fabd6556021a8cddc6ceb2f52b78d527deb35a1a763e17f1e9fb2e4d9b73"
 metafile = true
@@ -894,7 +880,7 @@ metafile = true
 
 [[files]]
 file = "mods/dragonlib.pw.toml"
-hash = "8522b9746a19016ff50c5b36d1362720bb73037cde028076f5ac1adf2376d12f"
+hash = "b80ebc591e8371d294c117a65c6f34898dc91bcafe646dbb7dcab99edcc19046"
 metafile = true
 
 [[files]]
@@ -915,6 +901,11 @@ metafile = true
 [[files]]
 file = "mods/easy-magic.pw.toml"
 hash = "e77431b8e7e88ba27b74ce8f03624a4d5e45137a5bc5f96d8f00904effb3092b"
+metafile = true
+
+[[files]]
+file = "mods/easy-mob-spawn-control.pw.toml"
+hash = "bd57bea837d1cac1614180ebe81bc6355199129e7138feebfd283583628580f3"
 metafile = true
 
 [[files]]
@@ -999,12 +990,17 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-xmod-compat.pw.toml"
-hash = "0d508e943f1f5c6c6fd168b784e143adc3c92627c60c3738cc7db5cc5bd1ce24"
+hash = "ada511bad14b617195dbe4dd1fe77d885b8aa91e1e9e7f1817749a6ac75e7824"
 metafile = true
 
 [[files]]
 file = "mods/gallery.pw.toml"
 hash = "4e78f0e057fe75377e7490b0ba2e61182c323534858de3c67fbb838273637b9a"
+metafile = true
+
+[[files]]
+file = "mods/gauged-a-wire-addon.pw.toml"
+hash = "a67693b6ed6410cb664ba813138b876bef8936e707f45b36b26efc63b3a4519f"
 metafile = true
 
 [[files]]
@@ -1393,6 +1389,11 @@ hash = "b78cc4902579cd27a73f4c0834ea9d3fbe8ca0e95f7b3a26f0cf3915ec6db0a1"
 metafile = true
 
 [[files]]
+file = "mods/steam-n-rails-neoforge.pw.toml"
+hash = "836057d677acf855dc475bc350f6a2324c260feff59517854959a51b415a5104"
+metafile = true
+
+[[files]]
 file = "mods/structure-essentials-forge-fabric.pw.toml"
 hash = "9a566b981ef3878fe1dce63add9b701508458b8baaedb193abfdc512e9f37909"
 metafile = true
@@ -1409,7 +1410,7 @@ metafile = true
 
 [[files]]
 file = "mods/tacz-1.21.1.pw.toml"
-hash = "5840061461645a264ee437260581a550b8e9b2540cb9ea2a39a450671b2d1be0"
+hash = "662d015c1d8eaf07f83a6b42ecb130a243e09f0cc0dc57886a3fdf9e3b41f366"
 metafile = true
 
 [[files]]
@@ -1464,7 +1465,7 @@ metafile = true
 
 [[files]]
 file = "mods/world-wide-power-grid.pw.toml"
-hash = "773974ef0788b22df70c57258f066fc091d2bb995eedfe46ae73d98966725a8e"
+hash = "1cbf811e31c7ea4fb5d4e9f2dfaf303a0922c7c1078a2e7cc6cf6645eb5c4e16"
 metafile = true
 
 [[files]]

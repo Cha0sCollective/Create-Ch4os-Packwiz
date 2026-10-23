@@ -1,0 +1,13 @@
+name = "Create: Power Components"
+filename = "power-components-1.3.0.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/9031/604/power-components-1.3.0.jar"
+hash-format = "sha256"
+hash = "73a130d1144f52fb94e6d7ed70c89692a2f7b7ad0476a4cfb81cde47a40261fd"
+
+[update.curseforge]
+file-id = 9031604
+project-id = 1659527

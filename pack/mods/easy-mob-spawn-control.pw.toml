@@ -1,0 +1,13 @@
+name = "Easy Mob Spawn Control"
+filename = "easy_mob_spawn_control-1.6.2.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://cdn.modrinth.com/data/pTXV6gwq/versions/mfDzYK72/easy_mob_spawn_control-1.6.2.jar"
+hash-format = "sha512"
+hash = "31dbf9d7a19996b30298121622c58869baa325d376f57cc394c332fd73cd33ac3408445568349e04c695663c67887413bc390a7c3222d6c93043e2da6f8c2cda"
+
+[update.modrinth]
+mod-id = "pTXV6gwq"
+version = "mfDzYK72"
