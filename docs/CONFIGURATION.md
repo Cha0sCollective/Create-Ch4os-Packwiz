@@ -202,3 +202,18 @@ which shares keys with Iris and other mods. Rebind it in Controls if needed.
 Multiplayer edits require operator permission level 2 or the
 `easy_mob_spawn_control.admin` permission. The provider marks the client optional;
 the pack includes it for the menu and singleplayer use.
+
+## Distant Horizons 3.3.3
+
+DH now uses config format 5 and deletes older generated configs before rebuilding
+them. Back up `config/DistantHorizons.toml` and the relevant DH LOD cache before
+trying an existing instance. After the upstream reset, reapply wanted settings
+through supported options; do not relabel an old file as version 5. Packwiz
+preservation does not stop DH from resetting its own incompatible file.
+
+The fresh-install template uses `_version = 5`, `generatorPlan = "CHUNKS_ONLY"`
+and `chunkGeneratorMode = "PRE_EXISTING_ONLY"`. This keeps the existing-terrain-only
+policy; the new surface-generation feature is not enabled by the pack. Four worker
+threads, the 0.50 runtime ratio, radius 128 and reviewed update settings remain.
+MVT does not establish visual quality, graphics performance or existing-world
+LOD-cache upgrade compatibility.

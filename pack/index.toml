@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "22675bd744c2f7b563e79aa8749a55bef8a5ce57a1537544914863e69f5cd70a"
+hash = "7af4cdd57457de80c98651d955871f3c7a950bef462cb002506a02d1bcecf163"
 preserve = true
 
 [[files]]
@@ -875,7 +875,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "83495bd364fbf73706c19cd55941bdfcb619701851c95867b3b940c1a00775b2"
+hash = "a520353dc1e0b9f6a2fbc7505c1ec119f0f4a7acae9ccca88173dac13a97ab15"
 metafile = true
 
 [[files]]
@@ -950,7 +950,7 @@ metafile = true
 
 [[files]]
 file = "mods/farmers-delight.pw.toml"
-hash = "e49147004645ca68e36559e89212b9437c95cc0c870c40dc8c43df4a363c0daf"
+hash = "a8e95ee7e2dba2a601fe9a5728e9e768289593096d4dae5cb342b384c49df4f2"
 metafile = true
 
 [[files]]
@@ -1010,7 +1010,7 @@ metafile = true
 
 [[files]]
 file = "mods/geckolib.pw.toml"
-hash = "5934dd8caf3bc9773f51ed4086c2acb260f86cc14272ae62e0da5c11386bde01"
+hash = "50d55a7e340597e8ef488fbcd6005f3201ca9e5eff4c7682bcc4cc7d43a9e631"
 metafile = true
 
 [[files]]
@@ -1035,7 +1035,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "c70176997b609a71089fa0da1ac297be6c292f72804b3bbbd5d30f56e02d38b9"
+hash = "64cbe64daf9d09037d714894721a842113fd5503fdcf76dfe31bdf1d59b96339"
 metafile = true
 
 [[files]]
@@ -1190,7 +1190,7 @@ metafile = true
 
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
-hash = "1c389f0d759d593c6bcb139d2285897b676e2aa8cc453f196171bddf04ae8396"
+hash = "f73b484d81f9415f0e929e8adfceb8b2bbb0b56e77e73abda08f1a68cf64c4ec"
 metafile = true
 
 [[files]]
@@ -1200,7 +1200,7 @@ metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "90f4decad9f8c0edae18b4c99e105424cb3584dd013227a6f365a5fa782ed5ab"
+hash = "700d6808334f634e7296ebff7c07efc208f1d63e1b682e7725c439d22ca5dec7"
 metafile = true
 
 [[files]]
@@ -1355,7 +1355,7 @@ metafile = true
 
 [[files]]
 file = "mods/sliceanddice.pw.toml"
-hash = "a320269e66f2946aec289ce644d8fa431ec5ad6c13e4b3c21a15f7e3438f8391"
+hash = "682aa3defd8e56d78dd38ac09287ba295f606f124e367ee2c734f3fdb3ff34f7"
 metafile = true
 
 [[files]]
@@ -1400,7 +1400,7 @@ metafile = true
 
 [[files]]
 file = "mods/strut-your-stuff.pw.toml"
-hash = "8a2003e16520997753c2d8a24146b32a19d0c84e5252e0e9fe84f54d427e958b"
+hash = "dba5a38854133f707c2057f2604ea5f26d3cdaf46708024459e9a7ba7de7aaef"
 metafile = true
 
 [[files]]
@@ -1470,12 +1470,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "adc2392ae9f8e6557a3178e6abcd0bf0f4592506dd425a54fd5f0e9885cb32dd"
+hash = "4ad78e9b9c75c1805643939252a20a19ffd49c9d8eaa6f8ac6536aeea1b1fd8a"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "e36998e4d9acf6b72eb4da10688bbb5408211a32a05d607b20fc97a7950a8a8d"
+hash = "4644eec67e6ec3ab4a9df5c56f688e7b1f4893d891bff4d071df01c69b784e45"
 metafile = true
 
 [[files]]
