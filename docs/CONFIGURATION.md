@@ -217,3 +217,9 @@ policy; the new surface-generation feature is not enabled by the pack. Four work
 threads, the 0.50 runtime ratio, radius 128 and reviewed update settings remain.
 MVT does not establish visual quality, graphics performance or existing-world
 LOD-cache upgrade compatibility.
+
+## Numismatics rename patch (Beta)
+
+Beta uses the [Ch4oS Numismatics fork](https://github.com/Cha0sCollective/CreateNumismatics)
+with the sub-account rename fix. No configuration changes or account migration are
+needed. Test renaming and persistence in game before promotion.
