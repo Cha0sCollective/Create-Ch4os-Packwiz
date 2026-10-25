@@ -1,13 +1,13 @@
-name = "create-stockmarket-1.1.0+mc1.21.1"
-filename = "create-stockmarket-1.1.0+mc1.21.1.jar"
+name = "Create: Stock Market"
+filename = "create-stockmarket-1.1.1+mc1.21.1.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://edge.forgecdn.net/files/8246/369/create-stockmarket-1.1.0%2bmc1.21.1.jar"
+url = "https://edge.forgecdn.net/files/9066/267/create-stockmarket-1.1.1%2Bmc1.21.1.jar"
 hash-format = "sha256"
-hash = "31f0574d13a00e97014bb07d7a5b5c65fdd7fc13de45fabb09937421b35c07fa"
+hash = "130557c0f7d536b4d0623df274029e664f4b034a628979fb812c60b469845c38"
 
 [update.curseforge]
-file-id = 8246369
+file-id = 9066267
 project-id = 1549447

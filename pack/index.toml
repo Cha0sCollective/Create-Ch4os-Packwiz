@@ -755,7 +755,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-stock-market.pw.toml"
-hash = "d826c2956c157306af24fc0c812a88669d6e6b50aba90e317412f1d826d7767b"
+hash = "adde75ab117e76a52602328116cd53ab814ecf8fe0dc4801866405232b906b57"
 metafile = true
 
 [[files]]
