@@ -203,7 +203,7 @@ Multiplayer edits require operator permission level 2 or the
 `easy_mob_spawn_control.admin` permission. The provider marks the client optional;
 the pack includes it for the menu and singleplayer use.
 
-## Experimental Distant Horizons 3.3.3
+## Distant Horizons 3.3.3
 
 DH now uses config format 5 and deletes older generated configs before rebuilding
 them. Back up `config/DistantHorizons.toml` and the relevant DH LOD cache before
@@ -217,3 +217,9 @@ policy; the new surface-generation feature is not enabled by the pack. Four work
 threads, the 0.50 runtime ratio, radius 128 and reviewed update settings remain.
 MVT does not establish visual quality, graphics performance or existing-world
 LOD-cache upgrade compatibility.
+
+## Numismatics rename patch (Beta)
+
+Beta uses the [Ch4oS Numismatics fork](https://github.com/Cha0sCollective/CreateNumismatics)
+with the sub-account rename fix. No configuration changes or account migration are
+needed. Test renaming and persistence in game before promotion.

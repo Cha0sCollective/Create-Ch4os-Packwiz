@@ -15,7 +15,7 @@ hash = "96e2ea7208003af18fd6de8ec06eda22a340deeac43667190de10587021273d0"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "deffe4efd05afda90464fa9ca939055c627d1b0580076c1affe9de051836dbff"
+hash = "e97cf683ca25a5c02eb9d5c4b0710c2d84571d5d02f13d3e7b60ec1973830f30"
 
 [[files]]
 file = "config/bhmenu-client.toml"
@@ -755,7 +755,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-stock-market.pw.toml"
-hash = "d826c2956c157306af24fc0c812a88669d6e6b50aba90e317412f1d826d7767b"
+hash = "adde75ab117e76a52602328116cd53ab814ecf8fe0dc4801866405232b906b57"
 metafile = true
 
 [[files]]
@@ -1195,12 +1195,12 @@ metafile = true
 
 [[files]]
 file = "mods/numismatics.pw.toml"
-hash = "2cda1866a4bfb139303609ec0dbb6fa90043598a41ff050f8da61af993ac04ac"
+hash = "aeb3c013ea44cb75b7365f165a8803d7ffa6fc6e08efc4e9a724c63a93f36d57"
 metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "700d6808334f634e7296ebff7c07efc208f1d63e1b682e7725c439d22ca5dec7"
+hash = "90f4decad9f8c0edae18b4c99e105424cb3584dd013227a6f365a5fa782ed5ab"
 metafile = true
 
 [[files]]
@@ -1470,12 +1470,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "4ad78e9b9c75c1805643939252a20a19ffd49c9d8eaa6f8ac6536aeea1b1fd8a"
+hash = "adc2392ae9f8e6557a3178e6abcd0bf0f4592506dd425a54fd5f0e9885cb32dd"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "4644eec67e6ec3ab4a9df5c56f688e7b1f4893d891bff4d071df01c69b784e45"
+hash = "e36998e4d9acf6b72eb4da10688bbb5408211a32a05d607b20fc97a7950a8a8d"
 metafile = true
 
 [[files]]
