@@ -1,7 +1,7 @@
 {
   "minecraft": "1.21.1",
   "neoforge": {
-    "version": "21.1.248"
+    "version": "21.1.262"
   },
   "launch": {
     "client": {

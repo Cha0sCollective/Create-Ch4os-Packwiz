@@ -2,7 +2,7 @@
 
 # Create: Ch4oS
 
-A Minecraft 1.21.1 / NeoForge 21.1.248 modpack for factories, vehicles and exploration.
+A Minecraft 1.21.1 / NeoForge 21.1.262 modpack for factories, vehicles and exploration.
 
 ## Play
 

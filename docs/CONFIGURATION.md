@@ -143,7 +143,7 @@ Dedicated-server lifecycle checks do not establish those behaviors.
 
 Experimental includes [World-Wide Power Grid 0.2.4](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.4)
 on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
-NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
+NeoForge 21.1.262, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
 ranges accept these versions; the full pack still needs player compatibility testing.
 
 `defaultconfigs/powergrid-server.toml` sets `[electricity.solver]` to
@@ -167,6 +167,16 @@ Stationary circuits are the release's supported scope. Moving Sable systems,
 large networks, mixed-machine behavior and real client rendering require testing
 in an isolated Experimental instance. No example worlds, SDKs or example add-ons
 are installed by the pack.
+
+## Experimental loader and admin configuration
+
+Experimental requires NeoForge **21.1.262** for Quark 4.1-487 and the modules
+bundled with Forgified Fabric API 0.116.15+2.3.6. Packwiz does not upgrade an
+existing Prism or AMP loader; use the current Experimental ZIP or update NeoForge
+manually before launching. Java 21 and the maintained configuration defaults remain unchanged.
+
+FTB Library 2101.1.37 requires operator permission level **4** to synchronize
+server configuration changes through its GUI, replacing the earlier level 2 check.
 
 ## MapSyncer synchronization defaults
 

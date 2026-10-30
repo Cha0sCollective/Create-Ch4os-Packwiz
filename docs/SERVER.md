@@ -25,6 +25,8 @@ Start Minecraft through AMP only after the installation succeeds.
 
 The URL above follows **Public**. For testing, replace `public` with `beta` or
 `experimental` in an isolated server. See [Experimental mod development](EXPERIMENTAL.md).
+Experimental currently requires **NeoForge 21.1.262**; set that version in AMP
+before starting its test server. Public and Beta keep their selected runtime.
 For a fixed version, use the full commit URL shown in that numbered release's
 notes; its command stays on that version even when branches advance. Clients must
 use the corresponding channel or fixed version. Each release supplies a ready-to-copy

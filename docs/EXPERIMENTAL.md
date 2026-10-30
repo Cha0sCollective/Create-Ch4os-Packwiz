@@ -16,8 +16,10 @@ https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/download/channe
 
 Its name is **Create: Ch4oS - experimental** and its identity is
 `Create-Ch4oS-experimental`, separate from Public, Beta and fixed versions.
-It follows `experimental` at launch and uses the same Java, memory, runtime and
-icon as the starting pack. Use disposable worlds for builds that change saved
+It follows `experimental` at launch and currently requires **NeoForge 21.1.262**.
+Java 21, memory settings and the icon are unchanged. Existing Prism instances need
+their NeoForge component updated or a fresh import; Packwiz cannot change it.
+Use disposable worlds for builds that change saved
 blocks or items; keep your ordinary play instances separate.
 
 For an isolated test server, install the bootstrap as described in

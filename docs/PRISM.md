@@ -27,6 +27,10 @@ their Minecraft options are preserved.
 The Public import follows `public`; the [Beta import](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-beta)
 follows `beta`. The [Experimental import](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-experimental)
 follows `experimental` for self-developed mod testing; see [its guide](EXPERIMENTAL.md).
+Experimental now requires **NeoForge 21.1.262**. Existing Experimental instances
+need **Edit Instance → Version → NeoForge → Change Version**, or a fresh import
+from the current Experimental ZIP. Packwiz does not update the launcher loader.
+
 A numbered release ZIP stays on its tagged commit, even after
 rolling branches advance. Download its attached Prism ZIP, not the source archive.
 Each choice has a separate instance identity. Use a separate instance when
