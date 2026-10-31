@@ -107,7 +107,15 @@ $config = $config.Replace('PACK_NAME', $profile.name).Replace('PACK_ICON', $icon
 $provenance = "Create: Ch4oS Prism import`nSelection: $selection`n$behavior`nHistorical profile version: $($profile.version)`nBuild source: $revision`nPack source: $packRevision`nPack address: $PackUrl`nPackwiz bootstrap: $($tools.bootstrap.version)`nPackwiz installer: $($tools.installer.version)`n"
 [IO.File]::WriteAllText((Join-Path $instance 'release.txt'), $provenance, $utf8)
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-[IO.Compression.ZipFile]::CreateFromDirectory($stage, $outputPath)
+$zip = [IO.Compression.ZipFile]::Open($outputPath, [IO.Compression.ZipArchiveMode]::Create)
+try {
+    foreach ($file in (Get-ChildItem -LiteralPath $stage -Recurse -File -Force | Sort-Object FullName)) {
+        $entryName = $file.FullName.Substring($stage.Length + 1).Replace('\', '/')
+        [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $file.FullName, $entryName, [IO.Compression.CompressionLevel]::Optimal) | Out-Null
+    }
+} finally {
+    $zip.Dispose()
+}
 $hash = (Get-FileHash -LiteralPath $outputPath -Algorithm SHA256).Hash.ToLowerInvariant()
 [IO.File]::WriteAllText(($outputPath + '.sha256'), "$hash  $([IO.Path]::GetFileName($outputPath))`n", $utf8)
 Write-Output "Prism ZIP: $outputPath"

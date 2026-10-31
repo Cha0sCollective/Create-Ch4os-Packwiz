@@ -94,6 +94,42 @@ class ReleaseTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "only the two Packwiz"):
                 r.inspect_zip(path, "v0.2.0", "a" * 40)
 
+    def write_raw_member(self, archive, name, content):
+        entry = zipfile.ZipInfo(name)
+        # Windows otherwise normalizes backslashes before writing the fixture.
+        entry.filename = entry.orig_filename = name
+        archive.writestr(entry, content)
+
+    def test_windows_zip_is_verified_with_posix_member_names(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self.zip_fixture(Path(tmp), "v0.3.9")
+            with zipfile.ZipFile(path) as archive:
+                files = [(entry.orig_filename, archive.read(entry)) for entry in archive.infolist()]
+            with zipfile.ZipFile(path, "w") as archive:
+                for name, content in files:
+                    self.write_raw_member(archive, name.replace("/", "\\"), content)
+            Path(str(path) + ".sha256").write_text(f"{r.digest(path)}  {path.name}\n")
+            # Linux exposes the stored backslashes instead of normalizing them.
+            with patch.object(zipfile.ZipFile, "namelist", lambda archive: [entry.orig_filename for entry in archive.infolist()]):
+                r.inspect_zip(path, "v0.3.9", "a" * 40)
+
+    def test_zip_rejects_traversal_with_either_separator(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            for name in ("Create-Ch4oS-v0-2-0/../outside.txt", "Create-Ch4oS-v0-2-0\\..\\outside.txt"):
+                path = self.zip_fixture(Path(tmp))
+                with zipfile.ZipFile(path, "a") as archive:
+                    self.write_raw_member(archive, name, b"outside")
+                with self.assertRaisesRegex(ValueError, "Unexpected ZIP layout"):
+                    r.inspect_zip(path, "v0.2.0", "a" * 40)
+
+    def test_zip_rejects_duplicate_paths_across_separators(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = self.zip_fixture(Path(tmp))
+            with zipfile.ZipFile(path, "a") as archive:
+                self.write_raw_member(archive, "Create-Ch4oS-v0-2-0\\instance.cfg", b"ambiguous command")
+            with self.assertRaisesRegex(ValueError, "Duplicate ZIP path"):
+                r.inspect_zip(path, "v0.2.0", "a" * 40)
+
     def test_rolling_url_and_fixed_url_resolve_differently(self):
         # Independent of remote availability: the selected reference is encoded in
         # the real Prism command, not inferred from a ZIP filename or release title.
