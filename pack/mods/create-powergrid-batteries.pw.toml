@@ -1,0 +1,13 @@
+name = "Create: Power Grid Batteries"
+filename = "powergrid_batteries-1.0.1.jar"
+side = "both"
+pin = true
+
+[download]
+url = "https://edge.forgecdn.net/files/8480/200/powergrid_batteries-1.0.1.jar"
+hash-format = "sha256"
+hash = "c8e75533654442e9f017408a9f122da5bd18ddff5ff59c4a5e3a5ef6a12c4538"
+
+[update.curseforge]
+file-id = 8480200
+project-id = 1619153

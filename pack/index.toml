@@ -729,6 +729,11 @@ hash = "60ff7643cb416b004611abeed102f4bcfeafdf644384715e7d760fecdd4daa29"
 metafile = true
 
 [[files]]
+file = "mods/create-powergrid-batteries.pw.toml"
+hash = "420805d1407f12c145760408f93e20e05d1fcacddbde7f898452a6714ff21bf0"
+metafile = true
+
+[[files]]
 file = "mods/create-prismatic-shine.pw.toml"
 hash = "8e01fabd6556021a8cddc6ceb2f52b78d527deb35a1a763e17f1e9fb2e4d9b73"
 metafile = true

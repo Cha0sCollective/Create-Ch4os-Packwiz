@@ -168,6 +168,11 @@ large networks, mixed-machine behavior and real client rendering require testing
 in an isolated Beta instance. No example worlds, SDKs or example add-ons
 are installed by the pack.
 
+[Create: Power Grid Batteries 1.0.1](https://www.curseforge.com/minecraft/mc-mods/create-powergrid-batteries/files/8480200)
+adds four battery tiers on clients and servers, with upstream recipes and capacities.
+Upstream reports intermittent registry-timing startup crashes. Battery charging,
+multiblock save/reload, WWPG integration, tooltips and Ponders need player testing.
+
 ## Beta loader and admin configuration
 
 Beta requires NeoForge **21.1.262** for Quark 4.1-487 and the modules
