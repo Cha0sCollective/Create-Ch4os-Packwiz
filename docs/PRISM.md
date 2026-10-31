@@ -25,7 +25,11 @@ their Minecraft options are preserved.
 ## Updates and removal
 
 The Public import follows `public`; the [Beta import](https://github.com/Cha0sCollective/Create-Ch4os-Packwiz/releases/tag/channel-beta)
-follows `beta`. A numbered release ZIP stays on its tagged commit, even after
+follows `beta`. Beta requires **NeoForge 21.1.262**. Existing Beta instances
+need **Edit Instance → Version → NeoForge → Change Version**, or a fresh
+import from the current Beta ZIP. Packwiz does not update the launcher loader.
+
+A numbered release ZIP stays on its tagged commit, even after
 either branch advances. Download its attached Prism ZIP, not the source archive.
 Each choice has a separate instance identity. Use a separate instance when
 switching versions; do not downgrade an existing world.

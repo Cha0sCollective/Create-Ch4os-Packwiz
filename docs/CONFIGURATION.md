@@ -6,7 +6,7 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 | --- | --- |
 | Terrain | Tectonic + Terralith, ordinary default world type; Y -64 to 320; larger continents and deeper oceans |
 | Tectonic | Vertical scale 1.2, elevation boost 0.15; continent scale 0.11, ocean offset -0.95; ocean/deep-ocean depth -0.32/-0.75 |
-| Nuclear ores | Uranium: 2 attempts, Y -64..-8, bottom-biased; lead: 4 attempts, Y -48..32, uniform; striated deposits: rarity 48, Y -56..0, bottom-biased |
+| Nuclear ores | Uranium: 2 attempts, Y -64..-8, bottom-biased; lead: 4 attempts, Y -48..32, uniform; striated deposits: rarity 48, Y -56..0, bottom-biased; Nuclear 2.0.0 thorium and nitrate use upstream defaults |
 | Deep Seas | 3.3.0 with additional ocean deepening off and startup screens disabled; hull, pressure and High Seas settings use upstream defaults |
 | Structures | IDAS included with Labyrinth mining fatigue off; CSA global multipliers 0.7 and 1.0 |
 | Logging | Only CSA's repetitive DEBUG logger is filtered; warnings/errors and other diagnostics remain |
@@ -23,6 +23,12 @@ The exact settings live in `pack/`; a mod's generated configuration can contain 
 
 Ore attempts and terrain settings are not guaranteed yields or geometry. This
 world line began as a fresh save and does not provide an RC8 world conversion.
+
+Beta uses Create Nuclear 2.0.0 with upstream reactor, radiation and
+configuration changes. Upstream renamed `reactor_input` to `reactor_rod_input`;
+no automatic block remapping was found in the tagged source. Test existing
+reactors and saved-world upgrades on a copy; a fresh-world MVT lifecycle does
+not verify migration.
 
 Files marked `preserve = true`, including `options.txt` and the DH configuration,
 retain existing player edits. To inspect which files are managed or preserved,
@@ -141,9 +147,9 @@ Dedicated-server lifecycle checks do not establish those behaviors.
 
 ## Electricity
 
-The pack includes [World-Wide Power Grid 0.2.3](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.3)
+Beta includes [World-Wide Power Grid 0.2.4](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.4)
 on clients and servers, with CEE 1.21.1-1.1.3 and Power Grid 0.6.2. The pack keeps
-NeoForge 21.1.248, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
+NeoForge 21.1.262, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
 ranges accept these versions; the full pack still needs player compatibility testing.
 
 `defaultconfigs/powergrid-server.toml` sets `[electricity.solver]` to
@@ -154,7 +160,7 @@ stop the server or game, edit those settings in the generated
 if the installation uses world-local server configs), and restart. CEE's `microTicks` does
 not control the simulation schedule with WWPG installed.
 
-WWPG 0.2.3 loads its verified guarded native v7 engine from a checksum-named
+WWPG 0.2.4 loads its verified guarded native v7 engine from a checksum-named
 folder within `.pg-native`, preserving administrator-installed files. Its tested
 native platforms are Windows x86-64 with AVX2 and Linux x86-64 with AVX2 on
 Ubuntu 24.04; other Linux distributions remain unverified upstream. Failure to
@@ -167,6 +173,16 @@ Stationary circuits are the release's supported scope. Moving Sable systems,
 large networks, mixed-machine behavior and real client rendering require testing
 in an isolated Beta instance. No example worlds, SDKs or example add-ons
 are installed by the pack.
+
+## Beta loader and admin configuration
+
+Beta requires NeoForge **21.1.262** for Quark 4.1-487 and the modules
+bundled with Forgified Fabric API 0.116.15+2.3.6. Packwiz does not upgrade an
+existing Prism or AMP loader; use the current Beta ZIP or update NeoForge
+manually before launching. Java 21 and the maintained configuration defaults remain unchanged.
+
+FTB Library 2101.1.37 requires operator permission level **4** to synchronize
+server configuration changes through its GUI, replacing the earlier level 2 check.
 
 ## MapSyncer synchronization defaults
 
@@ -188,7 +204,7 @@ and the approved unofficial Steam n Rails NeoForge 0.3.0-beta.2 port. All four
 are installed on clients and servers with upstream recipes and settings. Existing
 Create, Power Grid, Sable and Flywheel versions satisfy their declared requirements.
 
-WWPG 0.2.3 retains the native solver and 16 substeps. Its stationary CEE/PG
+WWPG 0.2.4 retains the native solver and 16 substeps. Its stationary CEE/PG
 support does not establish compatibility for every component or wire added by these
 mods. Railways Navigator integration, coaster assembly and physics, custom wire
 behavior, electrical components and client rendering require focused player tests.

@@ -24,6 +24,8 @@ replace it with `& 'C:\path\to\java.exe'`, using the Java path configured in AMP
 Start Minecraft through AMP only after the installation succeeds.
 
 The URL above follows **Public**. For testing, replace `public` with `beta`.
+Beta requires **NeoForge 21.1.262**; stop its server and update the loader in
+AMP before starting. Packwiz updates mods and configs, not the loader.
 For a fixed version, use the full commit URL shown in that numbered release's
 notes; its command stays on that version even when branches advance. Clients must
 use the corresponding channel or fixed version. Each release supplies a ready-to-copy
