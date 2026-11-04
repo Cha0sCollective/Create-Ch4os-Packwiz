@@ -605,7 +605,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-electro-energetics.pw.toml"
-hash = "aed0f2f8c5775ef063f24a0ad71288078fe3c34b004161ed7f12905ec9316706"
+hash = "83f0ffad5ee6f2c43e277270632941d5df49b052876a7efdc35f6b903590b777"
 metafile = true
 
 [[files]]
@@ -1470,7 +1470,7 @@ metafile = true
 
 [[files]]
 file = "mods/world-wide-power-grid.pw.toml"
-hash = "ec680cf2220a52105e3e0e857acab95530435fb3a08cc91457ad089db8aa0619"
+hash = "2156e9e85e44673267c071dddfb34bfd5bedd3f060da8627608f4c8fe781af14"
 metafile = true
 
 [[files]]
