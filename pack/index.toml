@@ -1470,7 +1470,7 @@ metafile = true
 
 [[files]]
 file = "mods/world-wide-power-grid.pw.toml"
-hash = "2156e9e85e44673267c071dddfb34bfd5bedd3f060da8627608f4c8fe781af14"
+hash = "04435ed369e87f62453d00ab5ffabaa209b7a1e1dff6f71bd9ea9feafeff3121"
 metafile = true
 
 [[files]]
