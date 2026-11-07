@@ -1,9 +1,9 @@
 name = "World-Wide Power Grid"
-filename = "wwpg-0.2.6.jar"
+filename = "wwpg-0.2.7.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/download/0.2.6/wwpg-0.2.6.jar"
+url = "https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/download/0.2.7/wwpg-0.2.7.jar"
 hash-format = "sha256"
-hash = "aa3402a9599281fb580372175413ac876823fe0ca6e927f28953a93ef8589efa"
+hash = "6c1060b17f14df765188a60da154b723705947503a813508a53f62013e625053"
