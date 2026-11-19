@@ -277,13 +277,14 @@ existing-world migration need focused player tests beyond MVT boot/persistence.
 
 ## Create gameplay and logistics updates
 
-Beta selects Bits n Bobs 2.3.5, Crafts & Additions 1.7.2, Avionics 0.7.0,
+Beta retains Bits n Bobs 2.2.8 and selects Crafts & Additions 1.7.2, Avionics 0.7.0,
 Fantasizing Again 1.2.1, Supplementaries 4.0.2, Connected 1.3.3, Mobile Packages
 0.7.8 and Ornithopter Glider 1.2.1 on clients and servers. Existing settings
 and upstream recipes are retained without pack-specific balance overrides.
 
-Bits n Bobs refactors its chain-drive/cogwheel API; incompatible Bits n Tracks
-and TFMG versions are not installed. Fantasizing Again removes Encased
+Bits n Bobs 2.3.5 is held after reproducing unpaid cogwheel placement and an
+OPAC claim-protection bypass ([upstream issue #182](https://github.com/Aztech-Modding/Create-Bits-n-Bobs/issues/182)).
+Fantasizing Again removes Encased
 integration while Create Encased remains installed. Avionics 0.7.0 is labelled
 alpha on Modrinth. Back up test worlds before assessing old items/contraptions.
 
