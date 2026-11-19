@@ -262,6 +262,11 @@ file = "config/supplementaries-common.toml"
 hash = "e04affe80ee314b81e4408d0fcb6996c56a2820b0f5c6c3c6719ae89cf98cfcf"
 
 [[files]]
+file = "config/tacz-common.toml"
+hash = "9bbfc28da9eb8a3296f924b195f7a2a707f79af77a051d1bdf4d046f43a4661a"
+preserve = true
+
+[[files]]
 file = "config/tacztweaks.json"
 hash = "99e9566a675d4f43abc00c1730ec66e1ba11567e44e4fe4e5e9062049763b2af"
 preserve = true
@@ -320,7 +325,7 @@ metafile = true
 
 [[files]]
 file = "mods/azimuth-api.pw.toml"
-hash = "8d41785617d2b750505fa70e4bf7548c1d3eb54f05c923e2c43fa388949b2575"
+hash = "bd94bf86d13373fe808edec5891459172c4dee09c7c9dc36bdd3fa4285b83c49"
 metafile = true
 
 [[files]]
@@ -355,7 +360,7 @@ metafile = true
 
 [[files]]
 file = "mods/blueprint.pw.toml"
-hash = "3612ff67be64694a16cd680e8b7612fdc8b626cd863de2df24affc0e498dd614"
+hash = "1f5bdaef1bc3a91a95348c1a79e5f1b2f6c6210b46e62ed715bfe3da0984fb0d"
 metafile = true
 
 [[files]]
@@ -425,7 +430,7 @@ metafile = true
 
 [[files]]
 file = "mods/colorwheel.pw.toml"
-hash = "85be74807d6b1f23709a2fd960b7732125e3145f4fb12520c1106081d0f89fab"
+hash = "5a983bd87569299492ce2645f9a601780ce535efe07433339454309200fd1156"
 metafile = true
 
 [[files]]
@@ -1195,7 +1200,7 @@ metafile = true
 
 [[files]]
 file = "mods/not-enough-animations.pw.toml"
-hash = "f73b484d81f9415f0e929e8adfceb8b2bbb0b56e77e73abda08f1a68cf64c4ec"
+hash = "0df65b46686fa489ff77ec23630c2ef067a673c5448099e78f0e56935f0c4075"
 metafile = true
 
 [[files]]
@@ -1275,12 +1280,12 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "f44bc92b129c4b4f01f05b7c1b0043478f4ea35dc0d37d0ad2acb05970115f70"
+hash = "00097957abba1118476f3c59ad509345cf1acf16e8d07181715dbe385f01a86f"
 metafile = true
 
 [[files]]
 file = "mods/quark.pw.toml"
-hash = "0c4673bae66f15215743127a0215bd56b96fecece6f8d7ed77984572cdadce79"
+hash = "2be9d7665b147d64a19335aba53ce8353d308a7a363bf1dc71750c2aa181463a"
 metafile = true
 
 [[files]]
@@ -1415,12 +1420,12 @@ metafile = true
 
 [[files]]
 file = "mods/tacz-1.21.1.pw.toml"
-hash = "662d015c1d8eaf07f83a6b42ecb130a243e09f0cc0dc57886a3fdf9e3b41f366"
+hash = "92ae86889fc05660bf808d40ceab17e4404316cffc721bcabd1b8701b9fd6b45"
 metafile = true
 
 [[files]]
 file = "mods/tacz-tweaks.pw.toml"
-hash = "27529451128a45a170e61a4510068f844f22d9dda6b05a42e0eba2d76a6ea645"
+hash = "e6c01d018d063c7e353b190514b24127daed38abb4cb980c0aac1c0b615593a1"
 metafile = true
 
 [[files]]

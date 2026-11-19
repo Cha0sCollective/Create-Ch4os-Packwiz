@@ -1,0 +1,3 @@
+# TaCZ Tweaks handles Sable compatibility.
+[ammo]
+EnableSableCompat = false

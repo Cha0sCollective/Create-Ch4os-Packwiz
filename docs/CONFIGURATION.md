@@ -112,8 +112,8 @@ lifecycle cannot validate these behaviors or existing-world upgrades.
 
 ## Guns and vehicle linkage
 
-Beta includes the unofficial TaCZ NeoForge port 1.1.8-hotfix-r7, TaCZ Tweaks
-3.0.0-alpha.10, Create Aeronautics: Transmission & Linkage 0.2.8, and
+Beta evaluates official TaCZ NeoForge 1.2.0-hotfix with TaCZ Tweaks
+3.0.0-alpha.11, Create Aeronautics: Transmission & Linkage 0.2.8, and
 Create Aeronautics: Toolgun 0.3.6. These are
 required on both clients and servers. Guns, ammunition, recipes, damage and
 movement use the installed mods' upstream defaults; no extra gun or example
@@ -293,3 +293,31 @@ Avionics peripherals/scripts, Fantasizing recipes/Ponders and girder tracks,
 Supplementaries blocks, package/fluid persistence and glider durability/crafting.
 Headless lifecycle checks do not establish those behaviors, visual compatibility
 or existing-world upgrades. SimpleRPC and audio settings remain unchanged.
+
+## Library and client integration updates
+
+Beta selects Azimuth 1.4.8, Blueprint 8.2.0, Puzzles Lib 21.1.66 and Quark
+4.1-488 on clients and servers, plus client-only Colorwheel 1.3.2 and Not Enough
+Animations 1.12.7. Bits n Bobs remains pinned to 2.2.8. Existing library, Quark,
+animation and shader settings are retained. Blueprint changes biome-provider
+behavior, and Quark changes glowshroom generation in newly generated chunks. No
+new Quark blockstate assets were added. Tests on disposable worlds do not establish
+existing-world compatibility.
+
+Keep Colorwheel Patcher 1.0.5, Sodium 0.8.13 and the current Iris/Flywheel setup.
+Check patched shaders, Colorwheel rendering, lantern/offhand animations and
+existing Quark content in a real client; headless MVT does not establish visual
+correctness or GPU performance.
+
+Official TaCZ 1.2.0-hotfix replaces the archived unofficial port and is evaluated
+with Tweaks alpha.11, whose embedded requirement is TaCZ [1.2.0,1.2.1) despite
+the CurseForge title mentioning 1.1.8. The November 15 hotfix is a younger candidate
+selected for evaluation. Keep the preserved Tweaks configuration at version 1 with
+`forceDisableCrawl = true` and `sableCompat = true`. The supplied preserved
+`config/tacz-common.toml` sets `[ammo] EnableSableCompat = false`, as upstream
+recommends when an addon handles compatibility. This keeps Tweaks responsible for
+Sable collision/explosion handling. **Existing client and server installations must
+set this value to false in their own `tacz-common.toml` before testing the update**;
+preserved files retain player settings. Assess existing guns/attachments/ammo,
+gun-pack conversion and multiplayer synchronization before promotion. No existing
+world or external gun pack is converted by the pack installer.

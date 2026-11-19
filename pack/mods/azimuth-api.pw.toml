@@ -1,13 +1,13 @@
-name = "azimuth-1.4.7"
-filename = "azimuth-1.4.7.jar"
+name = "Azimuth API"
+filename = "azimuth-1.4.8.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://edge.forgecdn.net/files/8661/574/azimuth-1.4.7.jar"
+url = "https://edge.forgecdn.net/files/8780/182/azimuth-1.4.8.jar"
 hash-format = "sha256"
-hash = "19e00a8268ffccc3165abd52b5d4cd7d415286b69d1ad2cde86e537e4b3ad8fb"
+hash = "fd401a291d141c24b797097aa8a4ae75b7d8448b5cb2a1d2f98bfcec801f687d"
 
 [update.curseforge]
-file-id = 8661574
+file-id = 8780182
 project-id = 1466331
