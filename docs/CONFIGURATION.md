@@ -245,3 +245,12 @@ LOD-cache upgrade compatibility.
 Beta uses the [Ch4oS Numismatics fork](https://github.com/Cha0sCollective/CreateNumismatics)
 with the sub-account rename fix. No configuration changes or account migration are
 needed. Test renaming and persistence in game before promotion.
+
+## Sable and Climbable Ropes testing
+
+Beta selects Sable 2.0.6 with Climbable Ropes 2.2.2, retaining Aeronautics 1.3.2,
+Coasters 0.1.5 and the existing physics settings. Test rope slopes/ends, grip
+position, entities standing on fluids and assembled contraptions in an isolated
+instance. Server lifecycle checks do not validate these interactions or rendering.
+A [similar-stack Quark key-binding crash report](https://github.com/ryanhcode/sable/issues/1621)
+remains open; a successful server boot does not clear that client risk.

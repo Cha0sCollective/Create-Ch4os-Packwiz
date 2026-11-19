@@ -400,7 +400,7 @@ metafile = true
 
 [[files]]
 file = "mods/climbable_ropes.pw.toml"
-hash = "b76375471c1732abdaa08163413de30b2273f26c87a1dd3e7e531ab7c8721933"
+hash = "de2a3d83c89a78fb767d686eb029f04006e63e51ff04ee0d658f5352acd102e6"
 metafile = true
 
 [[files]]
@@ -1320,7 +1320,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable.pw.toml"
-hash = "a6ce0e663acb6dba4fa41695bbd792fcc88e2516fcd090d84aba1ff2e51fce8c"
+hash = "55472e18fa892643459b77c7cae8921468af0f30fa01978666e57edea04d59db"
 metafile = true
 
 [[files]]
