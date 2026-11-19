@@ -1,13 +1,13 @@
-name = "create_fantasizing-1.21.1-1.2.0-b3"
-filename = "create_fantasizing-1.21.1-1.2.0-b3.jar"
+name = "Create: Fantasizing Again"
+filename = "create_fantasizing-1.21.1-1.2.1.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://edge.forgecdn.net/files/8585/611/create_fantasizing-1.21.1-1.2.0-b3.jar"
-hash-format = "sha256"
-hash = "1fdf90fdbe9d6dfab24d71793352a0b1c5af2eba0c88422710f5418ced6d09a5"
+url = "https://cdn.modrinth.com/data/UvrmqS41/versions/K7O1CgV2/create_fantasizing-1.21.1-1.2.1.jar"
+hash-format = "sha512"
+hash = "48db67ad00960e082df93847b53ea59a24bbae9446ab6369ea7b4e859ff7df23cffc65007c226764f5ac487d3a658637d028c285c6c6b79b0bdcc24497119cdc"
 
-[update.curseforge]
-file-id = 8585611
-project-id = 1279337
+[update.modrinth]
+mod-id = "UvrmqS41"
+version = "K7O1CgV2"

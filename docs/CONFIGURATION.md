@@ -258,9 +258,8 @@ remains open; a successful server boot does not clear that client risk.
 ## Stability and farming updates
 
 Beta selects ModernFix 5.27.27, Moonlight 3.8.3, Skin Layers 3D 1.11.4 and
-Integrated Farming 1.4.3. Supplementaries 3.9.9 is included because Farming
-requires that version when Supplementaries is installed; its Moonlight minimum
-is covered by 3.8.3. Existing ModernFix, Moonlight and farming settings are retained.
+Integrated Farming 1.4.3. Supplementaries 4.0.2 meets Farming's installed-mod
+minimum of 3.9.9; its Moonlight minimum is covered by 3.8.3. Existing ModernFix, Moonlight and farming settings are retained.
 Skin Layers remains client-only. Test generated resources, skins, farming
 interactions and Ponder tutorials in a fresh isolated instance; lifecycle and
 headless launch checks do not establish rendering or existing-world compatibility.
@@ -275,3 +274,21 @@ player settings are migrated by this pack. The optional HTTP API remains off
 (`web.enabled = false`) by upstream default. Do not enable it as part of testing.
 Complex routes, arrival times, displays, platform separation, permissions and
 existing-world migration need focused player tests beyond MVT boot/persistence.
+
+## Create gameplay and logistics updates
+
+Beta selects Bits n Bobs 2.3.5, Crafts & Additions 1.7.2, Avionics 0.7.0,
+Fantasizing Again 1.2.1, Supplementaries 4.0.2, Connected 1.3.3, Mobile Packages
+0.7.8 and Ornithopter Glider 1.2.1 on clients and servers. Existing settings
+and upstream recipes are retained without pack-specific balance overrides.
+
+Bits n Bobs refactors its chain-drive/cogwheel API; incompatible Bits n Tracks
+and TFMG versions are not installed. Fantasizing Again removes Encased
+integration while Create Encased remains installed. Avionics 0.7.0 is labelled
+alpha on Modrinth. Back up test worlds before assessing old items/contraptions.
+
+Test chain drives and addon cogwheels, electrical connectors across chunk unloads,
+Avionics peripherals/scripts, Fantasizing recipes/Ponders and girder tracks,
+Supplementaries blocks, package/fluid persistence and glider durability/crafting.
+Headless lifecycle checks do not establish those behaviors, visual compatibility
+or existing-world upgrades. SimpleRPC and audio settings remain unchanged.

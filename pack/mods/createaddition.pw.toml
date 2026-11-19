@@ -1,13 +1,13 @@
-name = "createaddition-1.6.0"
-filename = "createaddition-1.6.0.jar"
+name = "Create Crafts & Additions"
+filename = "createaddition-1.7.2.jar"
 side = "both"
 pin = true
 
 [download]
-url = "https://edge.forgecdn.net/files/8188/476/createaddition-1.6.0.jar"
-hash-format = "sha256"
-hash = "41876c3780b70365a1848994d146a73423cc19fbe86485885795d9e7d855e7e9"
+url = "https://cdn.modrinth.com/data/kU1G12Nn/versions/hsjVajlP/createaddition-1.7.2.jar"
+hash-format = "sha512"
+hash = "f3a3ddb5600189da818fc71ea659d17f0d1097c5ad664433eed400b3ecc67d0f9305b348e5b7c5fd872d7a6e51330c7158b3181e77192c576c205a74dd0298ff"
 
-[update.curseforge]
-file-id = 8188476
-project-id = 439890
+[update.modrinth]
+mod-id = "kU1G12Nn"
+version = "hsjVajlP"
