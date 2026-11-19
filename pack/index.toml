@@ -655,7 +655,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-integrated-farming.pw.toml"
-hash = "a887eb50283fdbccc6589d62aad3e14f82fccfe1bc47dc300ea1470ded55c258"
+hash = "a96d9a9ee60e742cb621d29ced1e6aaeeb6c4decfdfa599069a00ccff3597847"
 metafile = true
 
 [[files]]
@@ -1165,7 +1165,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "98cec3097b0f63197b186165e7958cf74279dd936a28a9eea4e075ec8e5517d0"
+hash = "76f7c6c5195e8a492905206aa473588108f0ee7eed7b1fb1f82fb32d2de471bd"
 metafile = true
 
 [[files]]
@@ -1335,7 +1335,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "a9f36917cc333a230fb0e038cb81aeef38816483531e17700808fa527352260d"
+hash = "033f925d28da23258a0b55f38159a554eb941388fb0b9088cc3526662255523e"
 metafile = true
 
 [[files]]
@@ -1355,7 +1355,7 @@ metafile = true
 
 [[files]]
 file = "mods/skin-layers-3d.pw.toml"
-hash = "81310c6ddcd261b48878b0f553a5876c8f37c190d69a285145fd230af3e9c242"
+hash = "4c0cb8b9a041d16632027bd7c9251eb08f222f4ba2c61f5368cbe0511177e230"
 metafile = true
 
 [[files]]
@@ -1410,7 +1410,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "f07d8e9afe8aa4ace0a590ef6bc3718cdae8c0a9b36de0d53f8d4ad85367e74a"
+hash = "bc2ed8fa58d8cc21685e913cf8ed980f704db67d61563bab1a5401e97493c59b"
 metafile = true
 
 [[files]]

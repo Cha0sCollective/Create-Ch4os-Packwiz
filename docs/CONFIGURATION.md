@@ -254,3 +254,13 @@ position, entities standing on fluids and assembled contraptions in an isolated
 instance. Server lifecycle checks do not validate these interactions or rendering.
 A [similar-stack Quark key-binding crash report](https://github.com/ryanhcode/sable/issues/1621)
 remains open; a successful server boot does not clear that client risk.
+
+## Stability and farming updates
+
+Beta selects ModernFix 5.27.27, Moonlight 3.8.3, Skin Layers 3D 1.11.4 and
+Integrated Farming 1.4.3. Supplementaries 3.9.9 is included because Farming
+requires that version when Supplementaries is installed; its Moonlight minimum
+is covered by 3.8.3. Existing ModernFix, Moonlight and farming settings are retained.
+Skin Layers remains client-only. Test generated resources, skins, farming
+interactions and Ponder tutorials in a fresh isolated instance; lifecycle and
+headless launch checks do not establish rendering or existing-world compatibility.
