@@ -264,3 +264,14 @@ is covered by 3.8.3. Existing ModernFix, Moonlight and farming settings are reta
 Skin Layers remains client-only. Test generated resources, skins, farming
 interactions and Ponder tutorials in a fresh isolated instance; lifecycle and
 headless launch checks do not establish rendering or existing-world compatibility.
+
+## Railways Navigator
+
+Beta selects Railways Navigator 1.21.1-beta-0.10.0-C6.
+The route backend was rewritten, permission handling changed, and many common
+settings moved into server configuration. Back up existing Navigator configuration
+and verify the generated server settings; defaults may reset on upgrade. No
+player settings are migrated by this pack. The optional HTTP API remains off
+(`web.enabled = false`) by upstream default. Do not enable it as part of testing.
+Complex routes, arrival times, displays, platform separation, permissions and
+existing-world migration need focused player tests beyond MVT boot/persistence.
