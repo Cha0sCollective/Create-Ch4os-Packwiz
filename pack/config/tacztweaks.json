@@ -2,6 +2,7 @@
   "version": 1,
   "general": {
     "compatibility": {
+      "apothicAttributesCompat": false,
       "forceDisableCrawl": true,
       "sableCompat": true
     }
