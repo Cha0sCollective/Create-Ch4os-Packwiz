@@ -1,6 +1,6 @@
 # Server installation with AMP
 
-Use an AMP instance with Minecraft **1.21.1**, NeoForge **21.1.248** and **Java 21**.
+Use an AMP instance with Minecraft **1.21.1**, NeoForge **21.1.262** and **Java 21**.
 AMP manages Java, memory, backups and starting or stopping Minecraft.
 
 Stop Minecraft in AMP. Back up an existing server, then open PowerShell in its

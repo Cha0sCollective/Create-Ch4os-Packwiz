@@ -48,8 +48,8 @@ checked against the shipped shader sources; in-game export and visual checks
 remain necessary. Complementary's `COLORED_LIGHTING=0` is its shipped default/off
 value even though its source's explicit distance list starts at 128.
 
-Use a fresh isolated Beta instance to evaluate all defaults together. The eight
-preserved defaults covered here are Minecraft options, Iris settings, DH settings, borderless-window
+Use a fresh isolated Beta instance to evaluate all defaults together. The
+preserved first-start defaults include Minecraft options, Iris settings, DH settings, borderless-window
 settings, MapSyncer's client settings and the three shader preset sidecars. Existing copies retain player
 settings; missing files receive the new defaults. Minecraft serializes the lowest
 priority first: vanilla and generated mod packs are followed by Patrix, Upscaled
@@ -120,8 +120,9 @@ movement use the installed mods' upstream defaults; no extra gun or example
 interaction packs are supplied. Transmission & Linkage and Toolgun use upstream settings.
 
 The pack supplies `config/tacztweaks.json` with configuration `version` 1,
-`general.compatibility.forceDisableCrawl` set to `true`, and
-`general.compatibility.sableCompat` set to `true`. This disables TaCZ's crawl
+`general.compatibility.forceDisableCrawl` and
+`general.compatibility.sableCompat` set to `true`, and
+`general.compatibility.apothicAttributesCompat` set to `false`. This disables TaCZ's crawl
 system and enables Tweaks' Sable integration for Aeronautics structures.
 Other settings use upstream defaults.
 The file is preserved by Packwiz so later player or server edits are retained.
@@ -182,7 +183,7 @@ multiblock save/reload, WWPG integration, tooltips and Ponders need player testi
 
 ## Beta loader and admin configuration
 
-Beta requires NeoForge **21.1.262** for Quark 4.1-487 and the modules
+Beta requires NeoForge **21.1.262** for Quark 4.1-488 and the modules
 bundled with Forgified Fabric API 0.116.15+2.3.6. Packwiz does not upgrade an
 existing Prism or AMP loader; use the current Beta ZIP or update NeoForge
 manually before launching. Java 21 and the maintained configuration defaults remain unchanged.

@@ -1,6 +1,6 @@
 # Player controls
 
-Extra controls for Create: Ch4oS beta **0.2.8**, Minecraft 1.21.1. These are the
+Extra controls for Create: Ch4oS beta **0.4.2**, Minecraft 1.21.1. These are the
 pack's fresh-install defaults and the installed mods' default bindings. Your
 **Options → Controls → Key Binds** screen shows your actual assignments.
 Vanilla movement, inventory and interaction controls still apply.
@@ -116,6 +116,7 @@ attachments can affect which actions are available.
 | --- | --- | --- |
 | TaCZ | Shoot / aim | Left mouse / Right mouse |
 | TaCZ | Reload | R |
+| TaCZ | Unload ammunition | Alt+R |
 | TaCZ | Inspect gun | H |
 | TaCZ | Switch firing mode | G |
 | TaCZ | Interact | O |
@@ -123,7 +124,7 @@ attachments can affect which actions are available.
 | TaCZ | Change scope zoom / melee | V / V |
 | TaCZ | Open configuration | Alt+T |
 | TaCZ | Crawl | C, **disabled by pack configuration** |
-| TaCZ Tweaks | Bolt; reduce sensitivity; tilt gun; unload | Unbound |
+| TaCZ Tweaks | Bolt; reduce sensitivity; tilt gun | Unbound |
 
 ## Create tools and vehicles
 
@@ -172,7 +173,7 @@ feature is available.
 
 A shared key can be harmless when actions run in separate screens, or cause two
 actions in the world. The conflict list alone cannot prove the result. Rebind
-the actions you use if they interfere; this update changes only Iris reload.
+the actions you use if they interfere. F8 is the only key overridden by the pack.
 
 | Key | Notable overlapping actions |
 | --- | --- |
