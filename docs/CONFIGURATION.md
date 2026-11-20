@@ -142,15 +142,16 @@ Dedicated-server lifecycle checks do not establish those behaviors.
 
 ## Electricity
 
-Beta includes [World-Wide Power Grid 0.2.10](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.10)
+Beta includes [World-Wide Power Grid 0.2.11](https://github.com/Cha0sCollective/World-Wide-Power-Grid/releases/tag/0.2.11)
 on clients and servers, with CEE 1.21.1-1.1.4 and Power Grid 0.6.2. The pack keeps
 NeoForge 21.1.262, Create 6.0.10 and Architectury 13.0.11. WWPG's embedded dependency
 ranges accept these versions; the full pack still needs player compatibility testing.
 
-WWPG 0.2.10 reduces brief slowdowns on PG-powered CEE trains when wire chunks
-reload and keeps both gauge needles visible during normal powered travel. Genuine
-outages still make readings unavailable. Earlier wire restoration and motor/fan
-safety fixes remain. These changes still need full-pack player testing.
+WWPG 0.2.11 fixes loading an existing wire that joins two connectors on the same
+factory-light terminal and rejects new same-terminal links. Mixed CEE wires stay
+visible and selectable on PG and Power Dock terminals while Sable builds move.
+Earlier train chunk-reload/gauge, wire restoration and motor/fan safety fixes
+remain. These changes still need full-pack player testing.
 CEE 1.1.4 fixes breaking motors, incorrect variac overheating and freezes when
 removing wired blocks on Sable sublevels. Upstream recipes and pack settings are retained.
 
@@ -162,7 +163,7 @@ stop the server or game, edit those settings in the generated
 if the installation uses world-local server configs), and restart. CEE's `microTicks` does
 not control the simulation schedule with WWPG installed.
 
-WWPG 0.2.10 loads its verified guarded native v7 engine from a checksum-named
+WWPG 0.2.11 loads its verified guarded native v7 engine from a checksum-named
 folder within `.pg-native`, preserving administrator-installed files. Its tested
 native platforms are Windows x86-64 with AVX2 and Linux x86-64 with AVX2 on
 Ubuntu 24.04; other Linux distributions remain unverified upstream. Failure to
@@ -211,7 +212,7 @@ and the approved unofficial Steam n Rails NeoForge 0.3.0-beta.2 port. All four
 are installed on clients and servers with upstream recipes and settings. Existing
 Create, Power Grid, Sable and Flywheel versions satisfy their declared requirements.
 
-WWPG 0.2.10 retains the native solver and 16 substeps. Its stationary CEE/PG
+WWPG 0.2.11 retains the native solver and 16 substeps. Its stationary CEE/PG
 support does not establish compatibility for every component or wire added by these
 mods. Railways Navigator integration, coaster assembly and physics, custom wire
 behavior, electrical components and client rendering require focused player tests.
