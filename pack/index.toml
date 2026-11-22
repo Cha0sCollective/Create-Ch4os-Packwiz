@@ -15,7 +15,7 @@ hash = "96e2ea7208003af18fd6de8ec06eda22a340deeac43667190de10587021273d0"
 
 [[files]]
 file = "config/bcc-common.toml"
-hash = "bd13396eb869053815c517d71926b2cbab83aa537a031d01271f80770e5513b5"
+hash = "ca4893b2ecef3d76da4933dabd5f58dcb62a21c7a50c994b15f337e40d447d4e"
 
 [[files]]
 file = "config/bhmenu-client.toml"
